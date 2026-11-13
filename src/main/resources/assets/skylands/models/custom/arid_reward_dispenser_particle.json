@@ -1,0 +1,6 @@
+{
+  "parent": "skylands:displaysettings/gambling_machine.item",
+  "textures": {
+    "particle": "skylands:block/gambling_machine_arid"
+  }
+}

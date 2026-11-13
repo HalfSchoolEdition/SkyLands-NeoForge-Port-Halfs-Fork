@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:grimstone_tiles"
+    }
+  },
+  "result": {
+    "count": 6,
+    "id": "skylands:grimstone_tiles_slab"
+  }
+}

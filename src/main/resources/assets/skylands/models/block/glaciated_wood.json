@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/glaciated_log",
+    "up": "skylands:block/glaciated_log",
+    "north": "skylands:block/glaciated_log",
+    "east": "skylands:block/glaciated_log",
+    "south": "skylands:block/glaciated_log",
+    "west": "skylands:block/glaciated_log",
+    "particle": "skylands:block/glaciated_log"
+  },
+  "render_type": "solid"
+}

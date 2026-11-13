@@ -63,7 +63,7 @@ public class SkyBirdEntity extends PathfinderMob implements GeoEntity {
 		super.defineSynchedData(builder);
 		builder.define(SHOOT, false);
 		builder.define(ANIMATION, "undefined");
-		builder.define(TEXTURE, "sky_bird");
+		builder.define(TEXTURE, "golden_tuc_tuc");
 	}
 
 	public void setTexture(String texture) {

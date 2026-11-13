@@ -15,6 +15,6 @@ public class GlaciatedSkyAutomatonRenderer extends MobRenderer<GlaciatedSkyAutom
 
 	@Override
 	public ResourceLocation getTextureLocation(GlaciatedSkyAutomatonEntity entity) {
-		return ResourceLocation.parse("flying_stuff:textures/entities/sky_automaton_ice.png");
+		return ResourceLocation.parse("skylands:textures/entities/sky_automaton_ice.png");
 	}
 }

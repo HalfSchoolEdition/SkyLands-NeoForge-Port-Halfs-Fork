@@ -15,6 +15,6 @@ public class AridSkyAutomatonRenderer extends MobRenderer<AridSkyAutomatonEntity
 
 	@Override
 	public ResourceLocation getTextureLocation(AridSkyAutomatonEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "textures/entities/desertic_sky_automaton.png");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "textures/entities/desertic_sky_automaton.png");
 	}
 }

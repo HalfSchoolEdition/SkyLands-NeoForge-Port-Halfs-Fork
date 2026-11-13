@@ -15,6 +15,6 @@ public class LavicSkyAutomatonRenderer extends MobRenderer<LavicSkyAutomatonEnti
 
 	@Override
 	public ResourceLocation getTextureLocation(LavicSkyAutomatonEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "textures/entities/lavic_sky_automaton.png");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "textures/entities/lavic_sky_automaton.png");
 	}
 }

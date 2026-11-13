@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/shrine_floor",
+    "up": "skylands:block/shrine_floor",
+    "north": "skylands:block/shrine_floor",
+    "east": "skylands:block/shrine_floor",
+    "south": "skylands:block/shrine_floor",
+    "west": "skylands:block/shrine_floor",
+    "particle": "skylands:block/shrine_floor"
+  },
+  "render_type": "solid"
+}

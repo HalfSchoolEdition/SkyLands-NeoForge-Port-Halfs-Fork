@@ -1,8 +1,0 @@
-{
-  "parent": "block/door_top_right",
-  "textures": {
-    "bottom": "flying_stuff:block/glaciated_door",
-    "top": "flying_stuff:block/glaciated_door_top"
-  },
-  "render_type": "solid"
-}

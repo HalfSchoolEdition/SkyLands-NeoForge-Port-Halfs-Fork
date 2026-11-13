@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:swampy_island_cluster",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "spacing": 15,
+    "separation": 11,
+    "salt": 4931485919,
+    "density_class": "medium"
+  }
+}

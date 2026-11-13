@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:sky_sandstone_brick_slab"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "skylands:sky_sandstone_pillar_base"
+  }
+}

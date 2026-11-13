@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/abyss_leaves",
+    "up": "skylands:block/abyss_leaves",
+    "north": "skylands:block/abyss_leaves",
+    "east": "skylands:block/abyss_leaves",
+    "south": "skylands:block/abyss_leaves",
+    "west": "skylands:block/abyss_leaves",
+    "particle": "skylands:block/abyss_leaves"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "skylands:block/polished_lavic_skymetal_slab"
+    },
+    "type=top": {
+      "model": "skylands:block/polished_lavic_skymetal_slab_top"
+    },
+    "type=double": {
+      "model": "skylands:block/polished_lavic_skymetal_slab_full"
+    }
+  }
+}

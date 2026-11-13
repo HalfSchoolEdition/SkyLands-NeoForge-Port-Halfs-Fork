@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:celestial_planks"
+    }
+  },
+  "result": {
+    "count": 2,
+    "id": "skylands:celestial_trapdoor"
+  }
+}

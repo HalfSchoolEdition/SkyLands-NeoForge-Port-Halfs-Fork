@@ -17,7 +17,7 @@ public final class StarterGuideItem extends Item {
     @Override public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         if (player instanceof ServerPlayer serverPlayer)
             serverPlayer.openMenu(new SimpleMenuProvider((id, inventory, reader) -> new StarterGuideMenu(id),
-                    Component.translatable("item.flying_stuff.sky_lands_starter_guide")));
+                    Component.translatable("item.skylands.skylands_starter_guide")));
         return InteractionResultHolder.sidedSuccess(player.getItemInHand(hand), level.isClientSide());
     }
 }

@@ -1,0 +1,12 @@
+{
+  "priority": 1100,
+  "selector": "#skylands:sable_grimstone_slab",
+  "properties": {
+    "sable:mass": 0.75
+  },
+  "overrides": {
+    "type=double": {
+      "sable:mass": 1.5
+    }
+  }
+}

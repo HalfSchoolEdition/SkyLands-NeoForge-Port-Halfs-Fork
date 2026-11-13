@@ -1,0 +1,87 @@
+{
+  "name": "skylands:great_sky_desert",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:great_sky_desert/gss0",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:great_sky_desert/gss1",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:great_sky_desert/gss2",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:great_sky_desert/gss3",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:great_sky_desert/gss4",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:great_sky_desert/gss5",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:great_sky_desert/gss6",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:great_sky_desert/gss7",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:great_sky_desert/gss8",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    }
+  ]
+}

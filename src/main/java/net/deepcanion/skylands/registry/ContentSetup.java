@@ -7,11 +7,11 @@ import net.minecraft.world.level.block.FireBlock;
 public final class ContentSetup {
     public static void registerFireBehavior() {
         FireBlock fire = (FireBlock) Blocks.FIRE;
-        fire.setFlammable(ModBlocks.FIERY_LEAVES.get(), 30, 60);
+        fire.setFlammable(ModBlocks.GOLDEN_LEAVES.get(), 30, 60);
         fire.setFlammable(ModBlocks.GLACIATED_LEAVES.get(), 30, 60);
-        fire.setFlammable(ModBlocks.SWAMPY_BUSH.get(), 60, 50);
-        fire.setFlammable(ModBlocks.FIERY_GRASS.get(), 60, 100);
-        fire.setFlammable(ModBlocks.FIERY_SHORT_GRASS.get(), 60, 100);
+        fire.setFlammable(ModBlocks.SWAMP_BUSH.get(), 60, 50);
+        fire.setFlammable(ModBlocks.GOLDEN_GRASS.get(), 60, 100);
+        fire.setFlammable(ModBlocks.GOLDEN_SHORT_GRASS.get(), 60, 100);
         fire.setFlammable(ModBlocks.SHORT_GLACIATED_GRASS.get(), 60, 50);
         fire.setFlammable(ModBlocks.TALL_GLACIATED_GRASS.get(), 60, 50);
         fire.setFlammable(ModBlocks.BLOW_FLOWER.get(), 60, 100);
@@ -27,7 +27,7 @@ public final class ContentSetup {
         fire.setFlammable(ModBlocks.GLACIATED_FERN.get(), 60, 50);
         fire.setFlammable(ModBlocks.CHERRY_GRASS.get(), 60, 100);
         fire.setFlammable(ModBlocks.CHERRY_SHORT_GRASS.get(), 60, 100);
-        fire.setFlammable(ModBlocks.SWAMPY_GRASS.get(), 60, 50);
+        fire.setFlammable(ModBlocks.SWAMP_GRASS.get(), 60, 50);
         fire.setFlammable(ModBlocks.METALLIC_SILK_BLOCK.get(), 2, 5);
         fire.setFlammable(ModBlocks.SHORT_ABYSS_GRASS.get(), 60, 100);
     }

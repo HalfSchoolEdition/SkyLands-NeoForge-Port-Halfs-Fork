@@ -1,0 +1,8 @@
+{
+  "asset_id": "skylands:aracnid",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.skylands.aracnid"
+  },
+  "template_item": "skylands:aracnid_armor_trim_smithing_template"
+}

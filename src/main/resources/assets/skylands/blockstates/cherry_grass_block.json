@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": [
+      { "model": "skylands:block/cherry_grass_block" },
+      { "model": "skylands:block/cherry_grass_block1" },
+      { "model": "skylands:block/cherry_grass_block2" },
+      { "model": "skylands:block/cherry_grass_block3" }
+    ]
+  }
+
+}

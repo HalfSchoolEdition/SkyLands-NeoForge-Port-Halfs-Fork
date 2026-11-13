@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/tornado_block_top",
+    "up": "skylands:block/tornado_block_top",
+    "north": "skylands:block/deactivatedstormblock",
+    "east": "skylands:block/deactivatedstormblock",
+    "south": "skylands:block/deactivatedstormblock",
+    "west": "skylands:block/deactivatedstormblock",
+    "particle": "skylands:block/tornado_block_top"
+  },
+  "render_type": "solid"
+}

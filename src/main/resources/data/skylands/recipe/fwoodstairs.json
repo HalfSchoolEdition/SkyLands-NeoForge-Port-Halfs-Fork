@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:golden_planks"
+    }
+  },
+  "result": {
+    "count": 4,
+    "id": "skylands:golden_planks_stairs"
+  }
+}

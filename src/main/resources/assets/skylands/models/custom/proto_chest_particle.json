@@ -1,0 +1,6 @@
+{
+  "parent": "skylands:displaysettings/proto_chest",
+  "textures": {
+    "particle": "skylands:block/protochest"
+  }
+}

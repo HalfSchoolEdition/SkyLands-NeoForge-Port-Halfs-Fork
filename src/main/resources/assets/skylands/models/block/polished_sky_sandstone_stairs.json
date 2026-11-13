@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "skylands:block/polished_sky_sandstone",
+    "top": "skylands:block/polished_sky_sandstone",
+    "side": "skylands:block/polished_sky_sandstone"
+  },
+  "render_type": "solid"
+}

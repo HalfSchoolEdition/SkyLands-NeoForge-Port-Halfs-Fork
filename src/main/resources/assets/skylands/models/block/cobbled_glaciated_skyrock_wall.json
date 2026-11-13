@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "skylands:block/cobbled_glaciated_skyrock",
+    "particle": "skylands:block/cobbled_glaciated_skyrock"
+  },
+  "render_type": "solid"
+}

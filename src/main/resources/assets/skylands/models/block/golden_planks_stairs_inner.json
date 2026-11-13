@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "skylands:block/golden_planks",
+    "top": "skylands:block/golden_planks",
+    "side": "skylands:block/golden_planks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "asset_name": "pale_celestium",
+  "description": {
+    "color": "#ecd1c8",
+    "translate": "trim_material.skylands.pale_celestium"
+  },
+  "ingredient": "skylands:pale_celestium",
+  "item_model_index": 1.3
+}

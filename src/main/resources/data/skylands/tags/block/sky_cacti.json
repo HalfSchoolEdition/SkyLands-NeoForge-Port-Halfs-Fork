@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "skylands:sky_cactus",
+    "skylands:lunero_cactus",
+    "skylands:solero_cactus",
+    "skylands:sky_cactus_branch",
+    "skylands:sky_cactus_top"
+  ]
+}

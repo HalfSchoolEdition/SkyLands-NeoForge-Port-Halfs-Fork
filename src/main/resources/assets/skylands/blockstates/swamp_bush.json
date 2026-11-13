@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "skylands:block/swamp_bush"
+    },
+    "half=lower": {
+      "model": "skylands:block/swampy_bush_bottom"
+    }
+  }
+}

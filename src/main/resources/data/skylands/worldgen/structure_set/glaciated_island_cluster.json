@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:glaciated_island_cluster",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "spacing": 19,
+    "separation": 15,
+    "salt": 636518623,
+    "density_class": "medium"
+  }
+}

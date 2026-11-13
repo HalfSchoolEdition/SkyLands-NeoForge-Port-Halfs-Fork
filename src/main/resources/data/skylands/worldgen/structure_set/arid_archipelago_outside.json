@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:arid_archipelago_outside",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "salt": 1252199249,
+    "spacing": 27,
+    "separation": 19,
+    "density_class": "medium"
+  }
+}

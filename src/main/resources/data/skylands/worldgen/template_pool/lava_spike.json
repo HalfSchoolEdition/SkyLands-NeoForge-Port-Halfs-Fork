@@ -1,0 +1,42 @@
+{
+  "name": "skylands:lava_spike",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:lava/lava_spike_huge0",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:lava/lava_spike_huge1",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:lava/lava_spike_huge2",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:lava/lava_spike_huge3",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "skylands:lavic_arcipelago",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:lavic_archipelago/la-1",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:lavic_archipelago/la-2",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:lavic_archipelago/la-3",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:lavic_archipelago/la-4",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:lavic_archipelago/la-5",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:golden_archipelago/empty",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    }
+  ]
+}

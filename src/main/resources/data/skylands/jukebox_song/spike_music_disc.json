@@ -1,0 +1,8 @@
+{
+  "sound_event": "skylands:diskice",
+  "description": {
+    "translate": "item.skylands.spike_music_disc.desc"
+  },
+  "length_in_seconds": 190.0,
+  "comparator_output": 0
+}

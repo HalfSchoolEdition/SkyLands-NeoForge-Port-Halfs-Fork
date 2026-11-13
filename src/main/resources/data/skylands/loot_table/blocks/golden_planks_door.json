@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "skylands:blocks/golden_planks_door",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "skylands:golden_planks_door",
+          "conditions": [
+            {
+              "block": "skylands:golden_planks_door",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

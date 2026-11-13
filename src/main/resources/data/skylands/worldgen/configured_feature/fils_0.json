@@ -1,0 +1,18 @@
+{
+  "type": "skylands:structure_feature",
+  "config": {
+    "structure": "skylands:lava_isle_small_0",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": [
+      "minecraft:structure_block",
+      "minecraft:air"
+    ],
+    "offset": [
+      0,
+      25,
+      0
+    ],
+    "density_class": "small"
+  }
+}

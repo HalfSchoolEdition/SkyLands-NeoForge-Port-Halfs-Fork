@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/grimstone_bricks",
+    "up": "skylands:block/grimstone_bricks",
+    "north": "skylands:block/grimstone_bricks",
+    "east": "skylands:block/grimstone_bricks",
+    "south": "skylands:block/grimstone_bricks",
+    "west": "skylands:block/grimstone_bricks",
+    "particle": "skylands:block/grimstone_bricks"
+  },
+  "render_type": "solid"
+}

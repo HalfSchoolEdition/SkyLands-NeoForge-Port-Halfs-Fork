@@ -9,7 +9,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
-public final class SkyFlowerBlock extends FlowerBlock {
+public class SkyFlowerBlock extends FlowerBlock {
     public SkyFlowerBlock(Holder<MobEffect> effect, int durationTicks, Properties properties) {
         super(new SuspiciousStewEffects(List.of(new SuspiciousStewEffects.Entry(effect, durationTicks))), properties);
     }

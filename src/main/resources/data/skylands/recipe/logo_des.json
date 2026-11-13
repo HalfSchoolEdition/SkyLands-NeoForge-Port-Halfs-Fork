@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "skylands:glider"
+    },
+    {
+      "item": "skylands:logo_glider_design"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "skylands:glider",
+    "components": {
+      "minecraft:custom_data": {
+        "canvas": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "skylands:lava_tower_start",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:lava_dung/lavic_tower_tower",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    }
+  ]
+}

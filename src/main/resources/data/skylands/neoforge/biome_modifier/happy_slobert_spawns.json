@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "skylands:floating_swamp_islands",
+  "spawners": {
+    "type": "skylands:happy_slobert",
+    "weight": 100,
+    "minCount": 4,
+    "maxCount": 8
+  }
+}

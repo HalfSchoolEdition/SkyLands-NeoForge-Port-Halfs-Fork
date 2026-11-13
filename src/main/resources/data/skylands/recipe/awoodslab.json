@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "skylands:inky_planks"
+    },
+    {
+      "item": "skylands:inky_planks"
+    },
+    {
+      "item": "skylands:inky_planks"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "id": "skylands:inky_planks_slab"
+  }
+}

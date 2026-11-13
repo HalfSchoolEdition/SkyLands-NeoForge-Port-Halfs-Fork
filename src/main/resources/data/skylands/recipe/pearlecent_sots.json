@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "skylands:pearlecent_celestium"
+  },
+  "base": {
+    "item": "skylands:sword_of_the_sky"
+  },
+  "addition": {
+    "item": "skylands:pearlecent_celestium"
+  },
+  "result": {
+    "id": "skylands:pearlecent_sword_of_the_sky",
+    "count": 1
+  }
+}

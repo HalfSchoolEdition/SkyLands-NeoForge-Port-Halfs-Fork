@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:polished_sky_sandstone"
+    }
+  },
+  "result": {
+    "count": 4,
+    "id": "skylands:sky_sandstone_bricks"
+  }
+}

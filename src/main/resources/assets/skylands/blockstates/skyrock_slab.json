@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "skylands:block/skyrock_slab"
+    },
+    "type=top": {
+      "model": "skylands:block/skyrock_slab_top"
+    },
+    "type=double": {
+      "model": "skylands:block/skyrock_slab_full"
+    }
+  }
+}

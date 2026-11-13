@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#skylands:source/arid",
+  "features": "skylands:standalone_arid_small",
+  "step": "raw_generation"
+}

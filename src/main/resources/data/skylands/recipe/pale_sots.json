@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "skylands:pale_celestium"
+  },
+  "base": {
+    "item": "skylands:sword_of_the_sky"
+  },
+  "addition": {
+    "item": "skylands:pale_celestium"
+  },
+  "result": {
+    "id": "skylands:pale_sword_of_the_sky",
+    "count": 1
+  }
+}

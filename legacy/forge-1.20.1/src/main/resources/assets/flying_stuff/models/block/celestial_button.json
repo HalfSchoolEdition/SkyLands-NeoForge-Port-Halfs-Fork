@@ -1,7 +1,0 @@
-{
-  "parent": "block/button",
-  "textures": {
-    "texture": "flying_stuff:block/celestial_planks"
-  },
-  "render_type": "solid"
-}

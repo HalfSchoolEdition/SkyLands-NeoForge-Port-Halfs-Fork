@@ -70,7 +70,7 @@ public class SkyAutomatonBossEntity extends Monster {
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return net.minecraft.core.registries.BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("flying_stuff:sky_automaton_boss_final_kill"));
+		return net.minecraft.core.registries.BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("skylands:sky_automaton_boss_final_kill"));
 	}
 
 	@Override

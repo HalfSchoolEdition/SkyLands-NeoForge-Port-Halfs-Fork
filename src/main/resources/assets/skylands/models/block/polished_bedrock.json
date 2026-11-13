@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/polished_bedrock",
+    "up": "skylands:block/polished_bedrock",
+    "north": "skylands:block/polished_bedrock",
+    "east": "skylands:block/polished_bedrock",
+    "south": "skylands:block/polished_bedrock",
+    "west": "skylands:block/polished_bedrock",
+    "particle": "skylands:block/polished_bedrock"
+  },
+  "render_type": "solid"
+}

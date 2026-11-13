@@ -14,17 +14,17 @@ import net.deepcanion.skylands.entity.SkyPharaohEntity;
 public class SkyPharaohModel extends GeoModel<SkyPharaohEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(SkyPharaohEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "animations/sky_pharaoh.animation.json");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "animations/sky_pharaoh.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(SkyPharaohEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "geo/sky_pharaoh.geo.json");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "geo/sky_pharaoh.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(SkyPharaohEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "textures/entities/" + entity.getTexture() + ".png");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "textures/entities/" + entity.getTexture() + ".png");
 	}
 
 	@Override

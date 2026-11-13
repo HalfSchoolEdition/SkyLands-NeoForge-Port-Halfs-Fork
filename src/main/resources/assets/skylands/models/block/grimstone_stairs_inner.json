@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "skylands:block/grimstone_top",
+    "top": "skylands:block/grimstone_top",
+    "side": "skylands:block/grimstone"
+  },
+  "render_type": "solid"
+}

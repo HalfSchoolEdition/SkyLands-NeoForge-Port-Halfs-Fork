@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "flying_stuff:block/swamp_bush_bottom",
-    "particle": "flying_stuff:block/swamp_bush_bottom"
-  },
-  "render_type": "cutout"
-}

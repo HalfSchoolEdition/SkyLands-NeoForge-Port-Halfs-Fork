@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "skylands:cobbled_glaciated_skyrock_wall",
+    "skylands:cobbled_skyrock_wall",
+    "skylands:glaciated_skyrock_wall",
+    "skylands:shrine_wall",
+    "skylands:sky_sandstone_wall",
+    "skylands:skyrock_wall"
+  ]
+}

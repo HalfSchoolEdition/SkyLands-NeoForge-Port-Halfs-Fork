@@ -1,0 +1,11 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "skylands:floating_glaciated_islands",
+  "features": [
+    "skylands:glaciated_fern",
+    "skylands:glaciated_ground_trees",
+    "skylands:short_glaciated_grass",
+    "skylands:tall_glaciated_grass"
+  ],
+  "step": "vegetal_decoration"
+}

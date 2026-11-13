@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/lavic_burnt_leaves",
+    "up": "skylands:block/lavic_burnt_leaves",
+    "north": "skylands:block/lavic_burnt_leaves",
+    "east": "skylands:block/lavic_burnt_leaves",
+    "south": "skylands:block/lavic_burnt_leaves",
+    "west": "skylands:block/lavic_burnt_leaves",
+    "particle": "skylands:block/lavic_burnt_leaves"
+  },
+  "render_type": "cutout"
+}

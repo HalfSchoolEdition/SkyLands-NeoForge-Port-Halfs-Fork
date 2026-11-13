@@ -1,0 +1,51 @@
+{
+  "name": "skylands:lavic_great_sky_island",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:great_sky_island_lava/gsi_lava_0",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:great_sky_island_lava/gsi_lava_1",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:great_sky_island_lava/gsi_lava_2",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:great_sky_island_lava/gsi_lava_3",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:great_sky_island_lava/gsi_lava_4",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    }
+  ]
+}

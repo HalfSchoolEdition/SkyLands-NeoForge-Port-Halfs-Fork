@@ -1,8 +1,0 @@
-{
-  "parent": "block/fence_inventory",
-  "textures": {
-    "texture": "flying_stuff:block/celestial_planks",
-    "particle": "flying_stuff:block/celestial_planks"
-  },
-  "render_type": "solid"
-}

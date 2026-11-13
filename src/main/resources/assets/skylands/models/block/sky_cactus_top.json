@@ -1,0 +1,14 @@
+{
+  "parent": "skylands:custom/cactus_top",
+  "textures": {
+    "all": "skylands:block/sky_cactus",
+    "particle": "skylands:block/sky_cactus",
+    "4": "skylands:block/sky_cactus",
+    "5": "skylands:block/sky_cactus_top",
+    "6": "skylands:block/cactus_extern",
+    "8": "skylands:block/cactus_leaf_center",
+    "missing": "skylands:block/cactus_leaf_center",
+    "9": "skylands:block/cactus_leaf"
+  },
+  "render_type": "cutout"
+}

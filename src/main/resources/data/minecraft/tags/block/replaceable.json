@@ -1,20 +1,20 @@
 {
   "replace": false,
   "values": [
-    "flying_stuff:swampy_grass",
-    "flying_stuff:cherry_short_grass",
-    "flying_stuff:cherry_grass",
-    "flying_stuff:glaciated_fern",
-    "flying_stuff:lavic_mushrooms",
-    "flying_stuff:golden_fern",
-    "flying_stuff:small_sky_cactus",
-    "flying_stuff:small_arid_bush",
-    "flying_stuff:arid_grass",
-    "flying_stuff:metallic_shorter_grass",
-    "flying_stuff:short_lavic_grass",
-    "flying_stuff:tall_glaciated_grass",
-    "flying_stuff:short_glaciated_grass",
-    "flying_stuff:fiery_short_grass",
-    "flying_stuff:fiery_grass"
+    "skylands:swamp_grass",
+    "skylands:cherry_short_grass",
+    "skylands:cherry_grass",
+    "skylands:glaciated_fern",
+    "skylands:lavic_mushrooms",
+    "skylands:golden_fern",
+    "skylands:small_sky_cactus",
+    "skylands:small_arid_bush",
+    "skylands:arid_grass",
+    "skylands:metallic_shorter_grass",
+    "skylands:short_lavic_grass",
+    "skylands:tall_glaciated_grass",
+    "skylands:short_glaciated_grass",
+    "skylands:golden_short_grass",
+    "skylands:golden_grass"
   ]
 }

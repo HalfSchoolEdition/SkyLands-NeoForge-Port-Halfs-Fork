@@ -1,0 +1,8 @@
+{
+  "asset_id": "skylands:chain",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.skylands.chain"
+  },
+  "template_item": "skylands:chain_armor_trim_smithing_template"
+}

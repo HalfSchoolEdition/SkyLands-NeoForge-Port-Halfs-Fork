@@ -1,0 +1,15 @@
+{
+  "name": "skylands:gsi0",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:gsi_big/chunk_center",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    }
+  ]
+}

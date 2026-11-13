@@ -1,0 +1,26 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:fallen_lavic_01",
+      "weight": 1
+    },
+    {
+      "structure": "skylands:fallen_lavic_02",
+      "weight": 1
+    },
+    {
+      "structure": "skylands:fallen_lavic_03",
+      "weight": 1
+    },
+    {
+      "structure": "skylands:fallen_lavic_04",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 12,
+    "separation": 8,
+    "salt": 14581974
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:floating_village",
+      "weight": 3
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "salt": 136953229,
+    "spacing": 30,
+    "separation": 22,
+    "density_class": "large"
+  }
+}

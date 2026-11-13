@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "skylands:block/grimstone_bricks_slab"
+    },
+    "type=top": {
+      "model": "skylands:block/grimstone_bricks_slab_top"
+    },
+    "type=double": {
+      "model": "skylands:block/grimstone_bricks_slab_full"
+    }
+  }
+}

@@ -15,6 +15,6 @@ public class SkyAutomatonRenderer extends MobRenderer<SkyAutomatonEntity, ModelA
 
 	@Override
 	public ResourceLocation getTextureLocation(SkyAutomatonEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "textures/entities/sky_automaton.png");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "textures/entities/sky_automaton.png");
 	}
 }

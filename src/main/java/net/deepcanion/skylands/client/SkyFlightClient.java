@@ -15,7 +15,7 @@ import org.lwjgl.glfw.GLFW;
 
 /** Input and the HUD are isolated from common/server class loading. */
 public final class SkyFlightClient {
-    public static final KeyMapping FREEFALL = new KeyMapping("key.flying_stuff.freefall", GLFW.GLFW_KEY_R, "key.categories.movement");
+    public static final KeyMapping FREEFALL = new KeyMapping("key.skylands.freefall", GLFW.GLFW_KEY_R, "key.categories.movement");
     private static final ResourceLocation UNDER = SkyLands.id("textures/screens/stamina_under.png");
     private static final ResourceLocation OVER = SkyLands.id("textures/screens/stamina_over.png");
     private static boolean wasDown;
@@ -35,7 +35,8 @@ public final class SkyFlightClient {
         if (player == null || player.isSpectator() || client.options.hideGui || client.screen != null) return;
         var data = player.getPersistentData();
         float stamina = Math.clamp(data.contains(GliderFlight.STAMINA) ? data.getFloat(GliderFlight.STAMINA) : 6, 0, 6);
-        boolean showStamina = stamina < 6 || data.getBoolean(GliderFlight.ACTIVE);
+        boolean showStamina = (!data.contains(GliderFlight.STAMINA_ENABLED) || data.getBoolean(GliderFlight.STAMINA_ENABLED))
+                && (stamina < 6 || data.getBoolean(GliderFlight.ACTIVE));
         int center = graphics.guiWidth() / 2, y = graphics.guiHeight() - 70;
         if (showStamina) {
             graphics.blit(UNDER, center - 47, y, 0, 0, 96, 16, 96, 16);
@@ -45,7 +46,7 @@ public final class SkyFlightClient {
 
         }
         if (data.getBoolean(FreefallFlight.ACTIVE))
-            graphics.drawCenteredString(client.font, Component.translatable(player.isShiftKeyDown() ? "freefall.flying_stuff.fast" : "freefall.flying_stuff.active"),
+            graphics.drawCenteredString(client.font, Component.translatable(player.isShiftKeyDown() ? "freefall.skylands.fast" : "freefall.skylands.active"),
                     center, showStamina ? y - 23 : y - 11, 0xffffff);
     }
     private SkyFlightClient() { }

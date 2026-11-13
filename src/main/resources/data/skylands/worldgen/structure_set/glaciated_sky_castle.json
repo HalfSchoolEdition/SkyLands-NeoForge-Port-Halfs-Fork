@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:glaciated_sky_castle",
+      "weight": 3
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "salt": 1364228249,
+    "spacing": 28,
+    "separation": 16,
+    "density_class": "large"
+  }
+}

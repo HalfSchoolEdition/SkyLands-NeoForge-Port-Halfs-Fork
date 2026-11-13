@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "skylands:block/inky_planks_slab"
+    },
+    "type=top": {
+      "model": "skylands:block/inky_planks_slab_top"
+    },
+    "type=double": {
+      "model": "skylands:block/inky_planks_slab_full"
+    }
+  }
+}

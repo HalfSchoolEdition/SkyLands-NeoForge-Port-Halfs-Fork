@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:floating_tower",
+      "weight": 3
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "salt": 1369988247,
+    "spacing": 28,
+    "separation": 20,
+    "density_class": "large"
+  }
+}

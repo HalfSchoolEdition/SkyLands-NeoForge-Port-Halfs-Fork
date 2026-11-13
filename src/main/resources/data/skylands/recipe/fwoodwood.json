@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "skylands:golden_log"
+    },
+    {
+      "item": "skylands:golden_log"
+    },
+    {
+      "item": "skylands:golden_log"
+    },
+    {
+      "item": "skylands:golden_log"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "skylands:golden_wood"
+  }
+}

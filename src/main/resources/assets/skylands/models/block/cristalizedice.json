@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/cristalized_ice",
+    "up": "skylands:block/cristalized_ice",
+    "north": "skylands:block/cristalized_ice",
+    "east": "skylands:block/cristalized_ice",
+    "south": "skylands:block/cristalized_ice",
+    "west": "skylands:block/cristalized_ice",
+    "particle": "skylands:block/cristalized_ice"
+  },
+  "render_type": "solid"
+}

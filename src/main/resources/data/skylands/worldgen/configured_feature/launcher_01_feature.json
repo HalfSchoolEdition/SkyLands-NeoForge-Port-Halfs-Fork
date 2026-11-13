@@ -1,0 +1,11 @@
+{
+  "type": "skylands:structure_feature",
+  "config": {
+    "structure": "skylands:launcher_01_complete",
+    "random_rotation": true,
+    "ignored_blocks": [
+      "minecraft:structure_block",
+      "minecraft:air"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "skylands:block/sky_launcher"
+    },
+    "facing=east": {
+      "model": "skylands:block/sky_launcher",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "skylands:block/sky_launcher",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "skylands:block/sky_launcher",
+      "y": 270
+    }
+  }
+}

@@ -22,7 +22,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class ModelAutomaton<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("flying_stuff", "model_automaton"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("skylands", "model_automaton"), "main");
 	public final ModelPart right_leg;
 	public final ModelPart head;
 	public final ModelPart body;

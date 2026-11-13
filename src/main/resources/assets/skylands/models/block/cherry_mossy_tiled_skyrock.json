@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/cherry_mossy_skyrock_tiles",
+    "up": "skylands:block/cherry_mossy_skyrock_tiles",
+    "north": "skylands:block/cherry_mossy_skyrock_tiles",
+    "east": "skylands:block/cherry_mossy_skyrock_tiles",
+    "south": "skylands:block/cherry_mossy_skyrock_tiles",
+    "west": "skylands:block/cherry_mossy_skyrock_tiles",
+    "particle": "skylands:block/cherry_mossy_skyrock_tiles"
+  },
+  "render_type": "solid"
+}

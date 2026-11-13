@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "skylands:lavic_skymetal"
+  },
+  "result": {
+    "id": "skylands:polished_lavic_skymetal",
+    "count": 1
+  }
+}

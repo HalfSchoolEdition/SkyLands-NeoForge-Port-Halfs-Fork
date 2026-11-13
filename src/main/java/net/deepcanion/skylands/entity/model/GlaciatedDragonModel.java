@@ -14,17 +14,17 @@ import net.deepcanion.skylands.entity.GlaciatedDragonEntity;
 public class GlaciatedDragonModel extends GeoModel<GlaciatedDragonEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(GlaciatedDragonEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "animations/icedragon.animation.json");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "animations/icedragon.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(GlaciatedDragonEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "geo/icedragon.geo.json");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "geo/icedragon.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(GlaciatedDragonEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "textures/entities/" + entity.getTexture() + ".png");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "textures/entities/" + entity.getTexture() + ".png");
 	}
 
 	@Override

@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "skylands:block/glaciated_planks",
+    "top": "skylands:block/glaciated_planks",
+    "side": "skylands:block/glaciated_planks"
+  },
+  "render_type": "solid"
+}

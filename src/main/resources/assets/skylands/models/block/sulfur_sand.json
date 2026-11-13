@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/sulfur_sand",
+    "up": "skylands:block/sulfur_sand",
+    "north": "skylands:block/sulfur_sand",
+    "east": "skylands:block/sulfur_sand",
+    "south": "skylands:block/sulfur_sand",
+    "west": "skylands:block/sulfur_sand",
+    "particle": "skylands:block/sulfur_sand"
+  },
+  "render_type": "solid"
+}

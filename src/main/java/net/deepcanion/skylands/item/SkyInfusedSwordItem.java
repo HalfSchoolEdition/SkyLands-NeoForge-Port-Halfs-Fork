@@ -2,7 +2,7 @@ package net.deepcanion.skylands.item;
 
 import java.util.List;
 import net.deepcanion.skylands.entity.FireWaveEntity;
-import net.deepcanion.skylands.registry.ModEffects;
+import net.deepcanion.skylands.effect.VanillaFreezing;
 import net.deepcanion.skylands.registry.ModEntities;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.component.DataComponents;
@@ -34,7 +34,7 @@ public final class SkyInfusedSwordItem extends SwordItem {
         if (!target.level().isClientSide()) {
             switch (infusion) {
                 case VERDANT -> target.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 2));
-                case PEARLECENT -> target.addEffect(new MobEffectInstance(ModEffects.FROZEN, 200, 3));
+                case PEARLECENT -> VanillaFreezing.chill(target, 100);
                 case PALE -> target.igniteForSeconds(5);
                 default -> { }
             }
@@ -83,6 +83,6 @@ public final class SkyInfusedSwordItem extends SwordItem {
     }
     @Override public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> lines, TooltipFlag flag) {
         super.appendHoverText(stack, context, lines, flag);
-        lines.add(Component.translatable("item.flying_stuff.infusion." + infusion.name().toLowerCase(java.util.Locale.ROOT)));
+        lines.add(Component.translatable("item.skylands.infusion." + infusion.name().toLowerCase(java.util.Locale.ROOT)));
     }
 }

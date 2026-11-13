@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "skylands:block/inky_wood",
+    "top": "skylands:block/inky_wood",
+    "side": "skylands:block/inky_wood"
+  },
+  "render_type": "solid"
+}

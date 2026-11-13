@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:lavic_archipelago",
+      "weight": 3
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "salt": 1252199249,
+    "spacing": 24,
+    "separation": 18,
+    "density_class": "medium"
+  }
+}

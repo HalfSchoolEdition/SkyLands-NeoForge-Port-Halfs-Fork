@@ -1,0 +1,13 @@
+{
+  "type": "skylands:structure_feature",
+  "config": {
+    "structure": "skylands:isle_medium_0",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": [
+      "minecraft:structure_block",
+      "minecraft:air"
+    ],
+    "density_class": "medium"
+  }
+}

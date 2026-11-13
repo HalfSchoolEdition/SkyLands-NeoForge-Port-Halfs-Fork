@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "skylands:block/hot_radish_plant",
+    "particle": "skylands:block/hot_radish_plant"
+  },
+  "render_type": "cutout"
+}

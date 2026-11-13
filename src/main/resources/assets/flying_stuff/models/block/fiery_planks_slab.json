@@ -1,9 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "flying_stuff:block/firey_planks",
-    "top": "flying_stuff:block/firey_planks",
-    "side": "flying_stuff:block/firey_planks"
-  },
-  "render_type": "solid"
-}

@@ -1,0 +1,12 @@
+{
+  "parent": "skylands:block/lavic_burnt_leaves",
+  "textures": {
+    "down": "skylands:block/lavic_burnt_leaves_phase_7",
+    "up": "skylands:block/lavic_burnt_leaves_phase_7",
+    "north": "skylands:block/lavic_burnt_leaves_phase_7",
+    "east": "skylands:block/lavic_burnt_leaves_phase_7",
+    "south": "skylands:block/lavic_burnt_leaves_phase_7",
+    "west": "skylands:block/lavic_burnt_leaves_phase_7",
+    "particle": "skylands:block/lavic_burnt_leaves_phase_7"
+  }
+}

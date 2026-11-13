@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "skylands:glaciated_leaves"
+    },
+    {
+      "item": "skylands:glaciated_skyrock_bricks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "skylands:glaciated_mossy_skyrock_bricks"
+  }
+}

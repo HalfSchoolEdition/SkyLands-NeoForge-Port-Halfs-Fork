@@ -1,8 +1,0 @@
-{
-  "parent": "block/door_bottom_left_open",
-  "textures": {
-    "bottom": "flying_stuff:block/inky_door_bottom",
-    "top": "flying_stuff:block/inky_door_top"
-  },
-  "render_type": "cutout"
-}

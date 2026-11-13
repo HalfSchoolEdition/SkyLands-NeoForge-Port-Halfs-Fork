@@ -1,0 +1,60 @@
+{
+  "name": "skylands:ice_dung",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:icedung/corner",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:icedung/corridor0",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:icedung/corridor1",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:icedung/corridor2",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:icedung/room",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:icedung/corridorjail",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    }
+  ]
+}

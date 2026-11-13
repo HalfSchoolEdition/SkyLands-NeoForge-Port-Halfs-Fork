@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/skymetal_grate",
+    "up": "skylands:block/skymetal_grate",
+    "north": "skylands:block/skymetal_grate",
+    "east": "skylands:block/skymetal_grate",
+    "south": "skylands:block/skymetal_grate",
+    "west": "skylands:block/skymetal_grate",
+    "particle": "skylands:block/skymetal_grate"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:arid_sky_temple",
+      "weight": 3
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "salt": 1362978249,
+    "spacing": 38,
+    "separation": 24,
+    "density_class": "large"
+  }
+}

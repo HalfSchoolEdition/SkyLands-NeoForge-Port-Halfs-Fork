@@ -1,0 +1,6 @@
+{
+  "parent": "skylands:displaysettings/golden_sky_chest_lvl1.item",
+  "textures": {
+    "particle": "skylands:block/sky_sandstone_top"
+  }
+}

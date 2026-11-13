@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:grimstone"
+    }
+  },
+  "result": {
+    "count": 6,
+    "id": "skylands:grimstone_wall"
+  }
+}

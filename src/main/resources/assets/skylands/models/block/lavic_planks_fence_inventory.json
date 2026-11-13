@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "skylands:block/lavic_wood",
+    "particle": "skylands:block/lavic_wood"
+  },
+  "render_type": "solid"
+}

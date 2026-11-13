@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "skylands:blue_grimstone",
+    "skylands:chiseled_grimstone",
+    "skylands:glowing_grimstone",
+    "skylands:grimstone",
+    "skylands:grimstone_bricks",
+    "skylands:grimstone_diamond_ore",
+    "skylands:grimstone_gold_ore",
+    "skylands:grimstone_iron_ore",
+    "skylands:grimstone_lapis_ore",
+    "skylands:grimstone_mycelium",
+    "skylands:grimstone_pillar",
+    "skylands:grimstone_redstone_ore",
+    "skylands:grimstone_tiles",
+    "skylands:polished_grimstone"
+  ]
+}

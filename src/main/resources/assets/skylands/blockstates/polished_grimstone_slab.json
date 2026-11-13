@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "skylands:block/polished_grimstone_slab"
+    },
+    "type=top": {
+      "model": "skylands:block/polished_grimstone_slab_top"
+    },
+    "type=double": {
+      "model": "skylands:block/polished_grimstone_slab_full"
+    }
+  }
+}

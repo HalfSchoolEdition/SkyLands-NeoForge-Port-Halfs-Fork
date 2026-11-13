@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "skylands:golden_grass_block",
+    "skylands:glaciated_grass_block",
+    "skylands:lavic_skymetal_grass",
+    "skylands:sky_sand",
+    "skylands:arid_grass_block",
+    "skylands:mossy_sky_sandstone",
+    "skylands:mossy_sky_sandstone_bricks",
+    "skylands:grimstone_mycelium",
+    "skylands:cherry_grass_block",
+    "skylands:swamp_grass_block",
+    "minecraft:tuff",
+    "minecraft:diorite",
+    "minecraft:blackstone",
+    "minecraft:sandstone"
+  ]
+}

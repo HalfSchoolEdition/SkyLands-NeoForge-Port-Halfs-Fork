@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/grimstone_lapis_ore",
+    "up": "skylands:block/grimstone_lapis_ore",
+    "north": "skylands:block/grimstone_lapis_ore",
+    "east": "skylands:block/grimstone_lapis_ore",
+    "south": "skylands:block/grimstone_lapis_ore",
+    "west": "skylands:block/grimstone_lapis_ore",
+    "particle": "skylands:block/grimstone_lapis_ore"
+  },
+  "render_type": "solid"
+}

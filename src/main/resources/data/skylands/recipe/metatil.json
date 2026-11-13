@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:polished_lavic_skymetal"
+    }
+  },
+  "result": {
+    "count": 4,
+    "id": "skylands:lavic_skymetal_bricks"
+  }
+}

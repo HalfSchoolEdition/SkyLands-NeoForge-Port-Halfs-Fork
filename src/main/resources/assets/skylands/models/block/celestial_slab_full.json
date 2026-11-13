@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "skylands:block/celestial_planks",
+    "top": "skylands:block/celestial_planks",
+    "side": "skylands:block/celestial_planks"
+  },
+  "render_type": "solid"
+}

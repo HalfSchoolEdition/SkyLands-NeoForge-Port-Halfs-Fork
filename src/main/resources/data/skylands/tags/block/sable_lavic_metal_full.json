@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "skylands:lavic_skymetal",
+    "skylands:lavic_skymetal_bricks",
+    "skylands:lavic_skymetal_grass",
+    "skylands:lavic_skymetal_pipe",
+    "skylands:lavic_skymetal_tiles",
+    "skylands:polished_lavic_skymetal"
+  ]
+}

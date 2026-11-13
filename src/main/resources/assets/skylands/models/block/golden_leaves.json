@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/golden_leaves",
+    "up": "skylands:block/golden_leaves",
+    "north": "skylands:block/golden_leaves",
+    "east": "skylands:block/golden_leaves",
+    "south": "skylands:block/golden_leaves",
+    "west": "skylands:block/golden_leaves",
+    "particle": "skylands:block/golden_leaves"
+  },
+  "render_type": "cutout"
+}

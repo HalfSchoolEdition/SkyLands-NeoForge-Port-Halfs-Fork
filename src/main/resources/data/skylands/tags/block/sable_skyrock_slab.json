@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "skylands:cobbled_glaciated_skyrock_slab",
+    "skylands:cobbled_skyrock_slab",
+    "skylands:glaciated_skyrock_bricks_slab",
+    "skylands:glaciated_skyrock_slab",
+    "skylands:polished_glaciated_skyrock_slab",
+    "skylands:polished_sky_sandstone_slab",
+    "skylands:polished_skyrock_slab",
+    "skylands:shrine_floor_slab",
+    "skylands:shrine_tiles_slab",
+    "skylands:shrine_wall_slab",
+    "skylands:sky_sandstone_brick_slab",
+    "skylands:sky_sandstone_slab",
+    "skylands:skyrock_slab",
+    "skylands:tiled_skyrock_slab"
+  ]
+}

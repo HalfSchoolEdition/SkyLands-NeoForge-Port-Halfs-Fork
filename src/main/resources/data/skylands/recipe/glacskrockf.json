@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "skylands:cobbled_glaciated_skyrock"
+  },
+  "result": {
+    "id": "skylands:glaciated_skyrock",
+    "count": 1
+  }
+}

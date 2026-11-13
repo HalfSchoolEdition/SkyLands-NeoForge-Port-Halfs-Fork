@@ -1,7 +1,7 @@
 package net.deepcanion.skylands.block;
 
 import net.deepcanion.skylands.registry.ModBlocks;
-import net.deepcanion.skylands.registry.ModEffects;
+import net.deepcanion.skylands.effect.VanillaFreezing;
 import net.deepcanion.skylands.registry.ModItems;
 import net.deepcanion.skylands.registry.ModParticles;
 import net.deepcanion.skylands.registry.ModSounds;
@@ -12,7 +12,6 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.ItemInteractionResult;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -37,8 +36,10 @@ public final class StormBlock extends Block implements net.minecraft.world.level
         if (!active || !state.is(this)) return;
         AABB area = new AABB(pos.getX() - 6, pos.getY() - 6, pos.getZ() - 6,
                              pos.getX() + 6, pos.getY() + 6, pos.getZ() + 6);
-        for (LivingEntity entity : level.getEntitiesOfClass(LivingEntity.class, area, entity -> entity.isAlive() && (!(entity instanceof Player player) || (!player.isCreative() && !player.isSpectator()))))
-            entity.addEffect(new MobEffectInstance(ModEffects.FROZEN, 150, 1));
+        // This block pulses every ten ticks. Outside powder snow, vanilla thaws
+        // by 20 ticks between pulses; +30 therefore yields ~1 net frozen tick/tick.
+        for (LivingEntity entity : level.getEntitiesOfClass(LivingEntity.class, area, entity -> entity.isAlive()))
+            VanillaFreezing.chill(entity, 30);
         if (random.nextFloat() < 0.3F) {
             level.sendParticles(ModParticles.CLOUD_BARRIER_2.get(), pos.getX(), pos.getY(), pos.getZ(), 1, 2, 2, 2, 0.03);
             level.playSound(null, pos, ModSounds.MECHANISM_STATIC.get(), SoundSource.BLOCKS, 0.6F, 1F);
@@ -61,7 +62,7 @@ public final class StormBlock extends Block implements net.minecraft.world.level
             ItemInteractionResult result = useItemOn(offhand, state, level, pos, player, InteractionHand.OFF_HAND, hit);
             return result == ItemInteractionResult.FAIL ? InteractionResult.FAIL : InteractionResult.sidedSuccess(level.isClientSide());
         }
-        if (!level.isClientSide()) player.displayClientMessage(net.minecraft.network.chat.Component.translatable("message.flying_stuff.storm_locked", ModItems.DIAMOND_LEVEL_1_KEY.get().getDescription()), true);
+        if (!level.isClientSide()) player.displayClientMessage(net.minecraft.network.chat.Component.translatable("message.skylands.storm_locked", ModItems.DIAMOND_LEVEL_1_KEY.get().getDescription()), true);
         return InteractionResult.sidedSuccess(level.isClientSide());
     }
 }

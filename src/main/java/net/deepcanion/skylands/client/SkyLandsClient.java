@@ -36,10 +36,10 @@ public final class SkyLandsClient {
         event.registerEntityRenderer(ModEntities.GLACIATED_SKY_AUTOMATON.get(), GlaciatedSkyAutomatonRenderer::new);
         event.registerEntityRenderer(ModEntities.GLACIATED_DRAGON.get(), GlaciatedDragonRenderer::new);
         event.registerEntityRenderer(ModEntities.SKY_AUTOMATON_BRUTE.get(), SkyAutomatonBruteRenderer::new);
-        event.registerEntityRenderer(ModEntities.ICE_BLOB.get(), IceBlobRenderer::new);
+        event.registerEntityRenderer(ModEntities.ICE_SLOBERT.get(), IceBlobRenderer::new);
         event.registerEntityRenderer(ModEntities.MAGMA_SLOBERT.get(), MagmaSlobertRenderer::new);
         event.registerEntityRenderer(ModEntities.IGNEO_ROBO_FELINE.get(), IgneoRoboFelineRenderer::new);
-        event.registerEntityRenderer(ModEntities.SKY_BIRD.get(), SkyBirdRenderer::new);
+        event.registerEntityRenderer(ModEntities.GOLDEN_TUC_TUC.get(), SkyBirdRenderer::new);
         event.registerEntityRenderer(ModEntities.SKY_PHARAOH.get(), SkyPharaohRenderer::new);
         event.registerEntityRenderer(ModEntities.FRIENDLY_VEX.get(), FriendlyVexRenderer::new);
         event.registerEntityRenderer(ModEntities.HAPPY_SLOBERT.get(), HappySlobertRenderer::new);
@@ -60,6 +60,8 @@ public final class SkyLandsClient {
         event.registerSpriteSet(ModParticles.WIND.get(), WindParticle::provider);
         event.registerSpriteSet(ModParticles.FIRE_LEAF.get(), FireLeafParticle::provider);
         event.registerSpriteSet(ModParticles.FIREFLY.get(), FireflyParticle::provider);
+        event.registerSpriteSet(ModParticles.CACTUS_WARM_PIXEL.get(), sprites -> ThermalCactusPixelParticle.provider(sprites, true));
+        event.registerSpriteSet(ModParticles.CACTUS_COLD_PIXEL.get(), sprites -> ThermalCactusPixelParticle.provider(sprites, false));
         event.registerSpriteSet(ModParticles.ITEM_BREAK.get(), ItemBreakParticle::provider);
         event.registerSpriteSet(ModParticles.CLOUD_BARRIER_3.get(), CloudBarrier3Particle::provider);
         event.registerSpriteSet(ModParticles.CLOUD_BARRIER_2.get(), CloudBarrier2Particle::provider);
@@ -74,7 +76,7 @@ public final class SkyLandsClient {
 
     @SubscribeEvent
     public static void menus(net.neoforged.neoforge.client.event.RegisterMenuScreensEvent event) {
-        event.register(net.deepcanion.skylands.registry.ModMenus.STARTER_GUIDE.get(), StarterGuideScreen::new);
+        event.register(net.deepcanion.skylands.registry.ModMenus.SKYLANDS_STARTER_GUIDE.get(), StarterGuideScreen::new);
         event.register(net.deepcanion.skylands.registry.ModMenus.SKY_CHEST.get(), SkyChestScreen::new);
         event.register(net.deepcanion.skylands.registry.ModMenus.PROTO_CHEST.get(), SkyChestScreen::new);
     }
@@ -93,7 +95,7 @@ public final class SkyLandsClient {
             }
         };
         event.registerItem(extension,
-            net.deepcanion.skylands.registry.ModBlocks.GOLDEN_REWARD_DISPENCER.get().asItem(),
+            net.deepcanion.skylands.registry.ModBlocks.GOLDEN_REWARD_DISPENSER.get().asItem(),
             net.deepcanion.skylands.registry.ModBlocks.GLACIATED_REWARD_DISPENSER.get().asItem(),
             net.deepcanion.skylands.registry.ModBlocks.LAVIC_REWARD_DISPENSER.get().asItem(),
             net.deepcanion.skylands.registry.ModBlocks.ARID_REWARD_DISPENSER.get().asItem());
@@ -105,6 +107,7 @@ public final class SkyLandsClient {
     }
     @SubscribeEvent
     public static void guiLayers(net.neoforged.neoforge.client.event.RegisterGuiLayersEvent event) {
+        event.registerAboveAll(SkyLands.id("heat_vignette"), ClientHeatOverlay::render);
         event.registerAboveAll(SkyLands.id("flight_hud"), SkyFlightClient::render);
     }
     private SkyLandsClient() { }
@@ -114,10 +117,12 @@ public final class SkyLandsClient {
         event.enqueueWork(FlightAnimations::register);
         net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(ClientClouds::tick);
         net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(ClientAmbientWind::tick);
+        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(ClientHeatOverlay::tick);
         event.enqueueWork(() -> net.neoforged.fml.ModList.get().getModContainerById(SkyLands.MOD_ID)
                 .orElseThrow().registerExtensionPoint(
                         net.neoforged.neoforge.client.gui.IConfigScreenFactory.class,
-                        net.neoforged.neoforge.client.gui.ConfigurationScreen::new));
+                        (mod, parent) -> new net.neoforged.neoforge.client.gui.ConfigurationScreen(mod, parent,
+                                (configParent, type, config, title) -> new SkyLandsConfigurationSection(configParent, type, config, title))));
         net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(SkyFlightClient::tick);
         event.enqueueWork(() -> net.minecraft.client.renderer.ItemBlockRenderTypes.setRenderLayer(
             net.deepcanion.skylands.registry.ModFluids.MOLTEN_METAL.get(), net.minecraft.client.renderer.RenderType.translucent()));
@@ -130,6 +135,6 @@ public final class SkyLandsClient {
                 net.deepcanion.skylands.registry.ModItems.GLIDER.get(), SkyLands.id("glider_grounded"),
                 (net.minecraft.client.renderer.item.ItemPropertyFunction) (stack, level, entity, seed) ->
                         entity instanceof net.minecraft.world.entity.player.Player && entity.onGround() ? 1F : 0F));
-        SkyLands.LOGGER.info("[Sky Lands] Unofficial Port v0.9.1 client setup complete.");
+        SkyLands.LOGGER.info("[Sky Lands] Unofficial Port v0.9.4 client setup complete.");
     }
 }

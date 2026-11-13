@@ -1,0 +1,10 @@
+{
+  "parent": "skylands:custom/mechanical_geyser",
+  "textures": {
+    "all": "skylands:block/mechanical_geyser",
+    "particle": "skylands:block/mechanical_geyser",
+    "1": "skylands:block/mechanical_geyser",
+    "missing": "skylands:block/mechanical_geyser"
+  },
+  "render_type": "solid"
+}

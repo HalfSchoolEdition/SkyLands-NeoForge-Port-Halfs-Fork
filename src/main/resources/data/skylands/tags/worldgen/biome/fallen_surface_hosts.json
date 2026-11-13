@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#skylands:sky_region/golden",
+    "#skylands:sky_region/glaciated",
+    "#skylands:sky_region/arid",
+    "#skylands:sky_region/lavic",
+    "#skylands:sky_region/swamp",
+    "#skylands:sky_region/cherry"
+  ]
+}

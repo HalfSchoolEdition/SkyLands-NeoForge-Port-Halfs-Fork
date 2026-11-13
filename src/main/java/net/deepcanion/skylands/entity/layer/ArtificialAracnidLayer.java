@@ -15,7 +15,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class ArtificialAracnidLayer extends GeoRenderLayer<ArtificialAracnidEntity> {
-	private static final ResourceLocation LAYER = ResourceLocation.fromNamespaceAndPath("flying_stuff", "textures/entities/artificial_aracnid_glow.png");
+	private static final ResourceLocation LAYER = ResourceLocation.fromNamespaceAndPath("skylands", "textures/entities/artificial_aracnid_glow.png");
 
 	public ArtificialAracnidLayer(GeoRenderer<ArtificialAracnidEntity> entityRenderer) {
 		super(entityRenderer);

@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "skylands:block/shrine_wall",
+    "top": "skylands:block/shrine_wall",
+    "side": "skylands:block/shrine_wall"
+  },
+  "render_type": "solid"
+}

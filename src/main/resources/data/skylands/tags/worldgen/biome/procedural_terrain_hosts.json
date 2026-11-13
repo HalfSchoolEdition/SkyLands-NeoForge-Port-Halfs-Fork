@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:is_overworld",
+      "required": false
+    },
+    {
+      "id": "#minecraft:is_overworld",
+      "required": false
+    },
+    "skylands:floating_golden_islands",
+    "skylands:floating_glaciated_islands",
+    "skylands:floating_arid_islands",
+    "skylands:floating_lavic_islands",
+    "skylands:floating_swamp_islands",
+    "skylands:floating_cherry_grove_islands"
+  ]
+}

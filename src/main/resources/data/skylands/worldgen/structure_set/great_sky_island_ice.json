@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:glaciated_great_sky_island",
+      "weight": 3
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "salt": 1361928249,
+    "spacing": 14,
+    "separation": 9,
+    "density_class": "large"
+  }
+}

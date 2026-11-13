@@ -1,8 +1,0 @@
-{
-  "parent": "block/template_wall_post",
-  "textures": {
-    "wall": "flying_stuff:block/glaciated_skyrock",
-    "particle": "flying_stuff:block/glaciated_skyrock"
-  },
-  "render_type": "solid"
-}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/mossy_sky_sandstone_top",
+    "up": "skylands:block/mossy_sky_sandstone_top",
+    "north": "skylands:block/mossy_sky_sandstone",
+    "east": "skylands:block/mossy_sky_sandstone",
+    "south": "skylands:block/mossy_sky_sandstone",
+    "west": "skylands:block/mossy_sky_sandstone",
+    "particle": "skylands:block/mossy_sky_sandstone_top"
+  },
+  "render_type": "solid"
+}

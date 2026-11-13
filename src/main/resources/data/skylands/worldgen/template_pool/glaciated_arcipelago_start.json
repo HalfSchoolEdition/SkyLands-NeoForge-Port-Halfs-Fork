@@ -1,0 +1,15 @@
+{
+  "name": "skylands:glaciated_arcipelago_start",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:glaciated_archipelago/ga1",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    }
+  ]
+}

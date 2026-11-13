@@ -1,0 +1,9 @@
+{
+  "parent": "skylands:custom/celestiumanvil",
+  "textures": {
+    "all": "skylands:block/celestium_anvil",
+    "particle": "skylands:block/celestium_anvil",
+    "0": "skylands:block/celestium_anvil"
+  },
+  "render_type": "solid"
+}

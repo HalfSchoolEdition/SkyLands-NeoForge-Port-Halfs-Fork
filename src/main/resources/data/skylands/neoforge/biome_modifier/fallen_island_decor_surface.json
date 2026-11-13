@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#skylands:fallen_surface_hosts",
+  "features": "skylands:fallen_island_decor",
+  "step": "vegetal_decoration"
+}

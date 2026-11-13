@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "skylands:block/golden_fern"
+    },
+    "half=lower": {
+      "model": "skylands:block/golden_fern_bottom"
+    }
+  }
+}

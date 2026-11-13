@@ -1,0 +1,10 @@
+{
+  "type": "skylands:structure_feature",
+  "config": {
+    "structure": "skylands:lavic_launcher_part0",
+    "ignored_blocks": [
+      "minecraft:structure_block",
+      "minecraft:air"
+    ]
+  }
+}

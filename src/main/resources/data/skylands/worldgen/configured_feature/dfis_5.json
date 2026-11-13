@@ -1,0 +1,13 @@
+{
+  "type": "skylands:structure_feature",
+  "config": {
+    "structure": "skylands:desert_isle_small5",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": [
+      "minecraft:structure_block",
+      "minecraft:air"
+    ],
+    "density_class": "small"
+  }
+}

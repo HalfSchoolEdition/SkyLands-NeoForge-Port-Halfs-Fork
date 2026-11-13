@@ -3,18 +3,18 @@
     {
       "type": "minecraft:paletted_permutations",
       "textures": [
-        "flying_stuff:trims/models/armor/automaton",
-        "flying_stuff:trims/models/armor/automaton_leggings",
-        "flying_stuff:trims/models/armor/dragon",
-        "flying_stuff:trims/models/armor/dragon_leggings",
-        "flying_stuff:trims/models/armor/headset",
-        "flying_stuff:trims/models/armor/headset_leggings",
-        "flying_stuff:trims/models/armor/chain",
-        "flying_stuff:trims/models/armor/chain_leggings",
-        "flying_stuff:trims/models/armor/cyclops",
-        "flying_stuff:trims/models/armor/cyclops_leggings",
-        "flying_stuff:trims/models/armor/aracnid",
-        "flying_stuff:trims/models/armor/aracnid_leggings"
+        "skylands:trims/models/armor/automaton",
+        "skylands:trims/models/armor/automaton_leggings",
+        "skylands:trims/models/armor/dragon",
+        "skylands:trims/models/armor/dragon_leggings",
+        "skylands:trims/models/armor/headset",
+        "skylands:trims/models/armor/headset_leggings",
+        "skylands:trims/models/armor/chain",
+        "skylands:trims/models/armor/chain_leggings",
+        "skylands:trims/models/armor/cyclops",
+        "skylands:trims/models/armor/cyclops_leggings",
+        "skylands:trims/models/armor/aracnid",
+        "skylands:trims/models/armor/aracnid_leggings"
       ],
       "palette_key": "minecraft:trims/color_palettes/trim_palette",
       "permutations": {
@@ -32,11 +32,11 @@
         "gold_darker": "trims/color_palettes/gold_darker",
         "diamond_darker": "trims/color_palettes/diamond_darker",
         "netherite_darker": "trims/color_palettes/netherite_darker",
-        "celestium": "flying_stuff:trims/color_palettes/celestium",
-        "pearlecent_celestium": "flying_stuff:trims/color_palettes/pearlecent_celestium",
-        "pale_celestium": "flying_stuff:trims/color_palettes/pale_celestium",
-        "inky_celestium": "flying_stuff:trims/color_palettes/inky_celestium",
-        "celestine_crystal": "flying_stuff:trims/color_palettes/celestine_crystal"
+        "celestium": "skylands:trims/color_palettes/celestium",
+        "pearlecent_celestium": "skylands:trims/color_palettes/pearlecent_celestium",
+        "pale_celestium": "skylands:trims/color_palettes/pale_celestium",
+        "inky_celestium": "skylands:trims/color_palettes/inky_celestium",
+        "celestine_crystal": "skylands:trims/color_palettes/celestine_crystal"
       }
     },
     {
@@ -81,11 +81,11 @@
       ],
       "palette_key": "minecraft:trims/color_palettes/trim_palette",
       "permutations": {
-        "celestium": "flying_stuff:trims/color_palettes/celestium",
-        "pearlecent_celestium": "flying_stuff:trims/color_palettes/pearlecent_celestium",
-        "pale_celestium": "flying_stuff:trims/color_palettes/pale_celestium",
-        "inky_celestium": "flying_stuff:trims/color_palettes/inky_celestium",
-        "celestine_crystal": "flying_stuff:trims/color_palettes/celestine_crystal"
+        "celestium": "skylands:trims/color_palettes/celestium",
+        "pearlecent_celestium": "skylands:trims/color_palettes/pearlecent_celestium",
+        "pale_celestium": "skylands:trims/color_palettes/pale_celestium",
+        "inky_celestium": "skylands:trims/color_palettes/inky_celestium",
+        "celestine_crystal": "skylands:trims/color_palettes/celestine_crystal"
       }
     }
   ]

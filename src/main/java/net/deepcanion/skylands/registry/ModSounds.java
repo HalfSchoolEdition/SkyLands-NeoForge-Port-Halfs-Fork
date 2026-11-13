@@ -30,7 +30,7 @@ public final class ModSounds {
     public static final DeferredHolder<SoundEvent, SoundEvent> SKY_WATERFALL = SOUNDS.register("sky_waterfall", () -> SoundEvent.createVariableRangeEvent(SkyLands.id("sky_waterfall")));
     public static final DeferredHolder<SoundEvent, SoundEvent> DISKICE = SOUNDS.register("diskice", () -> SoundEvent.createVariableRangeEvent(SkyLands.id("diskice")));
     public static final DeferredHolder<SoundEvent, SoundEvent> TEARS_OF_MOOG_CITY = SOUNDS.register("tears_of_moog_city", () -> SoundEvent.createVariableRangeEvent(SkyLands.id("tears_of_moog_city")));
-    public static final DeferredHolder<SoundEvent, SoundEvent> UNDERGROUND_MUSIC_DISK = SOUNDS.register("underground_music_disk", () -> SoundEvent.createVariableRangeEvent(SkyLands.id("underground_music_disk")));
+    public static final DeferredHolder<SoundEvent, SoundEvent> UNDERGROUND_MUSIC_DISC = SOUNDS.register("underground_music_disc", () -> SoundEvent.createVariableRangeEvent(SkyLands.id("underground_music_disc")));
     public static final DeferredHolder<SoundEvent, SoundEvent> MECHANISM_STATIC = SOUNDS.register("mechanism_static", () -> SoundEvent.createVariableRangeEvent(SkyLands.id("mechanism_static")));
     public static final DeferredHolder<SoundEvent, SoundEvent> MECHANISM_DEACTIVATION = SOUNDS.register("mechanism_deactivation", () -> SoundEvent.createVariableRangeEvent(SkyLands.id("mechanism_deactivation")));
     public static final DeferredHolder<SoundEvent, SoundEvent> POWERFUL_WIND = SOUNDS.register("powerful_wind", () -> SoundEvent.createVariableRangeEvent(SkyLands.id("powerful_wind")));

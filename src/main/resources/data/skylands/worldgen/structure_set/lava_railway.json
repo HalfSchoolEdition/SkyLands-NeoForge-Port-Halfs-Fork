@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:lavic_railway",
+      "weight": 3
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "salt": 1171198949,
+    "spacing": 24,
+    "separation": 10,
+    "density_class": "large"
+  }
+}

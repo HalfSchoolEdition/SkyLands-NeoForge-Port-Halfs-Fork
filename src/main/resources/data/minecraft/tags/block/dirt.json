@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "flying_stuff:fiery_grass_block",
-    "flying_stuff:glaciated_grass_block",
-    "flying_stuff:lavic_skymetal_grass",
-    "flying_stuff:sky_sand",
-    "flying_stuff:mossy_sky_sandstone",
-    "flying_stuff:mossy_sky_sandstone_bricks",
-    "flying_stuff:grimstone_micelium",
-    "flying_stuff:cherry_grass_block",
-    "flying_stuff:swampy_grass_block"
+    "skylands:golden_grass_block",
+    "skylands:glaciated_grass_block",
+    "skylands:sky_sand",
+    "skylands:arid_grass_block",
+    "skylands:mossy_sky_sandstone",
+    "skylands:mossy_sky_sandstone_bricks",
+    "skylands:grimstone_mycelium",
+    "skylands:cherry_grass_block",
+    "skylands:swamp_grass_block"
   ]
 }

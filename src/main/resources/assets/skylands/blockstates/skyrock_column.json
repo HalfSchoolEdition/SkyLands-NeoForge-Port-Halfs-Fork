@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "skylands:block/skyrock_column",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "skylands:block/skyrock_column"
+    },
+    "axis=z": {
+      "model": "skylands:block/skyrock_column",
+      "x": 90
+    }
+  }
+}

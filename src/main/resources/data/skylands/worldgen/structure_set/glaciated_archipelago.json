@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:glaciated_archipelago",
+      "weight": 3
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "salt": 1262199249,
+    "spacing": 27,
+    "separation": 19,
+    "density_class": "medium"
+  }
+}

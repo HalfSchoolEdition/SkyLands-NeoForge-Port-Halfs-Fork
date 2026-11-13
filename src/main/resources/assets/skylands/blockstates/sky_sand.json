@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "skylands:block/sky_sand",
+        "y": 0
+      },
+      {
+        "model": "skylands:block/sky_sand",
+        "y": 90
+      },
+      {
+        "model": "skylands:block/sky_sand",
+        "y": 180
+      },
+      {
+        "model": "skylands:block/sky_sand",
+        "y": 270
+      }
+    ]
+  }
+}

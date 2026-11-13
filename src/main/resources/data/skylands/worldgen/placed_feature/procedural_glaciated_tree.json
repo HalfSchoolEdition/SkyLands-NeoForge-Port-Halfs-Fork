@@ -1,0 +1,18 @@
+{
+  "feature": "skylands:glaciated_floating_islands_tree",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 2
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "skylands:sky_surface"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

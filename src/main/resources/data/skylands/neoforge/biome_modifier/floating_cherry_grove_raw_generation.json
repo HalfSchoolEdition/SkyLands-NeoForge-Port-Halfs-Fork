@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "skylands:floating_cherry_grove_islands",
+  "features": [
+    "skylands:cfim_0",
+    "skylands:cfim_1",
+    "skylands:cfimsnow_0",
+    "skylands:cfis_0",
+    "skylands:cfis_1"
+  ],
+  "step": "raw_generation"
+}

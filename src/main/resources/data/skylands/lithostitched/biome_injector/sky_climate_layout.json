@@ -1,0 +1,348 @@
+{
+  "type": "lithostitched:dispatch_alternate_layout",
+  "dimension": "minecraft:overworld",
+  "priority": 1500,
+  "parameters": {
+    "minecraft:y": {
+      "min_inclusive": 290
+    },
+    "skylands:sky_region_distance": {
+      "max_inclusive": -0.72
+    },
+    "skylands:sky_region_noise": {
+      "min_inclusive": 0.64
+    }
+  },
+  "points": [
+    {
+      "biome": "skylands:floating_glaciated_islands",
+      "parameters": {
+        "temperature": [
+          -1,
+          -0.52
+        ],
+        "humidity": [
+          -1,
+          1
+        ],
+        "continentalness": [
+          -1,
+          1
+        ],
+        "erosion": [
+          -1,
+          1
+        ],
+        "weirdness": [
+          -1,
+          1
+        ],
+        "depth": [
+          -2,
+          2
+        ],
+        "offset": 0
+      }
+    },
+    {
+      "biome": "skylands:floating_lavic_islands",
+      "parameters": {
+        "temperature": [
+          0.55,
+          1
+        ],
+        "humidity": [
+          -1,
+          0.32
+        ],
+        "continentalness": [
+          -0.11,
+          1
+        ],
+        "erosion": [
+          -1,
+          -0.2225
+        ],
+        "weirdness": [
+          -1,
+          1
+        ],
+        "depth": [
+          -2,
+          2
+        ],
+        "offset": 0
+      }
+    },
+    {
+      "biome": "skylands:floating_swamp_islands",
+      "parameters": {
+        "temperature": [
+          -0.1,
+          0.42
+        ],
+        "humidity": [
+          0.06,
+          1
+        ],
+        "continentalness": [
+          -0.19,
+          0.45
+        ],
+        "erosion": [
+          0.12,
+          1
+        ],
+        "weirdness": [
+          -1,
+          1
+        ],
+        "depth": [
+          -2,
+          2
+        ],
+        "offset": 0
+      }
+    },
+    {
+      "biome": "skylands:floating_swamp_islands",
+      "parameters": {
+        "temperature": [
+          0.42,
+          0.85
+        ],
+        "humidity": [
+          0.22,
+          1
+        ],
+        "continentalness": [
+          -0.19,
+          0.45
+        ],
+        "erosion": [
+          0.06,
+          1
+        ],
+        "weirdness": [
+          -1,
+          1
+        ],
+        "depth": [
+          -2,
+          2
+        ],
+        "offset": 0
+      }
+    },
+    {
+      "biome": "skylands:floating_arid_islands",
+      "parameters": {
+        "temperature": [
+          0.24,
+          0.65
+        ],
+        "humidity": [
+          -1,
+          0.1
+        ],
+        "continentalness": [
+          -1,
+          1
+        ],
+        "erosion": [
+          -1,
+          1
+        ],
+        "weirdness": [
+          -1,
+          1
+        ],
+        "depth": [
+          -2,
+          2
+        ],
+        "offset": 0.02
+      }
+    },
+    {
+      "biome": "skylands:floating_arid_islands",
+      "parameters": {
+        "temperature": [
+          0.55,
+          1
+        ],
+        "humidity": [
+          -1,
+          0.12
+        ],
+        "continentalness": [
+          -1,
+          1
+        ],
+        "erosion": [
+          -0.2225,
+          1
+        ],
+        "weirdness": [
+          -1,
+          1
+        ],
+        "depth": [
+          -2,
+          2
+        ],
+        "offset": 0.02
+      }
+    },
+    {
+      "biome": "skylands:floating_arid_islands",
+      "parameters": {
+        "temperature": [
+          0.55,
+          1
+        ],
+        "humidity": [
+          -0.12,
+          0.38
+        ],
+        "continentalness": [
+          -1,
+          1
+        ],
+        "erosion": [
+          -0.2225,
+          1
+        ],
+        "weirdness": [
+          -1,
+          1
+        ],
+        "depth": [
+          -2,
+          2
+        ],
+        "offset": 0.06
+      }
+    },
+    {
+      "biome": "skylands:floating_cherry_grove_islands",
+      "parameters": {
+        "temperature": [
+          -0.45,
+          0.22
+        ],
+        "humidity": [
+          0.2,
+          1
+        ],
+        "continentalness": [
+          -1,
+          1
+        ],
+        "erosion": [
+          -1,
+          1
+        ],
+        "weirdness": [
+          -1,
+          1
+        ],
+        "depth": [
+          -2,
+          2
+        ],
+        "offset": 0.01
+      }
+    },
+    {
+      "biome": "skylands:floating_cherry_grove_islands",
+      "parameters": {
+        "temperature": [
+          0.22,
+          0.46
+        ],
+        "humidity": [
+          0.28,
+          1
+        ],
+        "continentalness": [
+          -1,
+          1
+        ],
+        "erosion": [
+          -1,
+          0.12
+        ],
+        "weirdness": [
+          -1,
+          1
+        ],
+        "depth": [
+          -2,
+          2
+        ],
+        "offset": 0.01
+      }
+    },
+    {
+      "biome": "skylands:floating_golden_islands",
+      "parameters": {
+        "temperature": [
+          -0.48,
+          0.24
+        ],
+        "humidity": [
+          -1,
+          0.2
+        ],
+        "continentalness": [
+          -1,
+          1
+        ],
+        "erosion": [
+          -1,
+          1
+        ],
+        "weirdness": [
+          -1,
+          1
+        ],
+        "depth": [
+          -2,
+          2
+        ],
+        "offset": 0.025
+      }
+    },
+    {
+      "biome": "skylands:floating_golden_islands",
+      "parameters": {
+        "temperature": [
+          0.22,
+          0.53
+        ],
+        "humidity": [
+          -0.25,
+          0.2
+        ],
+        "continentalness": [
+          -1,
+          1
+        ],
+        "erosion": [
+          -1,
+          1
+        ],
+        "weirdness": [
+          -1,
+          1
+        ],
+        "depth": [
+          -2,
+          2
+        ],
+        "offset": 0.03
+      }
+    }
+  ]
+}

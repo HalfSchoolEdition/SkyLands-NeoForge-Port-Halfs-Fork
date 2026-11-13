@@ -10,11 +10,11 @@
       ],
       "palette_key": "minecraft:trims/color_palettes/trim_palette",
       "permutations": {
-        "celestium": "flying_stuff:trims/color_palettes/celestium",
-        "pearlecent_celestium": "flying_stuff:trims/color_palettes/pearlecent_celestium",
-        "pale_celestium": "flying_stuff:trims/color_palettes/pale_celestium",
-        "inky_celestium": "flying_stuff:trims/color_palettes/inky_celestium",
-        "celestine_crystal": "flying_stuff:trims/color_palettes/celestine_crystal"
+        "celestium": "skylands:trims/color_palettes/celestium",
+        "pearlecent_celestium": "skylands:trims/color_palettes/pearlecent_celestium",
+        "pale_celestium": "skylands:trims/color_palettes/pale_celestium",
+        "inky_celestium": "skylands:trims/color_palettes/inky_celestium",
+        "celestine_crystal": "skylands:trims/color_palettes/celestine_crystal"
       }
     }
   ]

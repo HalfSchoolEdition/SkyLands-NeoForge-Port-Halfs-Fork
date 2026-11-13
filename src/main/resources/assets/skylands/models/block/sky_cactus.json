@@ -1,0 +1,11 @@
+{
+  "parent": "skylands:custom/cactus_base",
+  "textures": {
+    "all": "skylands:block/sky_cactus",
+    "particle": "skylands:block/sky_cactus",
+    "0": "skylands:block/sky_cactus",
+    "1": "skylands:block/sky_cactus_top",
+    "2": "skylands:block/cactus_extern"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,8 @@
+{
+  "sound_event": "skylands:sky_river_disk",
+  "description": {
+    "translate": "item.skylands.sky_river_music_disc.desc"
+  },
+  "length_in_seconds": 127.5,
+  "comparator_output": 0
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/inky_wood",
+    "up": "skylands:block/inky_wood",
+    "north": "skylands:block/inky_wood",
+    "east": "skylands:block/inky_wood",
+    "south": "skylands:block/inky_wood",
+    "west": "skylands:block/inky_wood",
+    "particle": "skylands:block/inky_wood"
+  },
+  "render_type": "solid"
+}

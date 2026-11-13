@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "skylands:block/glaciated_skyrock_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "skylands:block/glaciated_skyrock_pillar"
+    },
+    "axis=z": {
+      "model": "skylands:block/glaciated_skyrock_pillar",
+      "x": 90
+    }
+  }
+}

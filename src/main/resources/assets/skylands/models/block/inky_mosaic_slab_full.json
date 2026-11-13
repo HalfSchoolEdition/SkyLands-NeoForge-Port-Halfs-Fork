@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "skylands:block/inky_mosaic",
+    "top": "skylands:block/inky_mosaic",
+    "side": "skylands:block/inky_mosaic"
+  },
+  "render_type": "solid"
+}

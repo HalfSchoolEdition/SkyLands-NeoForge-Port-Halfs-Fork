@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "skylands:item/tears_of_moog_city_disk"
+  }
+}

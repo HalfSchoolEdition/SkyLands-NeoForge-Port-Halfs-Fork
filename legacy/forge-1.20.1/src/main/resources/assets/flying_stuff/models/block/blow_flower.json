@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "flying_stuff:block/blowflower",
-    "particle": "flying_stuff:block/blowflower"
-  },
-  "render_type": "cutout"
-}

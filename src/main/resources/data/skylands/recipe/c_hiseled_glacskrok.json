@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:cobbled_glaciated_skyrock_slab"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "skylands:chiseled_glaciated_skyrock"
+  }
+}

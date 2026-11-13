@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "skylands:block/mini_sky_cactus",
+    "particle": "skylands:block/mini_sky_cactus"
+  },
+  "render_type": "cutout"
+}

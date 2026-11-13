@@ -23,7 +23,7 @@ public final class SkyArmorTrimTemplateItem extends SmithingTemplateItem {
     public SkyArmorTrimTemplateItem(String pattern) {
         super(Component.translatable("item.minecraft.smithing_template.armor_trim.applies_to").withStyle(ChatFormatting.BLUE),
                 Component.translatable("item.minecraft.smithing_template.armor_trim.ingredients").withStyle(ChatFormatting.BLUE),
-                Component.translatable("trim_pattern.flying_stuff." + pattern).withStyle(ChatFormatting.GRAY),
+                Component.translatable("trim_pattern.skylands." + pattern).withStyle(ChatFormatting.GRAY),
                 Component.translatable("item.minecraft.smithing_template.armor_trim.base_slot_description"),
                 Component.translatable("item.minecraft.smithing_template.armor_trim.additions_slot_description"),
                 ARMOR_ICONS, MATERIAL_ICONS);

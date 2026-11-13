@@ -14,17 +14,17 @@ import net.deepcanion.skylands.entity.SkyBirdEntity;
 public class SkyBirdModel extends GeoModel<SkyBirdEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(SkyBirdEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "animations/sky_bird.animation.json");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "animations/golden_tuc_tuc.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(SkyBirdEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "geo/sky_bird.geo.json");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "geo/golden_tuc_tuc.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(SkyBirdEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "textures/entities/" + entity.getTexture() + ".png");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "textures/entities/" + entity.getTexture() + ".png");
 	}
 
 	@Override

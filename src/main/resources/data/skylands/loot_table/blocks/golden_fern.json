@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "skylands:blocks/golden_fern",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "skylands:golden_fern",
+          "conditions": [
+            {
+              "block": "skylands:golden_fern",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

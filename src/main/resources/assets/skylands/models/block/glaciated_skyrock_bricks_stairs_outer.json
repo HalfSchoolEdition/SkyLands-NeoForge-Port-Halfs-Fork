@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "skylands:block/glaciated_skyrock_bricks",
+    "top": "skylands:block/glaciated_skyrock_bricks",
+    "side": "skylands:block/glaciated_skyrock_bricks"
+  },
+  "render_type": "solid"
+}

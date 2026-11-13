@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/skyrock",
+    "up": "skylands:block/golden_grass_top_var1",
+    "north": "skylands:block/golden_grass_block",
+    "east": "skylands:block/golden_grass_block",
+    "south": "skylands:block/golden_grass_block",
+    "west": "skylands:block/golden_grass_block",
+    "particle": "skylands:block/skyrock"
+  },
+  "render_type": "solid"
+}

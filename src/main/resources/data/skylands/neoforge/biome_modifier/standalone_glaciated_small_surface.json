@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#skylands:source/glaciated",
+  "features": "skylands:standalone_glaciated_small",
+  "step": "raw_generation"
+}

@@ -1,0 +1,8 @@
+{
+  "asset_id": "skylands:dragon",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.skylands.dragon"
+  },
+  "template_item": "skylands:dragon_armor_trim_smithing_template"
+}

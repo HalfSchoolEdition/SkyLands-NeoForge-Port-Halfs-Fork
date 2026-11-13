@@ -1,0 +1,15 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "minecraft:snowy_plains",
+    "minecraft:grove",
+    "minecraft:snowy_slopes",
+    "minecraft:snowy_taiga",
+    "minecraft:frozen_peaks",
+    "minecraft:jagged_peaks",
+    "minecraft:ice_spikes",
+    "minecraft:frozen_ocean"
+  ],
+  "features": "skylands:launcher_01_ice",
+  "step": "surface_structures"
+}

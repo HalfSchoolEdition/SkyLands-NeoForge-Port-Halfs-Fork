@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:lavic_planks"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "skylands:lavic_button"
+  }
+}

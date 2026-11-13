@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "flying_stuff:block/lavic_tree_sapling",
-    "particle": "flying_stuff:block/lavic_tree_sapling"
-  },
-  "render_type": "cutout"
-}

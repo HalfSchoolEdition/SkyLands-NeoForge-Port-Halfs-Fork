@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/metallic_tube_top",
+    "up": "skylands:block/metallic_tube_top",
+    "north": "skylands:block/metallic_tube",
+    "east": "skylands:block/metallic_tube",
+    "south": "skylands:block/metallic_tube",
+    "west": "skylands:block/metallic_tube",
+    "particle": "skylands:block/metallic_tube_top"
+  },
+  "render_type": "solid"
+}

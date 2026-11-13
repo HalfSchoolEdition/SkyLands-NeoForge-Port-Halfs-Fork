@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
-    "flying_stuff:sulfur_sand",
-    "flying_stuff:shrine_sand"
+    "skylands:sulfur_sand",
+    "skylands:shrine_sand",
+    "skylands:sky_sand",
+    "skylands:arid_grass_block",
+    "skylands:glaciated_grass_block"
   ]
 }

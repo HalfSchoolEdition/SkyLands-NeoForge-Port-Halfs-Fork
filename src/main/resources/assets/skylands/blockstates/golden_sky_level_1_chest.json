@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "skylands:custom/golden_sky_level_1_chest_particle"
+    },
+    "facing=east": {
+      "model": "skylands:custom/golden_sky_level_1_chest_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "skylands:custom/golden_sky_level_1_chest_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "skylands:custom/golden_sky_level_1_chest_particle",
+      "y": 270
+    }
+  }
+}

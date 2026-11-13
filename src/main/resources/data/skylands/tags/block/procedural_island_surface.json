@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "skylands:golden_grass_block",
+    "skylands:glaciated_grass_block",
+    "skylands:sky_sand",
+    "skylands:arid_grass_block",
+    "skylands:lavic_skymetal_grass",
+    "skylands:swamp_grass_block",
+    "skylands:cherry_grass_block"
+  ]
+}

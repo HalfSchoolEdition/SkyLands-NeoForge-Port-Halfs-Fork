@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "skylands:inky_planks"
+    },
+    {
+      "item": "skylands:inky_planks"
+    },
+    {
+      "item": "skylands:inky_planks"
+    },
+    {
+      "item": "skylands:inky_planks"
+    },
+    {
+      "item": "skylands:inky_planks"
+    },
+    {
+      "item": "skylands:inky_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "skylands:inky_planks_stairs"
+  }
+}

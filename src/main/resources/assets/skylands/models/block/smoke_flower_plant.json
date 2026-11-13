@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "skylands:block/smokeflowerplanttop",
+    "particle": "skylands:block/smokeflowerplanttop"
+  },
+  "render_type": "cutout"
+}

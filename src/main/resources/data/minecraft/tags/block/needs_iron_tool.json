@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "flying_stuff:small_celestine_spike",
-    "flying_stuff:celestine_spike",
-    "flying_stuff:grimstone_lapis_ore",
-    "flying_stuff:grimstone_redstone_ore",
-    "flying_stuff:grimstone_diamond_ore",
-    "flying_stuff:grimstone_gold_ore",
-    "flying_stuff:celestine_block",
-    "flying_stuff:inky_celestium_ore",
-    "flying_stuff:pale_celestium_ore",
-    "flying_stuff:celestium_block",
-    "flying_stuff:celestiumore"
+    "skylands:small_celestine_spike",
+    "skylands:celestine_spike",
+    "skylands:grimstone_lapis_ore",
+    "skylands:grimstone_redstone_ore",
+    "skylands:grimstone_diamond_ore",
+    "skylands:grimstone_gold_ore",
+    "skylands:celestine_block",
+    "skylands:inky_celestium_ore",
+    "skylands:pale_celestium_ore",
+    "skylands:celestium_block",
+    "skylands:celestium_ore"
   ]
 }

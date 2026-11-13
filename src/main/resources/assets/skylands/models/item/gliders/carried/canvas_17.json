@@ -1,0 +1,7 @@
+{
+  "parent": "skylands:custom/hangglider_carried",
+  "textures": {
+    "4": "skylands:item/day",
+    "particle": "skylands:item/glider"
+  }
+}

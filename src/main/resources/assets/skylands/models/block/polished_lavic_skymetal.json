@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/polished_skymetal",
+    "up": "skylands:block/polished_skymetal",
+    "north": "skylands:block/polished_skymetal",
+    "east": "skylands:block/polished_skymetal",
+    "south": "skylands:block/polished_skymetal",
+    "west": "skylands:block/polished_skymetal",
+    "particle": "skylands:block/polished_skymetal"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:pearlecent_celestium"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "skylands:pearlecent_celestium_block"
+  }
+}

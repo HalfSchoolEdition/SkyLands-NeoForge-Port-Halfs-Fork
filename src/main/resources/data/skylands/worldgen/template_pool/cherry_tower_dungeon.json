@@ -1,0 +1,33 @@
+{
+  "name": "skylands:cherry_tower_dungeon",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:cherrytower/cherry_isle_tower_dungeon_1",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:cherrytower/cherry_isle_tower_dungeon_2",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:cherrytower/cherry_isle_tower_dungeon_3",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    }
+  ]
+}

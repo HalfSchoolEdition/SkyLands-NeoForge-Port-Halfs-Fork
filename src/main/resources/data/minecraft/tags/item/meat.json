@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "flying_stuff:raw_tuc_tuc_wing",
-    "flying_stuff:cooked_tuc_tuc_wing"
+    "skylands:raw_tuc_tuc_wing",
+    "skylands:cooked_tuc_tuc_wing"
   ]
 }

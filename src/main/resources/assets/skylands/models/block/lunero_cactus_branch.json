@@ -1,0 +1,12 @@
+{
+  "parent": "skylands:block/sky_cactus_branch",
+  "textures": {
+    "all": "skylands:block/sky_cactus_lunero",
+    "particle": "skylands:block/sky_cactus_lunero",
+    "0": "skylands:block/sky_cactus_lunero",
+    "1": "skylands:block/sky_cactus_lunero_top",
+    "2": "skylands:block/cactus_lunero_extern",
+    "3": "skylands:block/cactus_lunero_leaf",
+    "missing": "skylands:block/cactus_lunero_leaf"
+  }
+}

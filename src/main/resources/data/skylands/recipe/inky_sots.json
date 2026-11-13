@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "skylands:inky_celestium"
+  },
+  "base": {
+    "item": "skylands:sword_of_the_sky"
+  },
+  "addition": {
+    "item": "skylands:inky_celestium"
+  },
+  "result": {
+    "id": "skylands:inky_sword_of_the_sky",
+    "count": 1
+  }
+}

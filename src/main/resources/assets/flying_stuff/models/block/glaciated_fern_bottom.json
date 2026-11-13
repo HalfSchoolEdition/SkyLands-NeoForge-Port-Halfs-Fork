@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "flying_stuff:block/glaciated_fern_bottom",
-    "particle": "flying_stuff:block/glaciated_fern_bottom"
-  },
-  "render_type": "cutout"
-}

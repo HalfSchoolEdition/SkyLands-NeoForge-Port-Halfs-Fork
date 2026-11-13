@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:fallen_golden_0",
+      "weight": 1
+    },
+    {
+      "structure": "skylands:fallen_golden_1",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 12,
+    "separation": 8,
+    "salt": 12119713
+  }
+}

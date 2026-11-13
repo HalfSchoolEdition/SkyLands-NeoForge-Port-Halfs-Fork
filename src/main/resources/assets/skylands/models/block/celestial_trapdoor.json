@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_orientable_trapdoor_bottom",
+  "textures": {
+    "texture": "skylands:block/celestial_trapdoor",
+    "particle": "skylands:block/celestial_trapdoor"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/polished_sky_sandstone",
+    "up": "skylands:block/polished_sky_sandstone",
+    "north": "skylands:block/sky_sandstone_pillar_base",
+    "east": "skylands:block/sky_sandstone_pillar_base",
+    "south": "skylands:block/sky_sandstone_pillar_base",
+    "west": "skylands:block/sky_sandstone_pillar_base",
+    "particle": "skylands:block/polished_sky_sandstone"
+  },
+  "render_type": "solid"
+}

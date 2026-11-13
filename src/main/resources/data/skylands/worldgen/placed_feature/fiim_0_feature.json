@@ -1,0 +1,37 @@
+{
+  "feature": "skylands:fiim_0_feature",
+  "placement": [
+    {
+      "type": "skylands:density_repeat",
+      "density_class": "medium"
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 55
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 300
+        },
+        "max_inclusive": {
+          "below_top": 50
+        }
+      }
+    },
+    {
+      "type": "minecraft:surface_relative_threshold_filter",
+      "heightmap": "OCEAN_FLOOR_WG",
+      "min_inclusive": 8,
+      "max_inclusive": 300
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

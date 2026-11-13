@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:skyarenalavic",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "spacing": 30,
+    "separation": 18,
+    "salt": 493248522,
+    "density_class": "medium"
+  }
+}

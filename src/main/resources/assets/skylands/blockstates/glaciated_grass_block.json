@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+    {"model": "skylands:block/glaciated_grass_block"},
+    {"model": "skylands:block/glaciated_grass_blockv1"},
+    {"model": "skylands:block/glaciated_grass_blockv2"},
+    {"model": "skylands:block/glaciated_grass_blockv3"}
+    ]
+  }
+}

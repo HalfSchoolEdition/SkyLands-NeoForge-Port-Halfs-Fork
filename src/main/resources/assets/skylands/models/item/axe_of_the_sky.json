@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "skylands:item/axe_of_the_sky"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "skylands:custom/glaciated_reward_dispenser_particle"
+    },
+    "facing=east": {
+      "model": "skylands:custom/glaciated_reward_dispenser_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "skylands:custom/glaciated_reward_dispenser_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "skylands:custom/glaciated_reward_dispenser_particle",
+      "y": 270
+    }
+  }
+}

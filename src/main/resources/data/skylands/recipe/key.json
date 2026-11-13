@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "skylands:celestium_core"
+    },
+    "c": {
+      "item": "skylands:inky_celestium_core"
+    },
+    "d": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "e": {
+      "item": "skylands:pearlecent_celestium_core"
+    },
+    "f": {
+      "item": "skylands:pale_celestium_core"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "skylands:master_key"
+  }
+}

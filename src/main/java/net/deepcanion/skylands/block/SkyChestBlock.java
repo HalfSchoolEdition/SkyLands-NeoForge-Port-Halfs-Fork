@@ -72,7 +72,7 @@ public final class SkyChestBlock extends BaseEntityBlock {
                 ItemInteractionResult result = useItemOn(offhand, state, level, pos, player, InteractionHand.OFF_HAND, hit);
                 return result == ItemInteractionResult.FAIL ? InteractionResult.FAIL : InteractionResult.sidedSuccess(level.isClientSide());
             }
-            if (!level.isClientSide()) player.displayClientMessage(net.minecraft.network.chat.Component.translatable("message.flying_stuff.chest_locked", kind.key.get().getDescription()), true);
+            if (!level.isClientSide()) player.displayClientMessage(net.minecraft.network.chat.Component.translatable("message.skylands.chest_locked", kind.key.get().getDescription()), true);
             return InteractionResult.sidedSuccess(level.isClientSide());
         }
         if (!level.isClientSide() && level.getBlockEntity(pos) instanceof SkyChestBlockEntity chest) player.openMenu(chest);

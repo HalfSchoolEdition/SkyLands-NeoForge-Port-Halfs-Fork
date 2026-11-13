@@ -30,8 +30,8 @@ public final class RewardDispenserBlockEntity extends BlockEntity implements Geo
     public RewardDispenserKind kind() { return ((RewardDispenserBlock)getBlockState().getBlock()).kind; }
     public void showStatus(Player player) {
         player.displayClientMessage(pending.isEmpty()
-            ? Component.translatable("message.flying_stuff.dispenser_needs", 32 - deposited, kind().currency.get().getDescription())
-            : Component.translatable("message.flying_stuff.dispenser_busy"), true);
+            ? Component.translatable("message.skylands.dispenser_needs", 32 - deposited, kind().currency.get().getDescription())
+            : Component.translatable("message.skylands.dispenser_busy"), true);
     }
     public void deposit(Player player, ItemStack stack) {
         if (level == null || level.isClientSide() || isRemoved() || !stack.is(kind().currency.get()) || stack.isEmpty()) return;
@@ -39,7 +39,7 @@ public final class RewardDispenserBlockEntity extends BlockEntity implements Geo
         List<Item> rewards = BuiltInRegistries.ITEM.getTag(kind().rewards)
             .map(tag -> tag.stream().map(holder -> holder.value()).filter(item -> item != Items.AIR).toList()).orElse(List.of());
         // A broken/overridden empty reward pool never consumes payment.
-        if (rewards.isEmpty()) { player.displayClientMessage(Component.translatable("message.flying_stuff.dispenser_empty"), true); return; }
+        if (rewards.isEmpty()) { player.displayClientMessage(Component.translatable("message.skylands.dispenser_empty"), true); return; }
         int amount = Math.min(32 - deposited, stack.getCount());
         deposited += amount; stack.shrink(amount);
         if (deposited == 32) {

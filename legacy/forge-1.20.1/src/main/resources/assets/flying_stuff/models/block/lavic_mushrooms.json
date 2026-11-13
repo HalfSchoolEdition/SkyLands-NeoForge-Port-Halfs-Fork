@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "flying_stuff:block/lavic_shrooms_top",
-    "particle": "flying_stuff:block/lavic_shrooms_top"
-  },
-  "render_type": "cutout"
-}

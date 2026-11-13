@@ -1,0 +1,24 @@
+{
+  "type": "skylands:density_jigsaw",
+  "start_pool": "skylands:skyarena",
+  "size": 1,
+  "max_distance_from_center": 64,
+  "spawn_overrides": {},
+  "step": "top_layer_modification",
+  "terrain_adaptation": "none",
+  "start_height": {
+    "type": "minecraft:trapezoid",
+    "min_inclusive": {
+      "absolute": 300
+    },
+    "max_inclusive": {
+      "absolute": 450
+    }
+  },
+  "biomes": "skylands:floating_golden_islands",
+  "use_expansion_hack": false,
+  "dimension_padding": 8,
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "density_class": "medium",
+  "density_set": "skylands:skyarena"
+}

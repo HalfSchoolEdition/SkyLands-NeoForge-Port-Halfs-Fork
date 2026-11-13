@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "skylands:smithing_template_upgrade_of_the_sky"
+  },
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "addition": {
+    "item": "skylands:ingot_of_the_sky"
+  },
+  "result": {
+    "id": "skylands:sword_of_the_sky",
+    "count": 1
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/door_top_left",
-  "textures": {
-    "bottom": "flying_stuff:block/fiery_planks_door_bottom",
-    "top": "flying_stuff:block/fiery_planks_door_top"
-  },
-  "render_type": "cutout"
-}

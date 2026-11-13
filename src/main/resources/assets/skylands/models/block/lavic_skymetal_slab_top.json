@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "skylands:block/skymetal",
+    "top": "skylands:block/skymetal",
+    "side": "skylands:block/skymetal"
+  },
+  "render_type": "solid"
+}

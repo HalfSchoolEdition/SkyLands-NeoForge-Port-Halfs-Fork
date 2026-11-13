@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "skylands:glaciated_log"
+    },
+    {
+      "item": "skylands:glaciated_log"
+    },
+    {
+      "item": "skylands:glaciated_log"
+    },
+    {
+      "item": "skylands:glaciated_log"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "skylands:glaciated_wood"
+  }
+}

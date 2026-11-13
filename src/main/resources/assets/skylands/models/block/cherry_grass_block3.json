@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/skyrock",
+    "up": "skylands:block/cherryblossomgrassblocktop2",
+    "north": "skylands:block/cherryblossomgrassblock",
+    "east": "skylands:block/cherryblossomgrassblock",
+    "south": "skylands:block/cherryblossomgrassblock",
+    "west": "skylands:block/cherryblossomgrassblock",
+    "particle": "skylands:block/skyrock"
+  },
+  "render_type": "solid"
+}

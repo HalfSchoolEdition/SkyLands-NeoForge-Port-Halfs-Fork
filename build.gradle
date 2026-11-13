@@ -15,9 +15,9 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 repositories {
     mavenCentral()
     maven {
-        name = 'Glitchfiend'
-        url = 'https://maven.minecraftforge.net/'
-        content { includeGroup 'com.github.glitchfiend' }
+        name = 'Modrinth'
+        url = 'https://api.modrinth.com/maven'
+        content { includeGroup 'maven.modrinth' }
     }
     maven {
         name = 'GeckoLib'
@@ -39,8 +39,8 @@ repositories {
 dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
 
-    // TerraBlender is active and required by the Overworld biome integration.
-    implementation "com.github.glitchfiend:TerraBlender-neoforge:${minecraft_version}-${terrablender_version}"
+    // Lithostitched reads our data-driven biome injectors and is required at runtime.
+    runtimeOnly "maven.modrinth:lithostitched:${lithostitched_version}"
 
     implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
 

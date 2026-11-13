@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_orientable_trapdoor_bottom",
+  "textures": {
+    "texture": "skylands:block/glaciated_trapdoor",
+    "particle": "skylands:block/glaciated_trapdoor"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:cobbled_skyrock"
+    }
+  },
+  "result": {
+    "count": 4,
+    "id": "skylands:cobbled_skyrock_stairs"
+  }
+}

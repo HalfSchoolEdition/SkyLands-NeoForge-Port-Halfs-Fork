@@ -1,6 +1,0 @@
-{
-  "type": "neoforge:add_features",
-  "biomes": "flying_stuff:flying_islands",
-  "features": "flying_stuff:fis_1_feature",
-  "step": "raw_generation"
-}

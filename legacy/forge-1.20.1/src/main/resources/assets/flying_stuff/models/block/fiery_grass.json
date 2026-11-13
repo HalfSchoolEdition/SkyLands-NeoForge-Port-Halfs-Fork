@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "flying_stuff:block/firey_grass",
-    "particle": "flying_stuff:block/firey_grass"
-  },
-  "render_type": "cutout"
-}

@@ -15,6 +15,6 @@ public class FriendlyVexRenderer extends MobRenderer<FriendlyVexEntity, Modelfve
 
 	@Override
 	public ResourceLocation getTextureLocation(FriendlyVexEntity entity) {
-		return ResourceLocation.parse("flying_stuff:textures/entities/friendlyvex.png");
+		return ResourceLocation.parse("skylands:textures/entities/friendlyvex.png");
 	}
 }

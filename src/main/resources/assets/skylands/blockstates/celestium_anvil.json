@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "skylands:block/celestium_anvil"
+    },
+    "facing=east": {
+      "model": "skylands:block/celestium_anvil",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "skylands:block/celestium_anvil",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "skylands:block/celestium_anvil",
+      "y": 270
+    }
+  }
+}

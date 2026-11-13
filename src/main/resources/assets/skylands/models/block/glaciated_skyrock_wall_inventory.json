@@ -1,0 +1,8 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "skylands:block/glaciated_skyrock",
+    "particle": "skylands:block/glaciated_skyrock"
+  },
+  "render_type": "solid"
+}

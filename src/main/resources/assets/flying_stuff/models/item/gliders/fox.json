@@ -1,7 +1,0 @@
-{
-  "parent": "flying_stuff:custom/hangglider",
-  "textures": {
-    "4": "flying_stuff:item/fox",
-    "particle": "flying_stuff:item/glider"
-  }
-}

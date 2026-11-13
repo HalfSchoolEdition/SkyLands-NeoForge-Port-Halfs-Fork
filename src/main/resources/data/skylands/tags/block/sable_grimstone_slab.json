@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "skylands:grimstone_bricks_slab",
+    "skylands:grimstone_slab",
+    "skylands:grimstone_tiles_slab",
+    "skylands:polished_grimstone_slab"
+  ]
+}

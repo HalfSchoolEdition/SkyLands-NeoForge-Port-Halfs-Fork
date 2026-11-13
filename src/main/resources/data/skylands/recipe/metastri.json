@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:lavic_skymetal_slab"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "skylands:lavic_skymetal_tiles"
+  }
+}

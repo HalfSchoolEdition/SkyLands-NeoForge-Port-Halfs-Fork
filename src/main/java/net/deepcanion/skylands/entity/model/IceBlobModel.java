@@ -9,17 +9,17 @@ import net.deepcanion.skylands.entity.IceBlobEntity;
 public class IceBlobModel extends GeoModel<IceBlobEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(IceBlobEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "animations/blob.animation.json");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "animations/blob.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(IceBlobEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "geo/blob.geo.json");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "geo/blob.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(IceBlobEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "textures/entities/" + entity.getTexture() + ".png");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "textures/entities/" + entity.getTexture() + ".png");
 	}
 
 }

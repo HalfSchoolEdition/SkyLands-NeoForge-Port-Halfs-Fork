@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "skylands:cobbled_skyrock"
+  },
+  "result": {
+    "id": "skylands:skyrock_column_base",
+    "count": 1
+  }
+}

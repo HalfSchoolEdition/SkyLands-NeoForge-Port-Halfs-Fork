@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:polished_lavic_skymetal"
+    }
+  },
+  "result": {
+    "count": 3,
+    "id": "skylands:lavic_skymetal_pipe"
+  }
+}

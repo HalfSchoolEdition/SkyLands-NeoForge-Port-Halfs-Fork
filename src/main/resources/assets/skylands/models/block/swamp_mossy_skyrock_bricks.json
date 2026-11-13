@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/swamp_mossy_skyrock_bricks",
+    "up": "skylands:block/swamp_mossy_skyrock_bricks",
+    "north": "skylands:block/swamp_mossy_skyrock_bricks",
+    "east": "skylands:block/swamp_mossy_skyrock_bricks",
+    "south": "skylands:block/swamp_mossy_skyrock_bricks",
+    "west": "skylands:block/swamp_mossy_skyrock_bricks",
+    "particle": "skylands:block/swamp_mossy_skyrock_bricks"
+  },
+  "render_type": "solid"
+}

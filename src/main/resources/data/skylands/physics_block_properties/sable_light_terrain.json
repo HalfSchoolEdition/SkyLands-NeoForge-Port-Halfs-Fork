@@ -1,0 +1,7 @@
+{
+  "priority": 1100,
+  "selector": "#skylands:sable_light_terrain",
+  "properties": {
+    "sable:mass": 0.65
+  }
+}

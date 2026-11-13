@@ -1,0 +1,6 @@
+{
+  "parent": "skylands:block/cactus_top_open",
+  "textures": {
+    "7": "skylands:block/cactus_bulb_warm"
+  }
+}

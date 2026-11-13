@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/cobbled_glaciated_skyrock",
+    "up": "skylands:block/glaciated_grass_block_top_var2",
+    "north": "skylands:block/glaciated_grass_block",
+    "east": "skylands:block/glaciated_grass_block",
+    "south": "skylands:block/glaciated_grass_block",
+    "west": "skylands:block/glaciated_grass_block",
+    "particle": "skylands:block/cobbled_glaciated_skyrock"
+  },
+  "render_type": "solid"
+}

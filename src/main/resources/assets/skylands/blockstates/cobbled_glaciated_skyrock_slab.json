@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "skylands:block/cobbled_glaciated_skyrock_slab"
+    },
+    "type=top": {
+      "model": "skylands:block/cobbled_glaciated_skyrock_slab_top"
+    },
+    "type=double": {
+      "model": "skylands:block/cobbled_glaciated_skyrock_slab_full"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "asset_id": "skylands:cyclops",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.skylands.cyclops"
+  },
+  "template_item": "skylands:cyclops_armor_trim_smithing_template"
+}

@@ -18,5 +18,10 @@ public final class ModParticles {
     public static final DeferredHolder<ParticleType<?>, SimpleParticleType> FIRE_LEAF = PARTICLES.register("fire_leaf", () -> new SimpleParticleType(false));
     public static final DeferredHolder<ParticleType<?>, SimpleParticleType> FIREFLY = PARTICLES.register("firefly", () -> new SimpleParticleType(false));
     public static final DeferredHolder<ParticleType<?>, SimpleParticleType> ITEM_BREAK = PARTICLES.register("item_break", () -> new SimpleParticleType(false));
+    // Tiny colored fullbright pixel particles around active Solero / Lunero cacti.
+    public static final DeferredHolder<ParticleType<?>, SimpleParticleType> CACTUS_WARM_PIXEL =
+            PARTICLES.register("cactus_warm_pixel", () -> new SimpleParticleType(false));
+    public static final DeferredHolder<ParticleType<?>, SimpleParticleType> CACTUS_COLD_PIXEL =
+            PARTICLES.register("cactus_cold_pixel", () -> new SimpleParticleType(false));
     private ModParticles() { }
 }

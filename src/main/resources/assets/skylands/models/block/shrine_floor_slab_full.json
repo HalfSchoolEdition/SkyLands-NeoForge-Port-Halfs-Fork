@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "skylands:block/shrine_floor",
+    "top": "skylands:block/shrine_floor",
+    "side": "skylands:block/shrine_floor"
+  },
+  "render_type": "solid"
+}

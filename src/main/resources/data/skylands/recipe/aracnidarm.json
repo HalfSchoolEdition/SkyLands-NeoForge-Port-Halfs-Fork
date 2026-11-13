@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "skylands:aracnid_armor_trim_smithing_template"
+    },
+    "c": {
+      "item": "skylands:grimstone"
+    }
+  },
+  "result": {
+    "count": 2,
+    "id": "skylands:aracnid_armor_trim_smithing_template"
+  }
+}

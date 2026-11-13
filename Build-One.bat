@@ -8,8 +8,8 @@ exit /b
 :build
 pushd "%~dp0"
 if errorlevel 1 goto directory_error
-echo SkyLands - Unofficial Port - NeoForge 1.21.1 - v0.9.1
-echo Runtime requires TerraBlender NeoForge 1.21.1 4.1.0.8 or newer within 4.1.
+echo SkyLands - NeoForge 1.21.1 - v0.9.3
+echo Runtime requires Lithostitched NeoForge 1.21.1 1.8.1 or newer within 1.8.
 echo Runtime also requires GeckoLib NeoForge 1.21.1 4.7.6 or newer within GeckoLib 4.
 echo Client runtime also requires Player Animator NeoForge 1.21.1 2.0.1 or newer within 2.x.
 echo Requires a Java 21 JDK and Gradle 8.13 or newer within Gradle 8.
@@ -24,7 +24,7 @@ call "%gradle_command%" --no-daemon build
 set "build_result=%errorlevel%"
 echo.
 if "%build_result%"=="0" (
-    echo BUILD SUCCESSFUL. The mod JAR is dist\SkyLands-UnofficialPort-NeoForge-1.21.1-v0.9.1.jar.
+    echo BUILD SUCCESSFUL. The mod JAR is dist\SkyLands-UnofficialPort-NeoForge-1.21.1-v0.9.3.jar.
 ) else (
     echo BUILD FAILED with exit code %build_result%.
     echo Copy the error output above when reporting the failure.

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "skylands:block/inky_mosaic_slab"
+    },
+    "type=top": {
+      "model": "skylands:block/inky_mosaic_slab_top"
+    },
+    "type=double": {
+      "model": "skylands:block/inky_mosaic_slab_full"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/glaciated_leaves",
+    "up": "skylands:block/glaciated_leaves",
+    "north": "skylands:block/glaciated_leaves",
+    "east": "skylands:block/glaciated_leaves",
+    "south": "skylands:block/glaciated_leaves",
+    "west": "skylands:block/glaciated_leaves",
+    "particle": "skylands:block/glaciated_leaves"
+  },
+  "render_type": "cutout"
+}

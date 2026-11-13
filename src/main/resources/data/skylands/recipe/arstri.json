@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:sky_sandstone_slab"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "skylands:chiseled_sky_sandstone"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "skylands:floating_swamp_islands",
+  "features": [
+    "skylands:fism_0",
+    "skylands:fism_1",
+    "skylands:fiss",
+    "skylands:fiss_1"
+  ],
+  "step": "raw_generation"
+}

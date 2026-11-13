@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "skylands:celestium_antenna",
+    "skylands:celestium_spike",
+    "skylands:inky_celestium_antenna",
+    "skylands:inky_celestium_spike",
+    "skylands:pale_celestium_antenna",
+    "skylands:pale_celestium_spike",
+    "skylands:pearlecent_celestium_antenna",
+    "skylands:pearlecent_celestium_spike"
+  ]
+}

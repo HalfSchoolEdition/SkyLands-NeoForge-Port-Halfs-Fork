@@ -1,0 +1,15 @@
+{
+  "name": "skylands:island_cluster_ice_fallback",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skylands:island_cluster_ice/ici_fallback",
+        "processors": "skylands:preserve_surrounding_terrain"
+      }
+    }
+  ]
+}

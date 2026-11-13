@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "skylands:inky_mosaic"
+    },
+    {
+      "item": "skylands:inky_mosaic"
+    },
+    {
+      "item": "skylands:inky_mosaic"
+    },
+    {
+      "item": "skylands:inky_mosaic"
+    },
+    {
+      "item": "skylands:inky_mosaic"
+    },
+    {
+      "item": "skylands:inky_mosaic"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "skylands:inky_mosaic_stairs"
+  }
+}

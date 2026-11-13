@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "flying_stuff:block/ice_spikes",
-    "particle": "flying_stuff:block/ice_spikes"
-  },
-  "render_type": "cutout"
-}

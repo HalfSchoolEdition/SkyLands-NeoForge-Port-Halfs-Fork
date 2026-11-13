@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "skylands:blocks/lavic_skymetal_bricks",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "skylands:lavic_skymetal_bricks"
+        }
+      ]
+    }
+  ]
+}

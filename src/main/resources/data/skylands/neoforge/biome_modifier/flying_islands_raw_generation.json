@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "skylands:floating_golden_islands",
+  "features": [
+    "skylands:fim_0_feature",
+    "skylands:fim_1_feature",
+    "skylands:fim_3",
+    "skylands:fimsnow_0_feature",
+    "skylands:fis_2_feature",
+    "skylands:fis_3_feature"
+  ],
+  "step": "raw_generation"
+}

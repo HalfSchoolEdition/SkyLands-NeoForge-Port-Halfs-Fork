@@ -11,12 +11,13 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 
 public record TemplateFeatureConfiguration(ResourceLocation structure, boolean randomRotation,
-        boolean randomMirror, HolderSet<Block> ignoredBlocks, Vec3i offset) implements FeatureConfiguration {
+        boolean randomMirror, HolderSet<Block> ignoredBlocks, Vec3i offset, IslandDensity.Size densityClass) implements FeatureConfiguration {
     public static final Codec<TemplateFeatureConfiguration> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             ResourceLocation.CODEC.fieldOf("structure").forGetter(TemplateFeatureConfiguration::structure),
             Codec.BOOL.optionalFieldOf("random_rotation", false).forGetter(TemplateFeatureConfiguration::randomRotation),
             Codec.BOOL.optionalFieldOf("random_mirror", false).forGetter(TemplateFeatureConfiguration::randomMirror),
             RegistryCodecs.homogeneousList(Registries.BLOCK).fieldOf("ignored_blocks").forGetter(TemplateFeatureConfiguration::ignoredBlocks),
-            Vec3i.offsetCodec(48).optionalFieldOf("offset", Vec3i.ZERO).forGetter(TemplateFeatureConfiguration::offset)
+            Vec3i.offsetCodec(48).optionalFieldOf("offset", Vec3i.ZERO).forGetter(TemplateFeatureConfiguration::offset),
+            IslandDensity.Size.CODEC.optionalFieldOf("density_class", IslandDensity.Size.NONE).forGetter(TemplateFeatureConfiguration::densityClass)
     ).apply(instance, TemplateFeatureConfiguration::new));
 }

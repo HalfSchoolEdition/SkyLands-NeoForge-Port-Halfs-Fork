@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:skyarena",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "spacing": 24,
+    "separation": 10,
+    "salt": 493248522,
+    "density_class": "medium"
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/door_top_right_open",
-  "textures": {
-    "bottom": "flying_stuff:block/celestial_door_bottom",
-    "top": "flying_stuff:block/celestial_door_top"
-  },
-  "render_type": "cutout"
-}

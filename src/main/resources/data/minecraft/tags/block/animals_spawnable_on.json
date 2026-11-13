@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "skylands:golden_grass_block",
+    "skylands:glaciated_grass_block",
+    "skylands:cherry_grass_block"
+  ]
+}

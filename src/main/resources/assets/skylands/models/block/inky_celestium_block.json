@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/inky_celestium_block",
+    "up": "skylands:block/inky_celestium_block",
+    "north": "skylands:block/inky_celestium_block",
+    "east": "skylands:block/inky_celestium_block",
+    "south": "skylands:block/inky_celestium_block",
+    "west": "skylands:block/inky_celestium_block",
+    "particle": "skylands:block/inky_celestium_block"
+  },
+  "render_type": "solid"
+}

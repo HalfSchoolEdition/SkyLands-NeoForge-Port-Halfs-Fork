@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "skylands:raw_tuc_tuc_wing"
+  },
+  "result": {
+    "id": "skylands:cooked_tuc_tuc_wing",
+    "count": 1
+  }
+}

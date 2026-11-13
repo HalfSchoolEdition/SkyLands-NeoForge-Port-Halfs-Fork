@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/lavic_wood",
+    "up": "skylands:block/lavic_wood",
+    "north": "skylands:block/lavic_wood",
+    "east": "skylands:block/lavic_wood",
+    "south": "skylands:block/lavic_wood",
+    "west": "skylands:block/lavic_wood",
+    "particle": "skylands:block/lavic_wood"
+  },
+  "render_type": "solid"
+}

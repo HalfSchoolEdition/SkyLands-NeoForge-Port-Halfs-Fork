@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "skylands:block/lavic_wood",
+    "top": "skylands:block/lavic_wood",
+    "side": "skylands:block/lavic_wood"
+  },
+  "render_type": "solid"
+}

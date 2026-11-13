@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/skymetal",
+    "up": "skylands:block/metallic_grass_top1",
+    "north": "skylands:block/metallic_grass",
+    "east": "skylands:block/metallic_grass",
+    "south": "skylands:block/metallic_grass",
+    "west": "skylands:block/metallic_grass",
+    "particle": "skylands:block/skymetal"
+  },
+  "render_type": "solid"
+}

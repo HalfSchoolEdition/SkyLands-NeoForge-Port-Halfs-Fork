@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/skyrock",
+    "up": "skylands:block/skyrock",
+    "north": "skylands:block/skyrock",
+    "east": "skylands:block/skyrock",
+    "south": "skylands:block/skyrock",
+    "west": "skylands:block/skyrock",
+    "particle": "skylands:block/skyrock"
+  },
+  "render_type": "solid"
+}

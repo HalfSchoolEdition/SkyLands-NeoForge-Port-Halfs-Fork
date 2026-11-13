@@ -1,0 +1,22 @@
+{
+  "type": "skylands:density_jigsaw",
+  "biomes": "skylands:floating_swamp_islands",
+  "step": "top_layer_modification",
+  "spawn_overrides": {},
+  "start_pool": "skylands:island_cluster_swamp",
+  "size": 0,
+  "start_height": {
+    "type": "minecraft:trapezoid",
+    "min_inclusive": {
+      "absolute": 325
+    },
+    "max_inclusive": {
+      "absolute": 415
+    }
+  },
+  "max_distance_from_center": 120,
+  "use_expansion_hack": false,
+  "density_class": "medium",
+  "density_set": "skylands:swampy_island_cluster",
+  "dimension_padding": 8
+}

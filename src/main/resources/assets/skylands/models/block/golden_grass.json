@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "skylands:block/golden_grass",
+    "particle": "skylands:block/golden_grass"
+  },
+  "render_type": "cutout"
+}

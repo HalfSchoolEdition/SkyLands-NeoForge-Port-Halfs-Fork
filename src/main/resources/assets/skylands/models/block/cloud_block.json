@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/cloud_block",
+    "up": "skylands:block/cloud_block",
+    "north": "skylands:block/cloud_block",
+    "east": "skylands:block/cloud_block",
+    "south": "skylands:block/cloud_block",
+    "west": "skylands:block/cloud_block",
+    "particle": "skylands:block/cloud_block"
+  },
+  "render_type": "cutout"
+}

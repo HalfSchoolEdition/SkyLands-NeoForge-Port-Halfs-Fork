@@ -1,0 +1,8 @@
+{
+  "sound_event": "skylands:lava_disk",
+  "description": {
+    "translate": "item.skylands.factory_music_disc.desc"
+  },
+  "length_in_seconds": 84.0,
+  "comparator_output": 13
+}

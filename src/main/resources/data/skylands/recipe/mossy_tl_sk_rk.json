@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "skylands:golden_leaves"
+    },
+    {
+      "item": "skylands:tiled_skyrock"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "skylands:golden_mossy_tiled_skyrock"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/celestium_ore",
+    "up": "skylands:block/celestium_ore",
+    "north": "skylands:block/celestium_ore",
+    "east": "skylands:block/celestium_ore",
+    "south": "skylands:block/celestium_ore",
+    "west": "skylands:block/celestium_ore",
+    "particle": "skylands:block/celestium_ore"
+  },
+  "render_type": "solid"
+}

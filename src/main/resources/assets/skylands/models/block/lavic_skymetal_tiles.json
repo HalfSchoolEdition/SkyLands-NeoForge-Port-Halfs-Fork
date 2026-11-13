@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/skymetal_strypes",
+    "up": "skylands:block/skymetal_strypes",
+    "north": "skylands:block/skymetal_strypes",
+    "east": "skylands:block/skymetal_strypes",
+    "south": "skylands:block/skymetal_strypes",
+    "west": "skylands:block/skymetal_strypes",
+    "particle": "skylands:block/skymetal_strypes"
+  },
+  "render_type": "solid"
+}

@@ -14,17 +14,17 @@ import net.deepcanion.skylands.entity.SkyAutomatonBruteEntity;
 public class SkyAutomatonBruteModel extends GeoModel<SkyAutomatonBruteEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(SkyAutomatonBruteEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "animations/automaton_brute.animation.json");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "animations/automaton_brute.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(SkyAutomatonBruteEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "geo/automaton_brute.geo.json");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "geo/automaton_brute.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(SkyAutomatonBruteEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "textures/entities/" + entity.getTexture() + ".png");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "textures/entities/" + entity.getTexture() + ".png");
 	}
 
 	@Override

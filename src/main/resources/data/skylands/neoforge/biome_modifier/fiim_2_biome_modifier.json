@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "skylands:floating_glaciated_islands",
+    "minecraft:grove",
+    "minecraft:frozen_peaks",
+    "minecraft:deep_frozen_ocean",
+    "minecraft:jagged_peaks",
+    "minecraft:snowy_plains"
+  ],
+  "features": "skylands:fiim_2",
+  "step": "raw_generation"
+}

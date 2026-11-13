@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:glaciated_sky_dungeon",
+      "weight": 3
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "salt": 1361928249,
+    "spacing": 24,
+    "separation": 16,
+    "density_class": "large"
+  }
+}

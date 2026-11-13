@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/golden_mossy_tiled_skyrock",
+    "up": "skylands:block/golden_mossy_tiled_skyrock",
+    "north": "skylands:block/golden_mossy_tiled_skyrock",
+    "east": "skylands:block/golden_mossy_tiled_skyrock",
+    "south": "skylands:block/golden_mossy_tiled_skyrock",
+    "west": "skylands:block/golden_mossy_tiled_skyrock",
+    "particle": "skylands:block/golden_mossy_tiled_skyrock"
+  },
+  "render_type": "solid"
+}

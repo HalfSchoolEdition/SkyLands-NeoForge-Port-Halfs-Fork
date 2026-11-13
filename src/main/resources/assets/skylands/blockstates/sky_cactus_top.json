@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "skylands:block/sky_cactus_top"
+    },
+    "facing=east": {
+      "model": "skylands:block/sky_cactus_top",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "skylands:block/sky_cactus_top",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "skylands:block/sky_cactus_top",
+      "y": 270
+    }
+  }
+}

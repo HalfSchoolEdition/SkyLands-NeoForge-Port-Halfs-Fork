@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "skylands:block/stripped_golden_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "skylands:block/stripped_golden_log"
+    },
+    "axis=z": {
+      "model": "skylands:block/stripped_golden_log",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "skylands:block/grimstone_bricks",
+    "top": "skylands:block/grimstone_bricks",
+    "side": "skylands:block/grimstone_bricks"
+  },
+  "render_type": "solid"
+}

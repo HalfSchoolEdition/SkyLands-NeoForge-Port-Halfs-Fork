@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#skylands:source/golden",
+  "features": "skylands:standalone_golden_small",
+  "step": "raw_generation"
+}

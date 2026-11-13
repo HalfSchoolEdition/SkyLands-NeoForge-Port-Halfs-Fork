@@ -14,17 +14,17 @@ import net.deepcanion.skylands.entity.IgneoRoboFelineEntity;
 public class IgneoRoboFelineModel extends GeoModel<IgneoRoboFelineEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(IgneoRoboFelineEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "animations/robot_lion.animation.json");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "animations/robot_lion.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(IgneoRoboFelineEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "geo/robot_lion.geo.json");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "geo/robot_lion.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(IgneoRoboFelineEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "textures/entities/" + entity.getTexture() + ".png");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "textures/entities/" + entity.getTexture() + ".png");
 	}
 
 	@Override

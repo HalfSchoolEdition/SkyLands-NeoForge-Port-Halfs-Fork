@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:golden_island_cluster",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "spacing": 19,
+    "separation": 14,
+    "salt": 626518623,
+    "density_class": "medium"
+  }
+}

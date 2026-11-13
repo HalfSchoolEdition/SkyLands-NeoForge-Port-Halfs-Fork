@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "skylands:automaton_armor_trim_smithing_template"
+    },
+    "c": {
+      "item": "skylands:cobbled_skyrock"
+    }
+  },
+  "result": {
+    "count": 2,
+    "id": "skylands:automaton_armor_trim_smithing_template"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:cherry_floating_dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "spacing": 28,
+    "separation": 24,
+    "salt": 464213121,
+    "density_class": "large"
+  }
+}

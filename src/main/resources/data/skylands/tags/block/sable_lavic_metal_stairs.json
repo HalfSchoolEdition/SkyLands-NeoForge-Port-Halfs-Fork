@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "skylands:lavic_skymetal_bricks_staircase",
+    "skylands:lavic_skymetal_staircase",
+    "skylands:polished_lavic_skymetal_staircase"
+  ]
+}

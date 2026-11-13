@@ -1,0 +1,8 @@
+{
+  "priority": 1100,
+  "selector": "#skylands:sable_celestium_blocks",
+  "properties": {
+    "sable:mass": 1.0,
+    "sable:floating_material": "skylands:celestium"
+  }
+}

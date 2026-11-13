@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/inky_mosaic",
+    "up": "skylands:block/inky_mosaic",
+    "north": "skylands:block/inky_mosaic",
+    "east": "skylands:block/inky_mosaic",
+    "south": "skylands:block/inky_mosaic",
+    "west": "skylands:block/inky_mosaic",
+    "particle": "skylands:block/inky_mosaic"
+  },
+  "render_type": "solid"
+}

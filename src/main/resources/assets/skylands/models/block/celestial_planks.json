@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/celestial_planks",
+    "up": "skylands:block/celestial_planks",
+    "north": "skylands:block/celestial_planks",
+    "east": "skylands:block/celestial_planks",
+    "south": "skylands:block/celestial_planks",
+    "west": "skylands:block/celestial_planks",
+    "particle": "skylands:block/celestial_planks"
+  },
+  "render_type": "solid"
+}

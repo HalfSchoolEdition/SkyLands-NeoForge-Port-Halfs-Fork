@@ -15,6 +15,6 @@ public class SkyAutomatonBossRenderer extends MobRenderer<SkyAutomatonBossEntity
 
 	@Override
 	public ResourceLocation getTextureLocation(SkyAutomatonBossEntity entity) {
-		return ResourceLocation.parse("flying_stuff:textures/entities/boss.png");
+		return ResourceLocation.parse("skylands:textures/entities/boss.png");
 	}
 }

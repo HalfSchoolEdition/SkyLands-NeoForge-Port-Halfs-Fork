@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/stripped_lavic_log_top",
+    "up": "skylands:block/stripped_lavic_log_top",
+    "north": "skylands:block/stripped_lavic_log",
+    "east": "skylands:block/stripped_lavic_log",
+    "south": "skylands:block/stripped_lavic_log",
+    "west": "skylands:block/stripped_lavic_log",
+    "particle": "skylands:block/stripped_lavic_log_top"
+  },
+  "render_type": "solid"
+}

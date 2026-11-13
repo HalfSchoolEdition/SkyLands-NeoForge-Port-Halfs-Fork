@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "skylands:block/grimstone_top",
+    "particle": "skylands:block/grimstone_top"
+  },
+  "render_type": "solid"
+}

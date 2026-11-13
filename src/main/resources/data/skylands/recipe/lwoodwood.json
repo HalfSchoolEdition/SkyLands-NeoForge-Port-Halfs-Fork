@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "skylands:lavic_burnt_log"
+    },
+    {
+      "item": "skylands:lavic_burnt_log"
+    },
+    {
+      "item": "skylands:lavic_burnt_log"
+    },
+    {
+      "item": "skylands:lavic_burnt_log"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "skylands:lavic_wood"
+  }
+}

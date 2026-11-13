@@ -1,0 +1,39 @@
+{
+  "feature": "skylands:dfis_0",
+  "placement": [
+    {
+      "type": "skylands:density_repeat",
+      "density_class": "small"
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 750
+    },
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 2
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 220
+        },
+        "max_inclusive": {
+          "below_top": 150
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

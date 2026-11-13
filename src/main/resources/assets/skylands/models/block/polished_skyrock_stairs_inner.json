@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "skylands:block/polished_skyrock",
+    "top": "skylands:block/polished_skyrock",
+    "side": "skylands:block/polished_skyrock"
+  },
+  "render_type": "solid"
+}

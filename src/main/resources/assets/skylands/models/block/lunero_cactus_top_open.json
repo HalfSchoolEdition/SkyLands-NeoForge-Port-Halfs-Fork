@@ -1,0 +1,12 @@
+{
+  "parent": "skylands:block/cactus_top_open",
+  "textures": {
+    "7": "skylands:block/cactus_bulb_cold",
+    "4": "skylands:block/sky_cactus_lunero",
+    "5": "skylands:block/sky_cactus_lunero_top",
+    "6": "skylands:block/cactus_lunero_extern",
+    "8": "skylands:block/cactus_lunero_leaf_center",
+    "9": "skylands:block/cactus_lunero_leaf",
+    "particle": "skylands:block/sky_cactus_lunero"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "skylands:block/celestium_spike",
+    "particle": "skylands:block/celestium_spike"
+  },
+  "render_type": "cutout"
+}

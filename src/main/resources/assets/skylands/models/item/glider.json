@@ -1,0 +1,367 @@
+{
+  "parent": "skylands:custom/hangglider",
+  "textures": {
+    "4": "skylands:block/glider_tex",
+    "particle": "skylands:item/glider"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "skylands:glider_canvas": 1
+      },
+      "model": "skylands:item/gliders/test"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 2
+      },
+      "model": "skylands:item/gliders/smile"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 3
+      },
+      "model": "skylands:item/gliders/corner"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 4
+      },
+      "model": "skylands:item/gliders/nostalgic"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 5
+      },
+      "model": "skylands:item/gliders/crafting"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 6
+      },
+      "model": "skylands:item/gliders/creeper"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 7
+      },
+      "model": "skylands:item/gliders/cloud"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 8
+      },
+      "model": "skylands:item/gliders/cold"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 9
+      },
+      "model": "skylands:item/gliders/glaciated"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 10
+      },
+      "model": "skylands:item/gliders/mojang"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 11
+      },
+      "model": "skylands:item/gliders/riptide"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 12
+      },
+      "model": "skylands:item/gliders/fox"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 13
+      },
+      "model": "skylands:item/gliders/rusted"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 14
+      },
+      "model": "skylands:item/gliders/lavic"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 15
+      },
+      "model": "skylands:item/gliders/lightly_weathered_cut_copper_stairs"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 16
+      },
+      "model": "skylands:item/gliders/night"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 17
+      },
+      "model": "skylands:item/gliders/day"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 18
+      },
+      "model": "skylands:item/gliders/geometry"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 19
+      },
+      "model": "skylands:item/gliders/mechanic"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 20
+      },
+      "model": "skylands:item/gliders/eye"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 21
+      },
+      "model": "skylands:item/gliders/rune"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 22
+      },
+      "model": "skylands:item/gliders/islands"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 23
+      },
+      "model": "skylands:item/gliders/furnace"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 24
+      },
+      "model": "skylands:item/gliders/arid"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 25
+      },
+      "model": "skylands:item/gliders/pyramid"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 26
+      },
+      "model": "skylands:item/gliders/naissancee"
+    },
+    {
+      "predicate": {
+        "skylands:glider_canvas": 27
+      },
+      "model": "skylands:item/gliders/copper"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 0
+      },
+      "model": "skylands:item/gliders/carried/canvas_0"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 1
+      },
+      "model": "skylands:item/gliders/carried/canvas_1"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 2
+      },
+      "model": "skylands:item/gliders/carried/canvas_2"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 3
+      },
+      "model": "skylands:item/gliders/carried/canvas_3"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 4
+      },
+      "model": "skylands:item/gliders/carried/canvas_4"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 5
+      },
+      "model": "skylands:item/gliders/carried/canvas_5"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 6
+      },
+      "model": "skylands:item/gliders/carried/canvas_6"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 7
+      },
+      "model": "skylands:item/gliders/carried/canvas_7"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 8
+      },
+      "model": "skylands:item/gliders/carried/canvas_8"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 9
+      },
+      "model": "skylands:item/gliders/carried/canvas_9"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 10
+      },
+      "model": "skylands:item/gliders/carried/canvas_10"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 11
+      },
+      "model": "skylands:item/gliders/carried/canvas_11"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 12
+      },
+      "model": "skylands:item/gliders/carried/canvas_12"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 13
+      },
+      "model": "skylands:item/gliders/carried/canvas_13"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 14
+      },
+      "model": "skylands:item/gliders/carried/canvas_14"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 15
+      },
+      "model": "skylands:item/gliders/carried/canvas_15"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 16
+      },
+      "model": "skylands:item/gliders/carried/canvas_16"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 17
+      },
+      "model": "skylands:item/gliders/carried/canvas_17"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 18
+      },
+      "model": "skylands:item/gliders/carried/canvas_18"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 19
+      },
+      "model": "skylands:item/gliders/carried/canvas_19"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 20
+      },
+      "model": "skylands:item/gliders/carried/canvas_20"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 21
+      },
+      "model": "skylands:item/gliders/carried/canvas_21"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 22
+      },
+      "model": "skylands:item/gliders/carried/canvas_22"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 23
+      },
+      "model": "skylands:item/gliders/carried/canvas_23"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 24
+      },
+      "model": "skylands:item/gliders/carried/canvas_24"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 25
+      },
+      "model": "skylands:item/gliders/carried/canvas_25"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 26
+      },
+      "model": "skylands:item/gliders/carried/canvas_26"
+    },
+    {
+      "predicate": {
+        "skylands:glider_grounded": 1,
+        "skylands:glider_canvas": 27
+      },
+      "model": "skylands:item/gliders/carried/canvas_27"
+    }
+  ]
+}

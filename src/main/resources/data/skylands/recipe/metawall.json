@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:lavic_skymetal"
+    }
+  },
+  "result": {
+    "count": 6,
+    "id": "skylands:lavic_skymetal_walls"
+  }
+}

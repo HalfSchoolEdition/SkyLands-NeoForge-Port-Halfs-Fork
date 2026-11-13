@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "skylands:floating_cherry_grove_islands",
+  "features": [
+    "skylands:cherry_tree"
+  ],
+  "step": "vegetal_decoration"
+}

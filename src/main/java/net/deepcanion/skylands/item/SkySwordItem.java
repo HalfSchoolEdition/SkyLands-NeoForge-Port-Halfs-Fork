@@ -9,6 +9,6 @@ public final class SkySwordItem extends SwordItem {
     }
     @Override public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> lines, TooltipFlag flag) {
         super.appendHoverText(stack, context, lines, flag);
-        lines.add(Component.translatable("item.flying_stuff.sword_of_the_sky.tooltip"));
+        lines.add(Component.translatable("item.skylands.sword_of_the_sky.tooltip"));
     }
 }

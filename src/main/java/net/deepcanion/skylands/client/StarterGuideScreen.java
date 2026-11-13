@@ -21,9 +21,9 @@ public final class StarterGuideScreen extends AbstractContainerScreen<StarterGui
     }
     @Override protected void init() {
         super.init();
-        previous = addRenderableWidget(Button.builder(Component.translatable("guide.flying_stuff.previous"), button -> turn(-1))
+        previous = addRenderableWidget(Button.builder(Component.translatable("guide.skylands.previous"), button -> turn(-1))
                 .bounds(leftPos - 24, topPos + 174, 20, 20).build());
-        next = addRenderableWidget(Button.builder(Component.translatable("guide.flying_stuff.next"), button -> turn(1))
+        next = addRenderableWidget(Button.builder(Component.translatable("guide.skylands.next"), button -> turn(1))
                 .bounds(leftPos + imageWidth + 4, topPos + 174, 20, 20).build());
         updateButtons();
     }
@@ -34,7 +34,7 @@ public final class StarterGuideScreen extends AbstractContainerScreen<StarterGui
     }
     @Override protected void renderLabels(GuiGraphics graphics, int mouseX, int mouseY) {
         if (page == 0) return;
-        String key = "guide.flying_stuff." + PAGES[page - 1];
+        String key = "guide.skylands." + PAGES[page - 1];
         graphics.drawWordWrap(font, Component.translatable(key + ".title"), 9, 9, 110, 0x153b21);
         graphics.drawWordWrap(font, Component.translatable(key + ".body"), 9, 36, 110, 0x153b21);
         graphics.drawCenteredString(font, Component.literal(page + " / " + PAGES.length), imageWidth / 2, 180, 0x153b21);

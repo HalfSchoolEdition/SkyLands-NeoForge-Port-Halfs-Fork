@@ -262,17 +262,17 @@ public class GlaciatedDragonEntity extends Monster implements RangedAttackMob, G
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return net.minecraft.core.registries.BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("flying_stuff:ice_dragon_flap"));
+		return net.minecraft.core.registries.BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("skylands:ice_dragon_flap"));
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return net.minecraft.core.registries.BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("flying_stuff:dragon_attack"));
+		return net.minecraft.core.registries.BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("skylands:dragon_attack"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return net.minecraft.core.registries.BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("flying_stuff:dragon_final_kill"));
+		return net.minecraft.core.registries.BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("skylands:dragon_final_kill"));
 	}
 
 	@Override

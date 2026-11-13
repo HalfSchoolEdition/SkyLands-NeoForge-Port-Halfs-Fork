@@ -19,7 +19,7 @@ public final class IceStaffItem extends Item {
     @Override public int getUseDuration(ItemStack stack, LivingEntity user) { return 72000; }
     @Override public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> lines, TooltipFlag flag) {
         super.appendHoverText(stack, context, lines, flag);
-        lines.add(Component.translatable("item.flying_stuff.ice_staff.tooltip"));
+        lines.add(Component.translatable("item.skylands.ice_staff.tooltip"));
     }
     @Override public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack stack = player.getItemInHand(hand);

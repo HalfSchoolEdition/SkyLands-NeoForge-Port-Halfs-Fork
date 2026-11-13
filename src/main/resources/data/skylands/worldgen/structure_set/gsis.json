@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "skylands:arid_great_sky_island",
+      "weight": 3
+    }
+  ],
+  "placement": {
+    "type": "skylands:density_spread",
+    "salt": 1361998249,
+    "spacing": 19,
+    "separation": 11,
+    "density_class": "large"
+  }
+}

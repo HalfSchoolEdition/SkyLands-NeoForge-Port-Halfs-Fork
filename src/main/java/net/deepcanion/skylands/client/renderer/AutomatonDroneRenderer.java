@@ -15,6 +15,6 @@ public class AutomatonDroneRenderer extends MobRenderer<AutomatonDroneEntity, Mo
 
 	@Override
 	public ResourceLocation getTextureLocation(AutomatonDroneEntity entity) {
-		return ResourceLocation.parse("flying_stuff:textures/entities/drone_automaton.png");
+		return ResourceLocation.parse("skylands:textures/entities/drone_automaton.png");
 	}
 }

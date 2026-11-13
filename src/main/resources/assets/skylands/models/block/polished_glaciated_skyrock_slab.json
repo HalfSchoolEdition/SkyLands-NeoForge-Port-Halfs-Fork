@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "skylands:block/polished_glaciated_skyrock",
+    "top": "skylands:block/polished_glaciated_skyrock",
+    "side": "skylands:block/polished_glaciated_skyrock"
+  },
+  "render_type": "solid"
+}

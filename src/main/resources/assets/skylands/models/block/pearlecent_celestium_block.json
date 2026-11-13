@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/pearlecent_celestium_block",
+    "up": "skylands:block/pearlecent_celestium_block",
+    "north": "skylands:block/pearlecent_celestium_block",
+    "east": "skylands:block/pearlecent_celestium_block",
+    "south": "skylands:block/pearlecent_celestium_block",
+    "west": "skylands:block/pearlecent_celestium_block",
+    "particle": "skylands:block/pearlecent_celestium_block"
+  },
+  "render_type": "solid"
+}

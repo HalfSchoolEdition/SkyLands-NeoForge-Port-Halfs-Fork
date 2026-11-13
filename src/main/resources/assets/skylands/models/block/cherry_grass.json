@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "skylands:block/cherryblossomgrass",
+    "particle": "skylands:block/cherryblossomgrass"
+  },
+  "render_type": "cutout"
+}

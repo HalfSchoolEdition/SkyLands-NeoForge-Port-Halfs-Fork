@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "skylands:celestium"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "skylands:celestium"
+    },
+    {
+      "item": "skylands:celestium"
+    },
+    {
+      "item": "skylands:broken_sky_automaton_sword"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "skylands:automaton_sword"
+  }
+}

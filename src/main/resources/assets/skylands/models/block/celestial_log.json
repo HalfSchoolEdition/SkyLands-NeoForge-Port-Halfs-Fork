@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/celestial_log_top",
+    "up": "skylands:block/celestial_log_top",
+    "north": "skylands:block/celestial_log_side",
+    "east": "skylands:block/celestial_log_side",
+    "south": "skylands:block/celestial_log_side",
+    "west": "skylands:block/celestial_log_side",
+    "particle": "skylands:block/celestial_log_top"
+  },
+  "render_type": "solid"
+}

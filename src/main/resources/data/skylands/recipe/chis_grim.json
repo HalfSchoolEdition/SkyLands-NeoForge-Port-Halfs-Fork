@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:polished_grimstone_slab"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "skylands:chiseled_grimstone"
+  }
+}

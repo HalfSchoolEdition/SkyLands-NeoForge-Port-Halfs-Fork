@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/golden_log",
+    "up": "skylands:block/golden_log",
+    "north": "skylands:block/golden_log",
+    "east": "skylands:block/golden_log",
+    "south": "skylands:block/golden_log",
+    "west": "skylands:block/golden_log",
+    "particle": "skylands:block/golden_log"
+  },
+  "render_type": "solid"
+}

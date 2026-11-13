@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#skylands:procedural_terrain_hosts",
+  "features": [
+    "skylands:procedural_overworld_terrain"
+  ],
+  "step": "top_layer_modification"
+}

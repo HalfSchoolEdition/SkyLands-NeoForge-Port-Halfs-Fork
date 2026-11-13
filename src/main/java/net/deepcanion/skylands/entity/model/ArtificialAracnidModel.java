@@ -14,17 +14,17 @@ import net.deepcanion.skylands.entity.ArtificialAracnidEntity;
 public class ArtificialAracnidModel extends GeoModel<ArtificialAracnidEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(ArtificialAracnidEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "animations/artificialaracnid.animation.json");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "animations/artificialaracnid.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(ArtificialAracnidEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "geo/artificialaracnid.geo.json");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "geo/artificialaracnid.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(ArtificialAracnidEntity entity) {
-		return ResourceLocation.fromNamespaceAndPath("flying_stuff", "textures/entities/" + entity.getTexture() + ".png");
+		return ResourceLocation.fromNamespaceAndPath("skylands", "textures/entities/" + entity.getTexture() + ".png");
 	}
 
 	@Override

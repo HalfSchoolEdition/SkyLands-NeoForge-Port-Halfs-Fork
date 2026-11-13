@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/glaciated_planks",
+    "up": "skylands:block/glaciated_planks",
+    "north": "skylands:block/glaciated_planks",
+    "east": "skylands:block/glaciated_planks",
+    "south": "skylands:block/glaciated_planks",
+    "west": "skylands:block/glaciated_planks",
+    "particle": "skylands:block/glaciated_planks"
+  },
+  "render_type": "solid"
+}

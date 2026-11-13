@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "skylands:block/sky_sandstone_slab"
+    },
+    "type=top": {
+      "model": "skylands:block/sky_sandstone_slab_top"
+    },
+    "type=double": {
+      "model": "skylands:block/sky_sandstone_slab_full"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "skylands:custom/skylauncher",
+  "textures": {
+    "all": "skylands:block/jumper_01",
+    "particle": "skylands:block/jumper_01",
+    "0": "skylands:block/jumper_01",
+    "missing": "skylands:block/jumper_01"
+  },
+  "render_type": "solid"
+}

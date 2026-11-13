@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/silk_block_top",
+    "up": "skylands:block/silk_block_top",
+    "north": "skylands:block/silk_block_side",
+    "east": "skylands:block/silk_block_side",
+    "south": "skylands:block/silk_block_side",
+    "west": "skylands:block/silk_block_side",
+    "particle": "skylands:block/silk_block_top"
+  },
+  "render_type": "solid"
+}

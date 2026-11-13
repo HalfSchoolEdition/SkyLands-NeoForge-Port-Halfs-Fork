@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "skylands:block/deactivated_storm_block"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "skylands:block/glaciated_fern"
+    },
+    "half=lower": {
+      "model": "skylands:block/glaciated_fern_bottom"
+    }
+  }
+}

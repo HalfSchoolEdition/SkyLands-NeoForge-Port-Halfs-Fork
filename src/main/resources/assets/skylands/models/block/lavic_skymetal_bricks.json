@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/skymetal_tiles",
+    "up": "skylands:block/skymetal_tiles",
+    "north": "skylands:block/skymetal_tiles",
+    "east": "skylands:block/skymetal_tiles",
+    "south": "skylands:block/skymetal_tiles",
+    "west": "skylands:block/skymetal_tiles",
+    "particle": "skylands:block/skymetal_tiles"
+  },
+  "render_type": "solid"
+}

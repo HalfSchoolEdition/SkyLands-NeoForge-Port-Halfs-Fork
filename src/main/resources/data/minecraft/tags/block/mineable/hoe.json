@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "flying_stuff:metallic_silk_block"
+    "skylands:metallic_silk_block",
+    "skylands:golden_leaves",
+    "skylands:glaciated_leaves",
+    "skylands:lavic_burnt_leaves",
+    "skylands:celestial_tree_leaves"
   ]
 }

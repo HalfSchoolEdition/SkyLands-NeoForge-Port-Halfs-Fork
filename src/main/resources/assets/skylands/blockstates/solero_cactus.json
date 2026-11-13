@@ -1,0 +1,94 @@
+{
+  "variants": {
+    "part=trunk,facing=north,open=true": {
+      "model": "skylands:block/solero_cactus_trunk"
+    },
+    "part=trunk,facing=north,open=false": {
+      "model": "skylands:block/solero_cactus_trunk"
+    },
+    "part=trunk,facing=east,open=true": {
+      "model": "skylands:block/solero_cactus_trunk",
+      "y": 90
+    },
+    "part=trunk,facing=east,open=false": {
+      "model": "skylands:block/solero_cactus_trunk",
+      "y": 90
+    },
+    "part=trunk,facing=south,open=true": {
+      "model": "skylands:block/solero_cactus_trunk",
+      "y": 180
+    },
+    "part=trunk,facing=south,open=false": {
+      "model": "skylands:block/solero_cactus_trunk",
+      "y": 180
+    },
+    "part=trunk,facing=west,open=true": {
+      "model": "skylands:block/solero_cactus_trunk",
+      "y": 270
+    },
+    "part=trunk,facing=west,open=false": {
+      "model": "skylands:block/solero_cactus_trunk",
+      "y": 270
+    },
+    "part=branch,facing=north,open=true": {
+      "model": "skylands:block/solero_cactus_branch"
+    },
+    "part=branch,facing=north,open=false": {
+      "model": "skylands:block/solero_cactus_branch"
+    },
+    "part=branch,facing=east,open=true": {
+      "model": "skylands:block/solero_cactus_branch",
+      "y": 90
+    },
+    "part=branch,facing=east,open=false": {
+      "model": "skylands:block/solero_cactus_branch",
+      "y": 90
+    },
+    "part=branch,facing=south,open=true": {
+      "model": "skylands:block/solero_cactus_branch",
+      "y": 180
+    },
+    "part=branch,facing=south,open=false": {
+      "model": "skylands:block/solero_cactus_branch",
+      "y": 180
+    },
+    "part=branch,facing=west,open=true": {
+      "model": "skylands:block/solero_cactus_branch",
+      "y": 270
+    },
+    "part=branch,facing=west,open=false": {
+      "model": "skylands:block/solero_cactus_branch",
+      "y": 270
+    },
+    "part=top,facing=north,open=true": {
+      "model": "skylands:block/solero_cactus_top_open"
+    },
+    "part=top,facing=north,open=false": {
+      "model": "skylands:block/solero_cactus_top_closed"
+    },
+    "part=top,facing=east,open=true": {
+      "model": "skylands:block/solero_cactus_top_open",
+      "y": 90
+    },
+    "part=top,facing=east,open=false": {
+      "model": "skylands:block/solero_cactus_top_closed",
+      "y": 90
+    },
+    "part=top,facing=south,open=true": {
+      "model": "skylands:block/solero_cactus_top_open",
+      "y": 180
+    },
+    "part=top,facing=south,open=false": {
+      "model": "skylands:block/solero_cactus_top_closed",
+      "y": 180
+    },
+    "part=top,facing=west,open=true": {
+      "model": "skylands:block/solero_cactus_top_open",
+      "y": 270
+    },
+    "part=top,facing=west,open=false": {
+      "model": "skylands:block/solero_cactus_top_closed",
+      "y": 270
+    }
+  }
+}

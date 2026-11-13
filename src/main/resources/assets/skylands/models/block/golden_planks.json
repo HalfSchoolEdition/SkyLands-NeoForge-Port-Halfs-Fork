@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/golden_planks",
+    "up": "skylands:block/golden_planks",
+    "north": "skylands:block/golden_planks",
+    "east": "skylands:block/golden_planks",
+    "south": "skylands:block/golden_planks",
+    "west": "skylands:block/golden_planks",
+    "particle": "skylands:block/golden_planks"
+  },
+  "render_type": "solid"
+}

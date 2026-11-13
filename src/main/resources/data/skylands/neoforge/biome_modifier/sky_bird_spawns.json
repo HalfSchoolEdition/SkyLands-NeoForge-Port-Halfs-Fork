@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "skylands:floating_golden_islands",
+  "spawners": {
+    "type": "skylands:golden_tuc_tuc",
+    "weight": 32,
+    "minCount": 1,
+    "maxCount": 6
+  }
+}

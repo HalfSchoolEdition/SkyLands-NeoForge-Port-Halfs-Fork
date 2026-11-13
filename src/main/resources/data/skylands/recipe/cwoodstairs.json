@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:celestial_planks"
+    }
+  },
+  "result": {
+    "count": 4,
+    "id": "skylands:celestial_stairs"
+  }
+}

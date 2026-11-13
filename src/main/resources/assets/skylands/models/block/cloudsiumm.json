@@ -1,0 +1,13 @@
+{
+  "parent": "skylands:custom/cumulunimbus_cloud",
+  "textures": {
+    "all": "skylands:block/cloud_big1",
+    "particle": "skylands:block/cloud_big1",
+    "1": "skylands:block/cloud_base",
+    "2": "skylands:block/cloud_realbig",
+    "3": "skylands:block/cloud_big1",
+    "4": "skylands:block/cloud_big0",
+    "5": "skylands:block/base_big"
+  },
+  "render_type": "cutout"
+}

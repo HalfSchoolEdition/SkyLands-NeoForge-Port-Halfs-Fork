@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "skylands:block/polished_skyrock",
+    "up": "skylands:block/polished_skyrock",
+    "north": "skylands:block/column_base",
+    "east": "skylands:block/column_base",
+    "south": "skylands:block/column_base",
+    "west": "skylands:block/column_base",
+    "particle": "skylands:block/polished_skyrock"
+  },
+  "render_type": "solid"
+}

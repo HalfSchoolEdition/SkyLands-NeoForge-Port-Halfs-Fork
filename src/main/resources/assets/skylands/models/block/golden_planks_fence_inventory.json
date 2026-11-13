@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "skylands:block/golden_planks",
+    "particle": "skylands:block/golden_planks"
+  },
+  "render_type": "solid"
+}
