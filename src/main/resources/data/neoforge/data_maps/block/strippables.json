@@ -1,0 +1,22 @@
+{
+  "values": {
+    "skylands:golden_log": {
+      "stripped_block": "skylands:stripped_golden_log"
+    },
+    "skylands:golden_wood": {
+      "stripped_block": "skylands:stripped_golden_wood"
+    },
+    "skylands:glaciated_log": {
+      "stripped_block": "skylands:stripped_glaciated_log"
+    },
+    "skylands:glaciated_wood": {
+      "stripped_block": "skylands:stripped_glaciated_wood"
+    },
+    "skylands:lavic_burnt_log": {
+      "stripped_block": "skylands:stripped_lavic_log"
+    },
+    "skylands:lavic_wood": {
+      "stripped_block": "skylands:stripped_lavic_wood"
+    }
+  }
+}

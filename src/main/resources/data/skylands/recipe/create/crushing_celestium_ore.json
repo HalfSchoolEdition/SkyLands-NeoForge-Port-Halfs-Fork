@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "skylands:celestium_ore"
+    }
+  ],
+  "processing_time": 350,
+  "results": [
+    {
+      "id": "skylands:celestium"
+    },
+    {
+      "id": "skylands:celestium",
+      "chance": 0.35
+    },
+    {
+      "id": "create:experience_nugget",
+      "chance": 0.75
+    },
+    {
+      "id": "skylands:cobbled_skyrock",
+      "chance": 0.125
+    }
+  ]
+}

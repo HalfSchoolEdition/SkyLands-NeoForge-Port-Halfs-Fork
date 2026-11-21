@@ -5,10 +5,10 @@ plugins {
 
 version = mod_version
 group = mod_group_id
-base { archivesName = "SkyLands-UnofficialPort-NeoForge-${minecraft_version}" }
+base { archivesName = "SkyLands-Reimagined-NeoForge-${minecraft_version}" }
 // The requested release filename is used by both build/libs and dist.
 tasks.named('jar', Jar).configure {
-    archiveFileName = "SkyLands-UnofficialPort-NeoForge-${minecraft_version}-v${mod_version}.jar"
+    archiveFileName = "SkyLands-Reimagined-NeoForge-${minecraft_version}-v${mod_version}.jar"
 }
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 

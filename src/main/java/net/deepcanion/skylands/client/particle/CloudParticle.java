@@ -17,18 +17,27 @@ import net.minecraft.util.Mth;
 @OnlyIn(Dist.CLIENT)
 public class CloudParticle extends TextureSheetParticle {
 	public static CloudParticleProvider provider(SpriteSet spriteSet) {
-		return new CloudParticleProvider(spriteSet);
+		return new CloudParticleProvider(spriteSet, 1.0f);
+	}
+
+	/** Compatibility alias: identical appearance to the ordinary cloud particle. */
+	public static CloudParticleProvider sourceProvider(SpriteSet spriteSet) {
+		return new CloudParticleProvider(spriteSet, 1.0f);
 	}
 
 	public static class CloudParticleProvider implements ParticleProvider<SimpleParticleType> {
 		private final SpriteSet spriteSet;
+		private final float sizeMultiplier;
 
-		public CloudParticleProvider(SpriteSet spriteSet) {
+		public CloudParticleProvider(SpriteSet spriteSet, float sizeMultiplier) {
 			this.spriteSet = spriteSet;
+			this.sizeMultiplier = sizeMultiplier;
 		}
 
 		public Particle createParticle(SimpleParticleType typeIn, ClientLevel worldIn, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
-			return new CloudParticle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
+			CloudParticle particle = new CloudParticle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
+			particle.quadSize *= sizeMultiplier;
+			return particle;
 		}
 	}
 

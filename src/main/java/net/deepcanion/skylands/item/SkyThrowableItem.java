@@ -5,7 +5,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import java.util.function.BiConsumer;
-public final class SkyThrowableItem extends Item {
+public class SkyThrowableItem extends Item {
     private final BiConsumer<Level, LivingEntity> shoot;
     private final int cooldown;
     public SkyThrowableItem(Properties properties, int cooldown, BiConsumer<Level, LivingEntity> shoot) { super(properties); this.cooldown = cooldown; this.shoot = shoot; }

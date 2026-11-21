@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "skylands:cobbled_glaciated_skyrock"
+    }
+  ],
+  "processing_time": 250,
+  "results": [
+    {
+      "id": "minecraft:gravel"
+    },
+    {
+      "id": "minecraft:snowball",
+      "chance": 0.15
+    }
+  ]
+}

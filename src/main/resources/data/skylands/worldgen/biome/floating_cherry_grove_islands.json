@@ -1,7 +1,7 @@
 {
   "has_precipitation": false,
-  "temperature": 1.2,
-  "downfall": 0,
+  "temperature": 0.5,
+  "downfall": 0.8,
   "effects": {
     "ambient_sound": "skylands:sky_wind",
     "particle": {

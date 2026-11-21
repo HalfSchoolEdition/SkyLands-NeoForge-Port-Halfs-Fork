@@ -32,7 +32,7 @@ public final class SkyTerrainPalette {
             case "glaciated" -> new SkyTerrainPalette("glaciated_grass_block","glaciated_skyrock","glaciated_skyrock","short_glaciated_grass","glaciated_fern","pearlecent_celestium_spike","pearlecent_celestium_ore");
             case "arid" -> new SkyTerrainPalette("arid_grass_block","sky_sandstone","sky_sandstone","arid_grass","small_arid_bush","inky_celestium_spike","inky_celestium_ore");
             case "lavic" -> new SkyTerrainPalette("lavic_skymetal_grass","lavic_skymetal","lavic_skymetal","short_lavic_grass","metallic_shorter_grass","pale_celestium_spike","pale_celestium_ore");
-            case "swamp" -> new SkyTerrainPalette("swamp_grass_block","skyrock","skyrock","swamp_grass","swamp_bush","pearlecent_celestium_spike","pearlecent_celestium_ore");
+            case "swamp" -> new SkyTerrainPalette("swamp_grass_block","glaciated_skyrock","glaciated_skyrock","swamp_grass","swamp_bush","pearlecent_celestium_spike","pearlecent_celestium_ore");
             case "cherry" -> new SkyTerrainPalette("cherry_grass_block","skyrock","skyrock","cherry_short_grass","cherry_grass","celestium_spike","celestium_ore");
             default -> throw new IllegalArgumentException("Unknown SkyLands island theme: " + theme);
         };

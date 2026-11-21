@@ -5,7 +5,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 
 /** Shared localized tooltips and reusable crafting ingredients. */
-public final class MaterialItem extends Item {
+public class MaterialItem extends Item {
     private final String tooltipKey;
     private final boolean reusable;
     public MaterialItem(Properties properties, String tooltipKey, boolean reusable) {

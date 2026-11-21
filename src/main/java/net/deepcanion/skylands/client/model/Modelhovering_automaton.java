@@ -33,11 +33,11 @@ public class Modelhovering_automaton<T extends Entity> extends EntityModel<T> {
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main", CubeListBuilder.create(), PartPose.offset(0.0F, 24.0F, 0.0F));
 		PartDefinition cube_r1 = bb_main.addOrReplaceChild("cube_r1",
-				CubeListBuilder.create().texOffs(36, 26).addBox(-8.0F, -16.0F, -1.0F, 19.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-13.0F, -15.0F, 1.0F, 12.0F, 1.0F, 12.0F, new CubeDeformation(0.0F)).texOffs(0, 13)
+				CubeListBuilder.create().texOffs(36, 26).addBox(-8.0F, -16.0F, -0.875F, 19.0F, 3.0F, 1.75F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-13.0F, -15.0F, 1.0F, 12.0F, 1.0F, 12.0F, new CubeDeformation(0.0F)).texOffs(0, 13)
 						.addBox(-13.0F, -15.0F, -13.0F, 12.0F, 1.0F, 12.0F, new CubeDeformation(0.0F)).texOffs(0, 26).addBox(1.0F, -15.0F, -13.0F, 12.0F, 1.0F, 12.0F, new CubeDeformation(0.0F)).texOffs(36, 1)
-						.addBox(1.0F, -15.0F, 1.0F, 12.0F, 1.0F, 12.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(4.0F, -11.0F, -1.0F, 3.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 6)
-						.addBox(-3.0F, -11.0F, -1.0F, 3.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 39).addBox(-4.0F, -7.0F, -2.0F, 12.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(38, 31)
-						.addBox(5.0F, -14.0F, -5.0F, 5.0F, 6.0F, 10.0F, new CubeDeformation(0.0F)).texOffs(36, 14).addBox(-8.0F, -13.0F, -3.0F, 13.0F, 4.0F, 6.0F, new CubeDeformation(0.0F)),
+						.addBox(1.0F, -15.0F, 1.0F, 12.0F, 1.0F, 12.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(4.0F, -11.125F, -1.0F, 3.0F, 4.25F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 6)
+						.addBox(-3.0F, -11.125F, -1.0F, 3.0F, 4.25F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 39).addBox(-4.0F, -7.0F, -2.0F, 12.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(38, 31)
+						.addBox(4.875F, -14.125F, -5.0F, 5.125F, 6.125F, 10.0F, new CubeDeformation(0.0F)).texOffs(36, 14).addBox(-8.125F, -13.125F, -3.0F, 13.125F, 4.125F, 6.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 1.5708F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 128, 128);
 	}

@@ -18,5 +18,13 @@
         0.375
       ]
     }
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "skylands:storm_unlocked": 1
+      },
+      "model": "skylands:item/storm_block_unlocked"
+    }
+  ]
 }

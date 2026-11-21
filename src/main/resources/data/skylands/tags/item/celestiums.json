@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "skylands:celestium",
+    "skylands:pale_celestium",
+    "skylands:inky_celestium",
+    "skylands:pearlecent_celestium"
+  ]
+}

@@ -8,7 +8,7 @@
   "block.skylands.shrine_wall_slab": "Shrine Wall Staircase",
   "block.skylands.celestial_fence": "GoldenLeaves Planks Fence",
   "block.skylands.lavic_skymetal_tiles": "Lavic Skyrock Bricks",
-  "block.skylands.short_lavic_grass": "Short Lavic Grass",
+  "block.skylands.short_lavic_grass": "Lavic Grass",
   "item.skylands.logo_glider_design": "Design di Aliante",
   "block.skylands.golden_planks_slab": "Mezzo Blocco di Assi di Legnoro",
   "block.skylands.glaciated_skyrock_pillar": "Skyrock Ghiacciata Levigata",
@@ -387,5 +387,13 @@
   "item.skylands.frost_berries": "Frost Berries",
   "item.skylands.cooling_potion": "Cooling Potion",
   "effect.skylands.cooling": "Cooling",
-  "effect.skylands.too_cold": "Too Cold"
+  "effect.skylands.too_cold": "Too Cold",
+  "item.skylands.cloud_staff": "Cloud Staff",
+  "item.skylands.cloud_staff.tooltip": "Used to place cloud particle sources. Hold the staff to reveal their source blocks.",
+  "skylands.configuration.temperatureIntegration": "Integrazione della temperatura esterna",
+  "skylands.configuration.coldSweatIntegration": "Attiva integrazione Cold Sweat",
+  "skylands.configuration.lsoIntegration": "Attiva integrazione Legendary Survival Overhaul",
+  "skylands.configuration.scorchfulIntegration": "Attiva integrazione Scorchful (calore)",
+  "skylands.configuration.frostifulIntegration": "Attiva integrazione Frostiful (freddo)",
+  "skylands.configuration.temperatureHelmetsEnabled": "Gli elmi termici offrono protezione"
 }

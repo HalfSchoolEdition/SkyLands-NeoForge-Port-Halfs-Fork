@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "skylands:sky_sandstone_bricks"
+  },
+  "result": {
+    "id": "skylands:sky_sandstone_brick_wall",
+    "count": 1
+  }
+}

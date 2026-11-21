@@ -97,6 +97,7 @@
     "skylands:sky_sandstone_stairs",
     "skylands:sky_sandstone_slab",
     "skylands:sky_sandstone_wall",
+    "skylands:sky_sandstone_brick_wall",
     "skylands:grimstone_mycelium",
     "skylands:celestine_block",
     "skylands:sulfur_block",
@@ -144,6 +145,7 @@
     "skylands:lavic_reward_dispenser",
     "skylands:arid_reward_dispenser",
     "skylands:mechanical_geyser",
-    "skylands:celestium_anvil"
+    "skylands:celestium_anvil",
+    "skylands:storm_block"
   ]
 }

@@ -20,9 +20,10 @@ import net.neoforged.neoforge.event.tick.PlayerTickEvent;
  */
 public final class SkyTemperatures {
     // Minecraft day clock: 0 dawn, 6000 noon, 12000 dusk, 18000 midnight.
-    // Neutral periods around dawn and dusk make timing a viable survival option.
-    private static final int DAY_START = 2000, DAY_END = 10500;
-    private static final int NIGHT_START = 14000, NIGHT_END = 22500;
+    // Include /time set day (1000) and /time set night (13000), leaving brief
+    // twilight grace before dawn and after sunset.
+    private static final int DAY_START = 0, DAY_END = 12000;
+    private static final int NIGHT_START = 13000, NIGHT_END = 23000;
     public static final int HEAT_THRESHOLD = 280; // ~14 seconds to full overheating
     private static final int HEAT_DAMAGE_GRACE = 40; // 2 seconds AFTER full exposure
     private static final int HEAT_DAMAGE_INTERVAL = 54; // one hit every 2.7 seconds (~1.5x faster than 4s)
@@ -48,14 +49,20 @@ public final class SkyTemperatures {
 
     public static void tick(PlayerTickEvent.Post event) {
         if (!(event.getEntity() instanceof ServerPlayer player)) return;
+        // Even creative players need authoritative tooltip/config updates.
+        TemperatureSettingsPayload.syncIfChanged(player);
         if (player.isCreative() || player.isSpectator()) {
             player.removeEffect(ModEffects.TOO_HOT);
             player.removeEffect(ModEffects.TOO_COLD);
             EXPOSURE.remove(player);
             return;
         }
-        TemperatureSettingsPayload.syncIfChanged(player);
         Exposure exposure = EXPOSURE.computeIfAbsent(player, unused -> new Exposure());
+        boolean externalHeat = TemperatureCompatibility.externalHeat();
+        boolean externalCold = TemperatureCompatibility.externalCold();
+        // Stop obsolete HUD effects when another temperature system takes over.
+        if (externalHeat) player.removeEffect(ModEffects.TOO_HOT);
+        if (externalCold) player.removeEffect(ModEffects.TOO_COLD);
         if (player.tickCount % 20 == 0 || player.tickCount <= 1) {
             boolean arid = player.level().getBiome(player.blockPosition()).is(SkyBiomes.ARID);
             boolean lavic = player.level().getBiome(player.blockPosition()).is(SkyBiomes.LAVIC);
@@ -64,7 +71,8 @@ public final class SkyTemperatures {
             exposure.cold = TemperatureHazards.cold(player.level(), player.blockPosition(), time);
             // Only SkyLands cacti shelter players in the original Arid/Lavic
             // biomes; optional vanilla-dimension hazards don't scan for them.
-            exposure.sheltered = (arid || lavic) && (exposure.hot || exposure.cold)
+            exposure.sheltered = (arid || lavic)
+                    && ((!externalHeat && exposure.hot) || (!externalCold && exposure.cold))
                     && nearProtectiveCactus(player.level(), player.blockPosition(),
                             exposure.cold, time);
             if (arid && exposure.cold && player.level() instanceof ServerLevel level)
@@ -72,7 +80,7 @@ public final class SkyTemperatures {
                         player.getZ(), 3, 2.4, 1.0, 2.4, 0.003);
         }
         boolean inGlaciated = player.level().getBiome(player.blockPosition()).is(SkyBiomes.GLACIATED);
-        if (player.hasEffect(ModEffects.TOO_COLD)
+        if (!externalCold && player.hasEffect(ModEffects.TOO_COLD)
                 && ((inGlaciated && GameplayConfig.SPEC.isLoaded() && !GameplayConfig.GLACIATED_TOO_COLD.get())
                     || (!inGlaciated && (!exposure.cold || exposure.sheltered))
                     || player.hasEffect(ModEffects.WARMTH)
@@ -80,9 +88,9 @@ public final class SkyTemperatures {
                     || player.isInPowderSnow)) {
             player.removeEffect(ModEffects.TOO_COLD);
         }
-        boolean hot = exposure.hot && !exposure.sheltered && !player.hasEffect(ModEffects.COOLING)
+        boolean hot = !externalHeat && exposure.hot && !exposure.sheltered && !player.hasEffect(ModEffects.COOLING)
                 && !TemperatureEquipment.preventsOverheating(player);
-        boolean cold = exposure.cold && !exposure.sheltered
+        boolean cold = !externalCold && exposure.cold && !exposure.sheltered
                 && !TemperatureEquipment.preventsFreezing(player);
         if (cold && !player.isInPowderSnow) {
             VanillaFreezing.tickBiomeCold(player); // gradual ~14s freezing + 2s damage grace

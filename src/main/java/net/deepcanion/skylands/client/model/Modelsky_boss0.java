@@ -43,7 +43,7 @@ public class Modelsky_boss0<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition left_leg = partdefinition.addOrReplaceChild("left_leg",
-				CubeListBuilder.create().texOffs(67, 75).addBox(2.0F, 21.0F, -8.0F, 9.0F, 3.0F, 13.0F, new CubeDeformation(0.0F)).texOffs(104, 116).addBox(2.0F, 14.0F, -3.0F, 7.0F, 8.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(52, 107)
+				CubeListBuilder.create().texOffs(67, 75).addBox(2.0F, 21.0F, -8.0F, 9.0F, 3.0F, 13.0F, new CubeDeformation(0.125F)).texOffs(104, 116).addBox(2.0F, 14.0F, -3.0F, 7.0F, 8.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(52, 107)
 						.addBox(1.0F, -3.0F, -3.0F, 8.0F, 9.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(26, 121).addBox(4.0F, 3.0F, -2.0F, 4.0F, 11.0F, 4.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 0.0F, 0.0F));
 		PartDefinition left_arm = partdefinition
@@ -57,7 +57,7 @@ public class Modelsky_boss0<T extends Entity> extends EntityModel<T> {
 								.texOffs(110, 44).addBox(-10.0F, 9.0F, -3.0F, 6.0F, 11.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(76, 32).addBox(-12.0F, 28.0F, -5.0F, 10.0F, 8.0F, 10.0F, new CubeDeformation(0.0F)),
 						PartPose.offset(-10.0F, -31.0F, -5.0F));
 		PartDefinition right_leg = partdefinition.addOrReplaceChild("right_leg",
-				CubeListBuilder.create().texOffs(0, 76).addBox(-11.0F, 20.0F, -8.0F, 9.0F, 3.0F, 13.0F, new CubeDeformation(0.0F)).texOffs(0, 115).addBox(-9.0F, 13.0F, -3.0F, 7.0F, 8.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(120, 61)
+				CubeListBuilder.create().texOffs(0, 76).addBox(-11.0F, 20.0F, -8.0F, 9.0F, 3.0F, 13.0F, new CubeDeformation(0.125F)).texOffs(0, 115).addBox(-9.0F, 13.0F, -3.0F, 7.0F, 8.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(120, 61)
 						.addBox(-8.0F, 2.0F, -2.0F, 4.0F, 11.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(98, 73).addBox(-9.0F, -4.0F, -3.0F, 8.0F, 9.0F, 6.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 1.0F, 0.0F));
 		PartDefinition torso = partdefinition.addOrReplaceChild("torso",

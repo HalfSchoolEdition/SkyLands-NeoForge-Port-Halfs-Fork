@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "skylands:glaciated_skyrock_bricks"
+  },
+  "result": {
+    "id": "skylands:glaciated_skyrock_bricks_slab",
+    "count": 2
+  }
+}

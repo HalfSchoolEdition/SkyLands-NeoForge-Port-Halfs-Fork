@@ -31,6 +31,7 @@ public final class SkyLandsClient {
     public static void renderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(net.deepcanion.skylands.registry.ModBlockEntities.REWARD_DISPENSER.get(), RewardDispenserRenderer::new);
         event.registerBlockEntityRenderer(net.deepcanion.skylands.registry.ModBlockEntities.SKY_CHEST.get(), SkyChestRenderer::new);
+        event.registerEntityRenderer(ModEntities.RISING_CELESTIUM_SPIKE.get(), risingSpikeRenderer());
         event.registerEntityRenderer(ModEntities.SKY_AUTOMATON_BOSS.get(), SkyAutomatonBossRenderer::new);
         event.registerEntityRenderer(ModEntities.AUTOMATON_DRONE.get(), AutomatonDroneRenderer::new);
         event.registerEntityRenderer(ModEntities.GLACIATED_SKY_AUTOMATON.get(), GlaciatedSkyAutomatonRenderer::new);
@@ -55,17 +56,33 @@ public final class SkyLandsClient {
         event.registerEntityRenderer(ModEntities.LAVIC_SKY_AUTOMATON.get(), LavicSkyAutomatonRenderer::new);
     }
 
+    /**
+     * FallingBlockRenderer handles FallingBlockEntity and every subclass.
+     * NeoForge's renderer factory is invariant in T, so the type bridge is
+     * intentionally local and safe (RisingCelestiumSpikeEntity is a subtype).
+     */
+    @SuppressWarnings({"unchecked", "rawtypes"})
+    private static net.minecraft.client.renderer.entity.EntityRendererProvider<net.deepcanion.skylands.entity.RisingCelestiumSpikeEntity> risingSpikeRenderer() {
+        return context -> (net.minecraft.client.renderer.entity.EntityRenderer)
+                new net.minecraft.client.renderer.entity.FallingBlockRenderer(context);
+    }
+
     @SubscribeEvent
     public static void particles(RegisterParticleProvidersEvent event) {
         event.registerSpriteSet(ModParticles.WIND.get(), WindParticle::provider);
         event.registerSpriteSet(ModParticles.FIRE_LEAF.get(), FireLeafParticle::provider);
         event.registerSpriteSet(ModParticles.FIREFLY.get(), FireflyParticle::provider);
+        event.registerSpriteSet(ModParticles.CLOUD_STAFF_SPARKLE.get(), CloudStaffSparkleParticle::provider);
+        event.registerSpriteSet(ModParticles.STORM_CLOUD.get(), net.deepcanion.skylands.client.particle.StormCloudParticle::provider);
+        event.registerSpriteSet(ModParticles.STORM_CLOUD_1.get(), net.deepcanion.skylands.client.particle.StormCloudParticle::provider);
+        event.registerSpriteSet(ModParticles.STORM_SNOWFLAKE.get(), net.deepcanion.skylands.client.particle.StormSnowflakeParticle::provider);
         event.registerSpriteSet(ModParticles.CACTUS_WARM_PIXEL.get(), sprites -> ThermalCactusPixelParticle.provider(sprites, true));
         event.registerSpriteSet(ModParticles.CACTUS_COLD_PIXEL.get(), sprites -> ThermalCactusPixelParticle.provider(sprites, false));
         event.registerSpriteSet(ModParticles.ITEM_BREAK.get(), ItemBreakParticle::provider);
         event.registerSpriteSet(ModParticles.CLOUD_BARRIER_3.get(), CloudBarrier3Particle::provider);
         event.registerSpriteSet(ModParticles.CLOUD_BARRIER_2.get(), CloudBarrier2Particle::provider);
         event.registerSpriteSet(ModParticles.CLOUD.get(), CloudParticle::provider);
+        event.registerSpriteSet(ModParticles.CLOUD_SOURCE.get(), CloudParticle::sourceProvider);
         event.registerSpriteSet(ModParticles.CLOUD_SMOKE.get(), CloudSmokeParticle::provider);
         event.registerSpriteSet(ModParticles.CLOUD_SMOKE_1.get(), CloudSmoke1Particle::provider);
         event.registerSpriteSet(ModParticles.EMPTY.get(), EmptyParticle::provider);
@@ -116,6 +133,8 @@ public final class SkyLandsClient {
     public static void clientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(FlightAnimations::register);
         net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(ClientClouds::tick);
+        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(ClientSwampFireflies::tick);
+        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(ClientCloudStaff::tick);
         net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(ClientAmbientWind::tick);
         net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(ClientHeatOverlay::tick);
         event.enqueueWork(() -> net.neoforged.fml.ModList.get().getModContainerById(SkyLands.MOD_ID)
@@ -128,6 +147,10 @@ public final class SkyLandsClient {
             net.deepcanion.skylands.registry.ModFluids.MOLTEN_METAL.get(), net.minecraft.client.renderer.RenderType.translucent()));
         event.enqueueWork(() -> net.minecraft.client.renderer.ItemBlockRenderTypes.setRenderLayer(
             net.deepcanion.skylands.registry.ModFluids.FLOWING_MOLTEN_METAL.get(), net.minecraft.client.renderer.RenderType.translucent()));
+        event.enqueueWork(() -> net.minecraft.client.renderer.item.ItemProperties.register(
+                net.deepcanion.skylands.registry.ModBlocks.STORM_BLOCK.get().asItem(), SkyLands.id("storm_unlocked"),
+                (net.minecraft.client.renderer.item.ItemPropertyFunction) (stack, level, entity, seed) ->
+                        net.deepcanion.skylands.item.StormBlockItem.isUnlocked(stack) ? 1F : 0F));
         event.enqueueWork(() -> net.minecraft.client.renderer.item.ItemProperties.register(
                 net.deepcanion.skylands.registry.ModItems.GLIDER.get(), SkyLands.id("glider_canvas"),
                 (net.minecraft.client.renderer.item.ItemPropertyFunction) (stack, level, entity, seed) -> net.deepcanion.skylands.item.GliderItem.canvas(stack)));

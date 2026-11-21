@@ -9,6 +9,7 @@
     "LightStorageAccess",
     "SkyLightEngineAccess",
     "SplitSkyLightEngineMixin",
+    "SplitSkyLightDataLayerGuardMixin",
     "SplitSkyLightSectionStorageMixin",
     "SkyRegionBiomeWhitelistMixin"
   ],

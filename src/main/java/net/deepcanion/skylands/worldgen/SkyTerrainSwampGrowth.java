@@ -97,7 +97,7 @@ final class SkyTerrainSwampGrowth {
                     || !level.getBlockState(pos.above()).isAir())continue;
             BlockState beneath=level.getBlockState(pos.below());
             // Never mistake a stream in another sky biome for Swamp wetland.
-            if(beneath.is(Blocks.MUD)||beneath.is(Blocks.CLAY)||beneath.is(ModBlocks.SKYROCK.get())
+            if(beneath.is(Blocks.MUD)||beneath.is(Blocks.CLAY)||beneath.is(ModBlocks.SKYROCK.get())||beneath.is(ModBlocks.GLACIATED_SKYROCK.get())
                     ||beneath.is(ModBlocks.SWAMP_MOSSY_SKYROCK.get()))return y;
         }
         return -1;

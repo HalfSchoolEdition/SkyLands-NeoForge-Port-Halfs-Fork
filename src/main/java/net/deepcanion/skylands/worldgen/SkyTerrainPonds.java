@@ -60,7 +60,7 @@ final class SkyTerrainPonds {
         if (isTop(state, frozen) || state.is(Blocks.DIORITE)) return true;
         return frozen
                 ? state.is(ModBlocks.GLACIATED_SKYROCK.get()) || state.is(ModBlocks.GLACIATED_MOSSY_SKYROCK.get())
-                : state.is(ModBlocks.SKYROCK.get()) || state.is(ModBlocks.SWAMP_MOSSY_SKYROCK.get());
+                : state.is(ModBlocks.GLACIATED_SKYROCK.get()) || state.is(ModBlocks.SKYROCK.get()) || state.is(ModBlocks.SWAMP_MOSSY_SKYROCK.get());
     }
 
     private static boolean inside(int dx, int dz, int radius, long form) {

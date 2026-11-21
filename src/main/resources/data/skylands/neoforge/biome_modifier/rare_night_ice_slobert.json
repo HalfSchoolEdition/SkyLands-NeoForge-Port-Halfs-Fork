@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "skylands:floating_glaciated_islands",
+  "spawners": {
+    "type": "skylands:ice_slobert",
+    "weight": 3,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

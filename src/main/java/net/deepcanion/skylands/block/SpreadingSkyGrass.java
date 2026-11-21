@@ -15,7 +15,10 @@ final class SpreadingSkyGrass {
 
     static BlockState bareStone(BlockState grass) {
         Block block = grass.getBlock();
-        if (block == ModBlocks.GLACIATED_GRASS_BLOCK.get())
+        // Both Glaciated and Swamp sky grass grow on the pale Skyrock family.
+        // Swamp grass must not decay into the golden-toned Skyrock when covered.
+        if (block == ModBlocks.GLACIATED_GRASS_BLOCK.get()
+                || block == ModBlocks.SWAMP_GRASS_BLOCK.get())
             return ModBlocks.GLACIATED_SKYROCK.get().defaultBlockState();
         if (block == ModBlocks.LAVIC_SKYMETAL_GRASS.get())
             return ModBlocks.LAVIC_SKYMETAL.get().defaultBlockState();

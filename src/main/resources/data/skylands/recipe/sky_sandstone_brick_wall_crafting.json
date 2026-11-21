@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:sky_sandstone_bricks"
+    }
+  },
+  "result": {
+    "count": 6,
+    "id": "skylands:sky_sandstone_brick_wall"
+  }
+}

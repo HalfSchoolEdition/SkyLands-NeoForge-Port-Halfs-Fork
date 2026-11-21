@@ -20,7 +20,7 @@ public final class GlaciatedBiomeCold {
 
         // Powder snow already accumulates vanilla freeze ticks, so don't double it.
         // Warmth protection and player immunity are checked by VanillaFreezing.
-        if (player.isInPowderSnow
+        if (TemperatureCompatibility.externalCold() || player.isInPowderSnow
                 || (GameplayConfig.SPEC.isLoaded() && !GameplayConfig.GLACIATED_TOO_COLD.get())
                 || !player.level().getBiome(player.blockPosition()).is(SkyBiomes.GLACIATED)) return;
 

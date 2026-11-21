@@ -3,6 +3,7 @@ package net.deepcanion.skylands.mixin;
 import net.deepcanion.skylands.SkyLands;
 import net.deepcanion.skylands.config.GameplayConfig;
 import net.deepcanion.skylands.worldgen.SkyBiomes;
+import net.deepcanion.skylands.worldgen.SkyRegionThemeSelector;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -24,9 +25,11 @@ import java.util.concurrent.ConcurrentHashMap;
  * Optional-on-surface-biome, single-theme sky regions.
  *
  * Lithostitched remains responsible for which sky-region disks exist. This hook
- * only replaces the selected biome within those disks, using a shared site
+ * replaces (or suppresses) the selected biome within those disks, using a shared site
  * anchor and the (unmodified-at-this-height) biome source beneath the disk.
  * Nothing is queried at sky height while classifying a region.
+ * A rejected disk returns its original ground biome at Y=96, rather than
+ * letting the underlying climate layout select a random sky-biome theme.
  *
  * Target is named as a string to avoid a compile-time Lithostitched dependency.
  */
@@ -41,12 +44,6 @@ public abstract class SkyRegionBiomeWhitelistMixin {
 
     @Unique private static final TagKey<Biome>[] SKYLANDS$THEME_TAGS = skylands$makeTags();
     @Unique private static final ResourceKey<Biome>[] SKYLANDS$SKY_KEYS = skylands$makeKeys();
-    // Theme order: Glaciated, Lavic, Swamp, Arid, Cherry, Golden.
-    // Integer factors express 1.5x for rarer themes and a 0.5x baseline
-    // for Golden Sky. The Golden slider stays at 100% by default; 200% restores
-    // the old effective relative score. No extra biome lookups are needed.
-    @Unique private static final int[] SKYLANDS$THEME_SCORE_FACTORS = {2, 3, 3, 2, 3, 1};
-
     // This biome source is unique to the world's biome layout; do not cache
     // across worlds or use global static entries that could leak between seeds.
     @Unique private Map<Long, Integer> skylands$regionThemes;
@@ -102,8 +99,24 @@ public abstract class SkyRegionBiomeWhitelistMixin {
         int theme = skylands$regionThemes.computeIfAbsent(siteKey,
                 unused -> skylands$chooseTheme(siteX, siteZ, sampler));
 
+        // -1 means this site was rejected: Golden was thinned without any
+        // surface-compatible alternative, or all matching themes are disabled.
+        // Leaving Lithostitched's original result in place would reintroduce
+        // an arbitrary (and potentially incompatible) sky biome. Instead use
+        // its ordinary, unmodified ground biome at this exact X/Z location.
+        if (theme < 0) {
+            skylands$samplingGround.set(true);
+            try {
+                cir.setReturnValue(((BiomeSource) (Object) this).getNoiseBiome(
+                        quartX, SKYLANDS$SAMPLE_Y_QUART, quartZ, sampler));
+            } finally {
+                skylands$samplingGround.set(false);
+            }
+            return;
+        }
+
         Holder<Biome>[] holders = skylands$getSkyHolders();
-        if (theme >= 0 && holders != null && holders[theme] != null) {
+        if (holders != null && holders[theme] != null) {
             cir.setReturnValue(holders[theme]);
         }
     }
@@ -158,25 +171,18 @@ public abstract class SkyRegionBiomeWhitelistMixin {
         } finally {
             skylands$samplingGround.set(false);
         }
-        // Favor Lavic, Swamp and Cherry by 1.5x when sampled on matching
-        // surface biomes, while Golden receives half its prior base weight.
-        // Zero matches still means zero score.
-        // Preserve the existing specificity priority on equal adjusted scores.
-        // This changes theme selection, not sky-region positions or rarity.
-        int best = -1;
-        int bestScore = -1;
-        for (int theme = 0; theme < score.length; theme++) {
-            int weight = GameplayConfig.SKY_BIOME_WEIGHTS[theme].get();
-            if (weight == 0) continue;
-            int weightedScore = score[theme] * SKYLANDS$THEME_SCORE_FACTORS[theme] * weight;
-            if (weightedScore > bestScore) {
-                bestScore = weightedScore;
-                best = theme;
-            }
+        // Every selected theme must have an actual matching sample. In
+        // particular, never replace rejected Golden sites with a randomly
+        // enabled theme that scored zero on all five surface samples.
+        int[] weights = new int[SKYLANDS$THEME_TAGS.length];
+        for (int i = 0; i < weights.length; i++) {
+            weights[i] = GameplayConfig.SKY_BIOME_WEIGHTS[i].get();
         }
-        // If every theme is disabled, leave the original biome result unchanged;
-        // the selector cannot remove Lithostitched disks on its own.
-        return best;
+        long hash = ((long) siteX * 0x9E3779B97F4A7C15L) ^ ((long) siteZ * 0xC2B2AE3D27D4EB4FL);
+        hash ^= hash >>> 33;
+        hash *= 0xFF51AFD7ED558CCDL;
+        hash ^= hash >>> 33;
+        return SkyRegionThemeSelector.choose(score, weights, hash);
     }
 
     @Unique private static int skylands$classify(Holder<Biome> biome) {

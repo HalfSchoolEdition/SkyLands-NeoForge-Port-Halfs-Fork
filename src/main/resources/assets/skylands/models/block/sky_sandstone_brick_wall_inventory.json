@@ -1,0 +1,8 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "skylands:block/sky_sandstone_bricks",
+    "particle": "skylands:block/sky_sandstone_bricks"
+  },
+  "render_type": "solid"
+}

@@ -47,6 +47,7 @@ public final class TemperatureHelmetItem extends ArmorItem implements GeoItem {
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> lines, TooltipFlag flag) {
         super.appendHoverText(stack, context, lines, flag);
+        if (!net.deepcanion.skylands.client.TemperatureClientRules.helmetsEnabled()) return;
         // Explicitly describe the protection granted by the equipped helmet.
         // The icy and warm colors distinguish the two temperatures at a glance.
         boolean frost = this.style == Style.FROST;

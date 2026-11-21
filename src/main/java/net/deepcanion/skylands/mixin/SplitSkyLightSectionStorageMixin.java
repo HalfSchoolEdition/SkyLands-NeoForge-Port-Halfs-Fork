@@ -1,5 +1,6 @@
 package net.deepcanion.skylands.mixin;
 
+import java.lang.ref.WeakReference;
 import java.util.concurrent.ConcurrentHashMap;
 import net.deepcanion.skylands.lighting.SkyLandsSkyLight;
 import net.minecraft.core.BlockPos;
@@ -36,7 +37,22 @@ public abstract class SplitSkyLightSectionStorageMixin {
 
     // Positive hits only. Never cache misses: an ungenerated chunk may later
     // acquire SkyLands terrain. Bounded to avoid growth while exploring.
-    @Unique private final ConcurrentHashMap<Long, Boolean> skylands$hostChunks = new ConcurrentHashMap<>();
+    @Unique private volatile ConcurrentHashMap<Long, WeakReference<LightChunk>> skylands$hostChunks;
+
+    @Unique
+    private ConcurrentHashMap<Long, WeakReference<LightChunk>> skylands$hostCache() {
+        ConcurrentHashMap<Long, WeakReference<LightChunk>> cache = skylands$hostChunks;
+        if (cache == null) {
+            synchronized (this) {
+                cache = skylands$hostChunks;
+                if (cache == null) {
+                    cache = new ConcurrentHashMap<>();
+                    skylands$hostChunks = cache;
+                }
+            }
+        }
+        return cache;
+    }
 
     @Inject(method = "getLightValue(J)I", at = @At("RETURN"), cancellable = true)
     private void skylands$fillMissingSkyAir(long packedPos, CallbackInfoReturnable<Integer> cir) {
@@ -72,13 +88,19 @@ public abstract class SplitSkyLightSectionStorageMixin {
         if (!chunk.getBlockState(BlockPos.of(packedPos)).isAir()) return;
         if (chunk.getSkyLightSources().getLowestSourceY(x & 15, z & 15) <= SKYLANDS$SPLIT_Y - 1) return;
 
+        // Only positives are cached. Verify the live chunk identity to avoid
+        // a stale hit when a chunk at the same coordinates gets reloaded.
+        // Weak references ensure this auxiliary cache never retains chunks.
         long key = chunkPos.toLong();
-        if (!skylands$hostChunks.containsKey(key)) {
-            if (!skylands$containsIsland(access)) return;
-            if (skylands$hostChunks.size() >= SKYLANDS$CACHE_LIMIT) {
-                skylands$hostChunks.clear();
+        ConcurrentHashMap<Long, WeakReference<LightChunk>> cache = skylands$hostCache();
+        WeakReference<LightChunk> cached = cache.get(key);
+        if (cached == null || cached.get() != chunk) {
+            if (!skylands$containsIsland(access)) {
+                if (cached != null) cache.remove(key, cached);
+                return;
             }
-            skylands$hostChunks.put(key, Boolean.TRUE);
+            if (cache.size() >= SKYLANDS$CACHE_LIMIT) cache.clear();
+            cache.put(key, new WeakReference<>(chunk));
         }
         cir.setReturnValue(virtualLight);
     }

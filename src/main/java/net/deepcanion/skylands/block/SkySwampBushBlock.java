@@ -1,16 +1,10 @@
 package net.deepcanion.skylands.block;
 
-import net.deepcanion.skylands.registry.ModParticles;
-import net.minecraft.core.BlockPos;
-import net.minecraft.util.RandomSource;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
-
+/**
+ * Sky Swamp Bush plant. Firefly particles are emitted by the client-side
+ * ClientSwampFireflies controller, which scales emission to nearby bush density.
+ * Keeping emission in one place avoids duplicate, camera-sampling-dependent bursts.
+ */
 public final class SkySwampBushBlock extends SkyDoublePlantBlock {
     public SkySwampBushBlock(Properties properties) { super(properties); }
-    @Override public void animateTick(BlockState state, Level level, BlockPos pos, RandomSource random) {
-        super.animateTick(state, level, pos, random);
-        level.addParticle(ModParticles.FIREFLY.get(), pos.getX() + random.nextDouble() * 8 - 4,
-                pos.getY() + random.nextDouble() * 8 - 3, pos.getZ() + random.nextDouble() * 8 - 4, 0, 0, 0);
-    }
 }

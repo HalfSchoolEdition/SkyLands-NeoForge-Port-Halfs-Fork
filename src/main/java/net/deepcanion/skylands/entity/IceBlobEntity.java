@@ -61,7 +61,7 @@ public class IceBlobEntity extends Monster implements GeoEntity {
 		xpReward = 12;
 		setNoAi(false);
 		
-		setPersistenceRequired();
+        // Natural variants should use ordinary hostile-mob despawning.
 	}
 
 	@Override
@@ -95,10 +95,23 @@ public class IceBlobEntity extends Monster implements GeoEntity {
 
 
 
-	@Override
-	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
-		return false;
-	}
+    @Override
+    public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+        return true;
+    }
+
+    @Override
+    public net.minecraft.world.entity.SpawnGroupData finalizeSpawn(
+            net.minecraft.world.level.ServerLevelAccessor level,
+            net.minecraft.world.DifficultyInstance difficulty,
+            net.minecraft.world.entity.MobSpawnType reason,
+            net.minecraft.world.entity.SpawnGroupData data) {
+        var result = super.finalizeSpawn(level, difficulty, reason, data);
+        // Preserve explicitly placed/spawned structure and scripted encounters.
+        if (reason == net.minecraft.world.entity.MobSpawnType.STRUCTURE)
+            setPersistenceRequired();
+        return result;
+    }
 
 	protected void dropCustomDeathLoot(net.minecraft.server.level.ServerLevel serverLevel, DamageSource source, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(serverLevel, source, recentlyHitIn);

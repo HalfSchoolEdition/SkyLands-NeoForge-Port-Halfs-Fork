@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.state.*;
 import net.minecraft.world.level.block.state.properties.*;
 import net.minecraft.world.level.material.*;
 
-public final class WaterloggedAttachedBlock extends AttachedBlock implements SimpleWaterloggedBlock {
+public class WaterloggedAttachedBlock extends AttachedBlock implements SimpleWaterloggedBlock {
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public WaterloggedAttachedBlock(Properties properties, java.util.function.Function<BlockState, net.minecraft.world.phys.shapes.VoxelShape> shape) {
         super(properties, shape);

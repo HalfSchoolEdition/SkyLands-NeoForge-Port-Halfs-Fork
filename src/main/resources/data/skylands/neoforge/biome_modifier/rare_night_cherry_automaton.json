@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "skylands:floating_cherry_grove_islands",
+  "spawners": {
+    "type": "skylands:sky_automaton",
+    "weight": 2,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

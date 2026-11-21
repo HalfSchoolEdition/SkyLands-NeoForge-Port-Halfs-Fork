@@ -5,14 +5,20 @@ license="${mod_license}"
 [[mixins]]
 config="skylands.mixins.json"
 
+# Only load the Streams Reflowing terrain compatibility mixin when that mod
+# is present. Without it, SkyLands keeps the exact v0.9.4 placement path.
+[[mixins]]
+config="skylands.streamsreflowing.mixins.json"
+requiredMods=["streamsreflowing"]
+
 [[mods]]
 modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
 logoFile="logo.png"
 authors="${mod_authors}"
-credits="Original Sky Lands by DeepCanionStudio. Unofficial NeoForge 1.21.1 port by MacatMovie."
-description='''SkyLands - Unofficial Port for NeoForge 1.21.1. Includes altitude-restricted Overworld sky biomes, structures, animated mobs, equipment, progression and flight controls. The extra dimension remains deferred.'''
+credits="Original Sky Lands: DeepCanionStudio (Forge 1.20.1). NeoForge port and expanded content: MacatMovie."
+description='''Sky Lands: Reimagined is an unofficial NeoForge 1.21.1 continuation of the original Sky Lands by DeepCanionStudio (Forge 1.20.1). Ported and expanded by MacatMovie with new sky biomes and island terrain, structures, mobs, equipment, progression, and flight features. Original concept and content: DeepCanionStudio. NeoForge port and expanded content: MacatMovie.'''
 
 [[dependencies.${mod_id}]]
 modId="neoforge"

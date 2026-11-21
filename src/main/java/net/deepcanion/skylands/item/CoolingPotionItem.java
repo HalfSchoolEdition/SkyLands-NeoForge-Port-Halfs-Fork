@@ -15,13 +15,14 @@ import net.minecraft.world.level.Level;
 public final class CoolingPotionItem extends Item {
     public CoolingPotionItem() {
         super(new Item.Properties().food(new FoodProperties.Builder()
-                .nutrition(0).saturationModifier(0F).alwaysEdible().build())
+                .nutrition(0).saturationModifier(0F).alwaysEdible()
+                .effect(() -> new MobEffectInstance(ModEffects.COOLING, 3600, 0), 1.0F)
+                .build())
                 .stacksTo(16));
     }
     @Override public UseAnim getUseAnimation(ItemStack stack) { return UseAnim.DRINK; }
     @Override public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
         ItemStack result = super.finishUsingItem(stack, level, entity);
-        if (!level.isClientSide()) entity.addEffect(new MobEffectInstance(ModEffects.COOLING, 3600, 0));
         if (entity instanceof Player player && player.getAbilities().instabuild) return result;
         ItemStack bottle = new ItemStack(Items.GLASS_BOTTLE);
         if (result.isEmpty()) return bottle;

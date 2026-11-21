@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:dirt",
+    {
+      "id": "#c:grass_blocks",
+      "required": false
+    },
+    {
+      "id": "#c:dirts",
+      "required": false
+    },
+    "minecraft:grass_block",
+    "minecraft:mycelium",
+    "minecraft:podzol",
+    "minecraft:farmland",
+    "minecraft:rooted_dirt",
+    "skylands:golden_grass_block",
+    "skylands:glaciated_grass_block",
+    "skylands:lavic_skymetal_grass",
+    "skylands:arid_grass_block",
+    "skylands:cherry_grass_block",
+    "skylands:swamp_grass_block"
+  ]
+}

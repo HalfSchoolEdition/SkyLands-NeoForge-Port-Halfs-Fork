@@ -23,6 +23,12 @@ public final class TemperatureHazards {
     private TemperatureHazards() { }
 
     public static boolean hot(Level level, BlockPos pos, long dayTime, Player player) {
+        if (TemperatureCompatibility.externalHeat(level, player)) return false;
+        return skyHotCandidate(level, pos, dayTime, player);
+    }
+
+    /** Candidate native heat exposure, used by optional temperature adapters too. */
+    public static boolean skyHotCandidate(Level level, BlockPos pos, long dayTime, Player player) {
         Holder<Biome> biome = level.getBiome(pos);
         return (biome.is(SkyBiomes.LAVIC)
                     && skyHeatEnabled(level, player, TemperatureSettingsPayload.CLIENT_LAVIC_HEAT,

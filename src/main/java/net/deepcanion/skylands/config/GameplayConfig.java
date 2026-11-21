@@ -16,6 +16,9 @@ public final class GameplayConfig {
     // Extra Nether/Overworld hazards remain OFF by default.
     public static final ModConfigSpec.BooleanValue NETHER_TOO_HOT;
     public static final ModConfigSpec.BooleanValue OVERWORLD_COLD_FREEZING;
+    public static final ModConfigSpec.BooleanValue COLD_SWEAT_INTEGRATION, LSO_INTEGRATION;
+    public static final ModConfigSpec.BooleanValue FROSTIFUL_INTEGRATION, SCORCHFUL_INTEGRATION;
+    public static final ModConfigSpec.BooleanValue TEMPERATURE_HELMETS_ENABLED;
     public static final ModConfigSpec.BooleanValue GENERATE_FALLEN_ISLANDS;
     public static final ModConfigSpec.BooleanValue GENERATE_SURFACE_CAVES;
     public static final ModConfigSpec.IntValue SURFACE_CAVE_FREQUENCY;
@@ -64,6 +67,26 @@ public final class GameplayConfig {
                 "Does not replace or double-apply vanilla powdered snow freezing.")
                 .translation("skylands.configuration.overworldColdFreezing")
                 .define("overworldColdFreezing", false);
+        builder.translation("skylands.configuration.temperatureIntegration").push("integration");
+        COLD_SWEAT_INTEGRATION = builder.comment(
+                "Let Cold Sweat handle both heat and cold instead of SkyLands' native hazards.",
+                "Automatically active only when Cold Sweat is installed. Takes priority over the other integrations.")
+                .translation("skylands.configuration.coldSweatIntegration").define("coldSweat", true);
+        LSO_INTEGRATION = builder.comment(
+                "Let Legendary Survival Overhaul handle heat and cold instead of SkyLands' native hazards.",
+                "Automatically active when installed unless Cold Sweat integration is active.")
+                .translation("skylands.configuration.lsoIntegration").define("legendarySurvivalOverhaul", true);
+        SCORCHFUL_INTEGRATION = builder.comment(
+                "Let Scorchful/Thermoo handle heat. Only active when installed and no complete system has priority.")
+                .translation("skylands.configuration.scorchfulIntegration").define("scorchful", true);
+        FROSTIFUL_INTEGRATION = builder.comment(
+                "Let Frostiful/Thermoo handle cold. Only active when installed and no complete system has priority.")
+                .translation("skylands.configuration.frostifulIntegration").define("frostiful", true);
+        TEMPERATURE_HELMETS_ENABLED = builder.comment(
+                "Give Frost and Flame Helmets temperature protection (also in integrated mods).",
+                "Disabling this keeps their armor statistics unchanged and hides their protection tooltips.")
+                .translation("skylands.configuration.temperatureHelmetsEnabled").define("temperatureHelmetsEnabled", true);
+        builder.pop();
         builder.pop();
         builder.translation("skylands.configuration.islandDensity").push("islandDensity");
         builder.translation("skylands.configuration.skyBiomes").push("skyBiomes");
@@ -80,8 +103,8 @@ public final class GameplayConfig {
         String[] biomeIds = {"glaciated", "lavic", "swamp", "arid", "cherry", "golden"};
         for (int i = 0; i < biomeIds.length; i++) {
             SKY_BIOME_WEIGHTS[i] = builder.comment(
-                    "Relative selection weight: 100=baseline, 200=double, 0=disabled. Golden Sky's baseline is internally halved (200 restores its former weight).",
-                    "Changes the MIX of sky biome types within the existing Lithostitched sky-region sites, NOT the total number or spacing of sky regions.",
+                    "Relative selection weight: 100=baseline, 200=double, 0=disabled. Golden Sky is additionally thinned by 50% at its default setting; 200% restores the Golden sites.",
+                    "Only sky biomes matching sampled surface biomes are eligible. Rejected Golden sites without a compatible replacement are left without a sky biome; total island-region count may decrease.",
                     "World/server restart required; existing chunks do not change.")
                     .translation("skylands.configuration.biomeWeight." + biomeIds[i])
                     .worldRestart().defineInRange(biomeIds[i], 100, 0, 300);

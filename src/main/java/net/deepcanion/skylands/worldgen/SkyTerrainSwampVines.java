@@ -49,7 +49,7 @@ final class SkyTerrainSwampVines {
                 lastSurfaceY=y;
             }
             if(seenSwamp && lastSurfaceY-y<95
-                    && (state.is(Blocks.DIORITE)||state.is(ModBlocks.SKYROCK.get())
+                    && (state.is(Blocks.DIORITE)||state.is(ModBlocks.SKYROCK.get())||state.is(ModBlocks.GLACIATED_SKYROCK.get())
                     ||state.is(ModBlocks.SWAMP_MOSSY_SKYROCK.get()))
                     && level.getBlockState(pos.below()).isAir())return pos.below();
             if(seenSwamp && lastSurfaceY-y>95)return null;

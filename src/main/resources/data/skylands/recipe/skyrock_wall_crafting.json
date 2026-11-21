@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "skylands:skyrock"
+    }
+  },
+  "result": {
+    "count": 6,
+    "id": "skylands:skyrock_wall"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "skylands:tiled_skyrock"
+    },
+    {
+      "item": "minecraft:cherry_leaves"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "skylands:cherry_mossy_tiled_skyrock"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "I I",
+    "ICI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "tag": "skylands:celestium_blocks"
+    }
+  },
+  "result": {
+    "id": "skylands:sky_launcher",
+    "count": 1
+  }
+}

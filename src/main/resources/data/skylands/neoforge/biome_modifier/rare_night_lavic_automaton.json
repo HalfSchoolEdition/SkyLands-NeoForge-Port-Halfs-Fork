@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "skylands:floating_lavic_islands",
+  "spawners": {
+    "type": "skylands:lavic_sky_automaton",
+    "weight": 3,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

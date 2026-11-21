@@ -20,7 +20,6 @@ public final class ModVillagers {
             () -> new VillagerProfession("skylands:cool", poi -> poi.is(COOL_POI.getKey()), poi -> poi.is(COOL_POI.getKey()), ImmutableSet.of(), ImmutableSet.of(), SoundEvents.VILLAGER_TRADE));
     public static void trades(VillagerTradesEvent event) {
         if (event.getType() != COOL.get()) return;
-        event.getTrades().get(1).add(new BasicItemListing(new ItemStack(ModItems.CELESTIUM.get(), 10), new ItemStack(ModBlocks.CLOUD_BLOCK.get()), 10, 5, 0.05F));
         event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD, 2), new ItemStack(ModItems.CELESTIUM.get(), 8), new ItemStack(ModItems.ISLAND_GLIDER_DESIGN.get()), 10, 9, 0.05F));
         event.getTrades().get(2).add(new BasicItemListing(new ItemStack(ModItems.GOLDEN_LEVEL_1_KEY.get()), new ItemStack(ModBlocks.CELESTIUM_BLOCK.get()), new ItemStack(ModItems.HEADSET_ARMOR_TRIM_SMITHING_TEMPLATE.get()), 10, 11, 0.05F));
     }

@@ -63,6 +63,16 @@ public final class SkyLands {
         // Old dev armor material keys may survive in item serialization.
         net.deepcanion.skylands.registry.ModArmorMaterials.MATERIALS.addAlias(id("glaciated"), id("frost"));
         net.deepcanion.skylands.registry.ModArmorMaterials.MATERIALS.addAlias(id("lavic"), id("flame"));
+        ModBlocks.BLOCKS.addAlias(id("active_sky_launcher"), id("sky_launcher"));
+        // Old items resolve to their modern forms. Keep block IDs for smoke flowers
+        // for old world palettes; their separate item entries are no longer registered.
+        for (String[] ids : new String[][] {
+                {"active_sky_launcher", "sky_launcher"},
+                {"deactivated_storm_block", "storm_block"},
+                {"smoke_flower_plant", "smoke_flower"},
+                {"smoke_flower_plant_grow_stage", "smoke_flower"},
+                {"float_grape_plant", "float_grape"}
+        }) ModItems.ITEMS.addAlias(id(ids[0]), id(ids[1]));
         ModBlocks.BLOCKS.register(modBus);
         net.deepcanion.skylands.registry.ModBlockEntities.TYPES.register(modBus);
         net.deepcanion.skylands.registry.ModMenus.MENUS.register(modBus);
@@ -75,11 +85,13 @@ public final class SkyLands {
         NeoForge.EVENT_BUS.addListener(net.deepcanion.skylands.item.CoolingBrewing::register);
         NeoForge.EVENT_BUS.addListener(net.deepcanion.skylands.effect.GlaciatedBiomeCold::tick);
         NeoForge.EVENT_BUS.addListener(net.deepcanion.skylands.effect.SkyTemperatures::tick);
+        NeoForge.EVENT_BUS.addListener(net.deepcanion.skylands.effect.TemperatureCompatibility::tick);
         modBus.addListener(net.deepcanion.skylands.effect.TemperatureSettingsPayload::register);
         NeoForge.EVENT_BUS.addListener(net.deepcanion.skylands.effect.TemperatureSettingsPayload::login);
         NeoForge.EVENT_BUS.addListener(net.deepcanion.skylands.effect.TemperatureSettingsPayload::respawn);
         NeoForge.EVENT_BUS.addListener(net.deepcanion.skylands.effect.TemperatureSettingsPayload::changedDimension);
         NeoForge.EVENT_BUS.addListener(CombatEvents::target);
+        NeoForge.EVENT_BUS.addListener(net.deepcanion.skylands.block.SkyLauncherJump::onJump);
         NeoForge.EVENT_BUS.addListener(net.deepcanion.skylands.item.SkySwordRecovery::broken);
         NeoForge.EVENT_BUS.addListener(net.deepcanion.skylands.item.SkySwordRecovery::tick);
         NeoForge.EVENT_BUS.addListener(net.deepcanion.skylands.item.SkySwordRecovery::logout);
@@ -124,11 +136,17 @@ public final class SkyLands {
         event.enqueueWork(() -> {
             ContentSetup.registerFireBehavior();
         });
-        LOGGER.info("[Sky Lands] Unofficial Port v0.9.4 common setup complete: {} blocks, {} items. Lithostitched sky biome injectors active; dimension port pending.",
+        LOGGER.info("[Sky Lands: Reimagined] v0.9.5.1 common setup complete: {} blocks, {} items. Lithostitched sky biome injectors active; dimension port pending.",
                 ModBlocks.BLOCKS.getEntries().size(), ModItems.ITEMS.getEntries().size());
+        LOGGER.info("[SkyLands/SplitSkyLight] v0.9.5.1 source-lifecycle safeguards and sampled diagnostics installed; check latest.log for guard/ or NULL_DATALAYER entries.");
     }
 
     private void serverStarted(ServerStartedEvent event) {
-        LOGGER.info("[Sky Lands] Unofficial Port v0.9.4 server started.");
+        LOGGER.info("[Sky Lands: Reimagined] v0.9.5.1 server started.");
+        LOGGER.info("[Sky Lands] Temperature handlers: heat={}, cold={}, helmet protection={}",
+                net.deepcanion.skylands.effect.TemperatureCompatibility.heatMode(),
+                net.deepcanion.skylands.effect.TemperatureCompatibility.coldMode(),
+                !net.deepcanion.skylands.config.GameplayConfig.SPEC.isLoaded()
+                        || net.deepcanion.skylands.config.GameplayConfig.TEMPERATURE_HELMETS_ENABLED.get());
     }
 }

@@ -84,7 +84,7 @@ public final class ModItems {
     public static final DeferredItem<Item> PEARLECENT_CELESTIUM_CORE = ITEMS.register("pearlecent_celestium_core", () -> new MaterialItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true), "item.skylands.pearlecent_celestium_core.tooltip", false));
     public static final DeferredItem<Item> PALE_CELESTIUM_CORE = ITEMS.register("pale_celestium_core", () -> new MaterialItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true), "item.skylands.pale_celestium_core.tooltip", false));
     public static final DeferredItem<Item> INKY_CELESTIUM_CORE = ITEMS.register("inky_celestium_core", () -> new MaterialItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true), "item.skylands.inky_celestium_core.tooltip", false));
-    public static final DeferredItem<Item> MASTER_KEY = ITEMS.register("master_key", () -> new MaterialItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true), "item.skylands.master_key.tooltip", false));
+    public static final DeferredItem<Item> MASTER_KEY = ITEMS.register("master_key", net.deepcanion.skylands.item.MasterKeyItem::new);
     public static final DeferredItem<Item> SMITHING_TEMPLATE_UPGRADE_OF_THE_SKY = ITEMS.register("smithing_template_upgrade_of_the_sky", () -> new MaterialItem(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.EPIC), "item.skylands.smithing_template_upgrade_of_the_sky.tooltip", true));
     public static final DeferredItem<Item> CELESTINE_CRYSTAL = ITEMS.register("celestine_crystal", () -> new MaterialItem(new Item.Properties().stacksTo(64).rarity(Rarity.UNCOMMON), "", false));
     public static final DeferredItem<Item> INGOT_OF_THE_SKY = ITEMS.register("ingot_of_the_sky", () -> new MaterialItem(new Item.Properties().stacksTo(64).rarity(Rarity.RARE), "", false));
@@ -137,8 +137,12 @@ public final class ModItems {
         ModBlocks.BLOCKS.getEntries().forEach(block -> {
             // Double plants must place both halves, just like vanilla tall plants.
             String id = block.getId().getPath();
-            if (id.equals("temporary_fire") || id.equals("molten_metal")) return;
-            items.add(ITEMS.<BlockItem>register(id, () -> block.get() instanceof net.minecraft.world.level.block.DoublePlantBlock
+            if (id.equals("temporary_fire") || id.equals("molten_metal")
+                    || id.equals("smoke_flower_plant") || id.equals("smoke_flower_plant_grow_stage")
+                    || id.equals("deactivated_storm_block") || id.equals("float_grape_plant")) return;
+            items.add(ITEMS.<BlockItem>register(id, () -> id.equals("storm_block")
+                    ? new net.deepcanion.skylands.item.StormBlockItem(block.get(), new Item.Properties())
+                    : block.get() instanceof net.minecraft.world.level.block.DoublePlantBlock
                     ? new DoubleHighBlockItem(block.get(), new Item.Properties())
                     : new BlockItem(block.get(), new Item.Properties())));
         });
@@ -173,10 +177,11 @@ public final class ModItems {
 
     public static final DeferredItem<IceBowItem> ICE_BOW = ITEMS.register("ice_bow", IceBowItem::new);
     public static final DeferredItem<IgneusLaserBladeItem> IGNEUS_LASER_BLADE = ITEMS.register("igneus_laser_blade", IgneusLaserBladeItem::new);
-    public static final DeferredItem<SkyThrowableItem> SMOKE_FLOWER = ITEMS.register("smoke_flower", () -> new SkyThrowableItem(new Item.Properties().rarity(Rarity.UNCOMMON), 60, (world, user) -> SmokeFlowerProjEntity.shoot(world, user, world.getRandom())));
-    public static final DeferredItem<SkyThrowableItem> FLOAT_GRAPE = ITEMS.register("float_grape", () -> new SkyThrowableItem(new Item.Properties(), 50, (world, user) -> FloatGrapeProjEntity.shoot(world, user, world.getRandom())));
+    public static final DeferredItem<net.deepcanion.skylands.item.SmokeFlowerItem> SMOKE_FLOWER = ITEMS.register("smoke_flower", net.deepcanion.skylands.item.SmokeFlowerItem::new);
+    public static final DeferredItem<net.deepcanion.skylands.item.FloatGrapeItem> FLOAT_GRAPE = ITEMS.register("float_grape", net.deepcanion.skylands.item.FloatGrapeItem::new);
     public static final DeferredItem<SkyThrowableItem> EYE_OF_THE_SKY = ITEMS.register("eye_of_the_sky", () -> new SkyThrowableItem(new Item.Properties().fireResistant().rarity(Rarity.RARE), 20, (world, user) -> EyeOftsProjectileEntity.shoot(world, user, world.getRandom())));
 
+    public static final DeferredItem<net.deepcanion.skylands.item.CloudStaffItem> CLOUD_STAFF = ITEMS.register("cloud_staff", net.deepcanion.skylands.item.CloudStaffItem::new);
     public static final DeferredItem<net.deepcanion.skylands.item.IceStaffItem> ICE_STAFF = ITEMS.register("ice_staff", net.deepcanion.skylands.item.IceStaffItem::new);
     public static final DeferredItem<net.deepcanion.skylands.item.PharaohStaffItem> PHARAOH_STAFF = ITEMS.register("pharaoh_staff", net.deepcanion.skylands.item.PharaohStaffItem::new);
 

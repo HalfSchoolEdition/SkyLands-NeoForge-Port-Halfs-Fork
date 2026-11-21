@@ -47,7 +47,9 @@ public class SkyAutomatonBruteEntity extends Monster implements GeoEntity {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private boolean swinging;
 	private boolean lastloop;
-	private long lastSwing;
+	private long lastSwing = -1L;
+	// The one-shot GeckoLib attack animation is 1.25 seconds (25 game ticks).
+	private static final long ATTACK_ANIMATION_TICKS = 25L;
 	public String animationprocedure = "empty";
 
 
@@ -163,23 +165,27 @@ public class SkyAutomatonBruteEntity extends Monster implements GeoEntity {
 	}
 
 	private PlayState attackingPredicate(AnimationState event) {
-		double d1 = this.getX() - this.xOld;
-		double d0 = this.getZ() - this.zOld;
-		float velocity = (float) Math.sqrt(d1 * d1 + d0 * d0);
-		if (getAttackAnim(event.getPartialTick()) > 0f && !this.swinging) {
-			this.swinging = true;
-			this.lastSwing = level().getGameTime();
-		}
-		if (this.swinging && this.lastSwing + 7L <= level().getGameTime()) {
-			this.swinging = false;
-		}
-		if (this.swinging && event.getController().getAnimationState() == AnimationController.State.STOPPED) {
+		long gameTime = level().getGameTime();
+		boolean attackSwing = getAttackAnim(event.getPartialTick()) > 0f;
+
+		// Start a fresh, one-shot attack on each new swing, even if a previous attack
+		// is still finishing. The previous animation must never loop indefinitely.
+		boolean newSwing = attackSwing && !this.swinging;
+		this.swinging = attackSwing;
+		if (newSwing) {
+			this.lastSwing = gameTime;
 			event.getController().forceAnimationReset();
 			return event.setAndContinue(RawAnimation.begin().thenPlay("attack"));
 		}
-		return PlayState.CONTINUE;
-	}
 
+		// Allow the full 25-tick attack to finish, then explicitly stop this
+		// controller so the regular movement/idle pose takes over. This also
+		// handles losing the target (e.g. a player switching to Creative mode).
+		if (this.lastSwing >= 0L && gameTime - this.lastSwing < ATTACK_ANIMATION_TICKS) {
+			return PlayState.CONTINUE;
+		}
+		return PlayState.STOP;
+	}
 
 
 

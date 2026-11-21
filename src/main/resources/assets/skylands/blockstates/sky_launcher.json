@@ -1,18 +1,33 @@
 {
   "variants": {
-    "facing=north": {
+    "facing=north,powered=false": {
       "model": "skylands:block/sky_launcher"
     },
-    "facing=east": {
+    "facing=north,powered=true": {
+      "model": "skylands:block/active_sky_launcher"
+    },
+    "facing=east,powered=false": {
       "model": "skylands:block/sky_launcher",
       "y": 90
     },
-    "facing=south": {
+    "facing=east,powered=true": {
+      "model": "skylands:block/active_sky_launcher",
+      "y": 90
+    },
+    "facing=south,powered=false": {
       "model": "skylands:block/sky_launcher",
       "y": 180
     },
-    "facing=west": {
+    "facing=south,powered=true": {
+      "model": "skylands:block/active_sky_launcher",
+      "y": 180
+    },
+    "facing=west,powered=false": {
       "model": "skylands:block/sky_launcher",
+      "y": 270
+    },
+    "facing=west,powered=true": {
+      "model": "skylands:block/active_sky_launcher",
       "y": 270
     }
   }

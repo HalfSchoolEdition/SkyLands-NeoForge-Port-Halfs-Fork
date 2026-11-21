@@ -48,6 +48,18 @@ public final class SmokeFlowerPlantBlock extends DoublePlantBlock {
         }
         return InteractionResult.sidedSuccess(level.isClientSide());
     }
+    @Override public BlockState playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
+        if (mature && !level.isClientSide() && !player.getAbilities().instabuild) {
+            BlockPos bottom = state.getValue(HALF) == DoubleBlockHalf.UPPER ? pos.below() : pos;
+            if (complete(level, bottom)) Block.popResource(level, bottom, new ItemStack(ModItems.SMOKE_FLOWER.get()));
+        }
+        return super.playerWillDestroy(level, pos, state, player);
+    }
+
+    @Override public ItemStack getCloneItemStack(net.minecraft.world.level.LevelReader level, BlockPos pos, BlockState state) {
+        return new ItemStack(ModItems.SMOKE_FLOWER.get());
+    }
+
     @Override protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         if (!mature && state.getValue(HALF) == DoubleBlockHalf.LOWER && complete(level, pos) && random.nextFloat() < 0.4F)
             replace(level, pos, ModBlocks.SMOKE_FLOWER_PLANT.get());

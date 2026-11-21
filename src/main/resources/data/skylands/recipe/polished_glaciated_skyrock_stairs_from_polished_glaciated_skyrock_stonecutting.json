@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "skylands:polished_glaciated_skyrock"
+  },
+  "result": {
+    "id": "skylands:polished_glaciated_skyrock_stairs",
+    "count": 1
+  }
+}

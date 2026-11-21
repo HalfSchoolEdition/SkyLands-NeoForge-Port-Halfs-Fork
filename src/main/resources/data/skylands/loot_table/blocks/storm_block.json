@@ -1,3 +1,33 @@
 {
-  "type": "minecraft:block"
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "skylands:storm_block",
+          "properties": {
+            "locked": "false"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "skylands:storm_block",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:block_state": {
+                  "locked": "false"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

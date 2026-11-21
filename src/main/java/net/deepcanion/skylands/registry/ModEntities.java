@@ -18,6 +18,10 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public final class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(Registries.ENTITY_TYPE, SkyLands.MOD_ID);
+    public static final DeferredHolder<EntityType<?>, EntityType<RisingCelestiumSpikeEntity>> RISING_CELESTIUM_SPIKE = ENTITIES.register("rising_celestium_spike",
+            () -> EntityType.Builder.<RisingCelestiumSpikeEntity>of(RisingCelestiumSpikeEntity::new, MobCategory.MISC)
+                    .sized(0.98f, 0.98f).clientTrackingRange(8).updateInterval(1)
+                    .build("skylands:rising_celestium_spike"));
     public static final DeferredHolder<EntityType<?>, EntityType<SkyAutomatonEntity>> SKY_AUTOMATON = ENTITIES.register("sky_automaton",
             () -> EntityType.Builder.<SkyAutomatonEntity>of(SkyAutomatonEntity::new, MobCategory.MONSTER).sized(0.6f, 1.8f).clientTrackingRange(8).updateInterval(3).build("skylands:sky_automaton"));
     public static final DeferredHolder<EntityType<?>, EntityType<SkyAutomatonBossEntity>> SKY_AUTOMATON_BOSS = ENTITIES.register("sky_automaton_boss",
@@ -86,18 +90,18 @@ public final class ModEntities {
         event.put(ARTIFICIAL_ARACNID.get(), ArtificialAracnidEntity.createAttributes().build());
     }
     private static void placements(RegisterSpawnPlacementsEvent event) {
-        event.register(SKY_AUTOMATON.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(SKY_AUTOMATON.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, ModEntities::rareNightMonster, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(SKY_AUTOMATON_BOSS.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(AUTOMATON_DRONE.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
-        event.register(GLACIATED_SKY_AUTOMATON.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(GLACIATED_SKY_AUTOMATON.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, ModEntities::rareNightMonster, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(GLACIATED_DRAGON.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(SKY_AUTOMATON_BRUTE.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
-        event.register(ICE_SLOBERT.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
-        event.register(MAGMA_SLOBERT.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
-        event.register(LAVIC_SKY_AUTOMATON.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(ICE_SLOBERT.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, ModEntities::rareNightMonster, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(MAGMA_SLOBERT.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, ModEntities::rareNightMonster, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(LAVIC_SKY_AUTOMATON.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, ModEntities::rareNightMonster, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(IGNEO_ROBO_FELINE.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(GOLDEN_TUC_TUC.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (type, world, reason, pos, random) -> pos.getY() > 169 && net.minecraft.world.entity.Mob.checkMobSpawnRules(type, world, reason, pos, random), RegisterSpawnPlacementsEvent.Operation.REPLACE);
-        event.register(ARID_SKY_AUTOMATON.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(ARID_SKY_AUTOMATON.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, ModEntities::rareNightMonster, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(SKY_PHARAOH.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(FRIENDLY_VEX.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(HAPPY_SLOBERT.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (type, world, reason, pos, random) -> pos.getY() > 200 && net.minecraft.world.entity.Mob.checkMobSpawnRules(type, world, reason, pos, random), RegisterSpawnPlacementsEvent.Operation.REPLACE);
@@ -151,6 +155,16 @@ public final class ModEntities {
                 RegisterSpawnPlacementsEvent.Operation.OR);
 
     }
+    private static boolean rareNightMonster(EntityType<? extends Monster> type, ServerLevelAccessor world,
+            MobSpawnType reason, BlockPos pos, net.minecraft.util.RandomSource random) {
+        // Natural mobs belong on the sky islands at night, not in existing low-altitude terrain
+        // that happens to share the biome, and not during the day in caves under the islands.
+        if (reason == MobSpawnType.NATURAL || reason == MobSpawnType.CHUNK_GENERATION) {
+            if (pos.getY() <= SkyIslandShape.MIN_Y || world.getLevel().isDay()) return false;
+        }
+        return Monster.checkMonsterSpawnRules(type, world, reason, pos, random);
+    }
+
     private static boolean skyAnimalGround(ServerLevelAccessor world, BlockPos pos) {
         if(pos.getY()<=SkyIslandShape.MIN_Y || world.getMaxLocalRawBrightness(pos)<=8)return false;
         var biome=world.getBiome(pos);

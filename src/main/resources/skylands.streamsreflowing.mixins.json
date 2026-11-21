@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.deepcanion.skylands.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "StreamsReflowingSkyTerrainMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
